@@ -2,6 +2,8 @@
 = ["$image$/static/images/ostis-logo.png"]
 
 <- image
+<- format_png
+
 => nrel_size:
 	{
 		rrel_width: 128px;

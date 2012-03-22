@@ -1,0 +1,7 @@
+!format_png
+
+<= nrel_identification:
+	{
+		["формат png"] (<- ru_lang);
+		["png format"] (<- en_lang);
+	}
