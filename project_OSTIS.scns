@@ -23,7 +23,7 @@
 		(<- ru_lang);
 		["OSTIS project"]
 		(<- en_lang);
-		["$html$<img src="/static/images/ostis-logo.png"></img>"]
+		["$image$/static/images/ostis-logo.png"]
 		(<- image);
 	}
 
