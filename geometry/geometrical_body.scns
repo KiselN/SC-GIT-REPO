@@ -1,0 +1,6 @@
+!geometrical_body
+
+<= nrel_identification:
+	{
+		["геометрическое тело"] (<- ru_lang);
+	}

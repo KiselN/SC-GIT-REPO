@@ -1,0 +1,5 @@
+!obtuse_triangle
+<= nrel_identification:
+{
+  ["тупоугольный треугольник"] (<- ru_lang);
+}

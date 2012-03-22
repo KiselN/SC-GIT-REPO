@@ -1,0 +1,5 @@
+!nrel_biconditional
+<= nrel_identification:
+{
+  ["эквиваленция*"] (<- ru_lang);
+}

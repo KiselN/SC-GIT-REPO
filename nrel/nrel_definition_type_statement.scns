@@ -1,0 +1,5 @@
+!nrel_definition_type_statement
+<= nrel_identification:
+{
+  ["утверждение определяющего типа*"] (<- ru_lang);
+}

@@ -1,0 +1,2 @@
+!authors
+<= nrel_identification: {["Авторы"] (<- ru_lang);}

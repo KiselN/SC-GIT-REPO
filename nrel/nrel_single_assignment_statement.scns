@@ -1,0 +1,5 @@
+!nrel_single_assignment_statement
+<= nrel_identification:
+{
+  ["утверждение об однозначном задании*"] (<- ru_lang);
+}

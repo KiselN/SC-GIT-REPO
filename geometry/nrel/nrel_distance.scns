@@ -1,0 +1,5 @@
+!nrel_distance
+<= nrel_identification:
+{
+  ["расстояние*"] (<- ru_lang);
+}

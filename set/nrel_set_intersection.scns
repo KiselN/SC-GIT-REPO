@@ -1,0 +1,5 @@
+!nrel_set_intersection
+<= nrel_identification:
+{
+  ["пересечение множеств*"] (<- ru_lang);
+}

@@ -1,0 +1,6 @@
+!truncated_cone
+
+<= nrel_identification:
+	{
+		["усеченный конус"] (<- ru_lang);
+	}

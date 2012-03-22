@@ -1,0 +1,5 @@
+!nrel_median
+<= nrel_identification:
+{
+  ["медиана*"] (<- ru_lang);
+}

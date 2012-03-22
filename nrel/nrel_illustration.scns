@@ -1,0 +1,5 @@
+!nrel_illustration
+<= nrel_identification:
+{
+  ["иллюстрация*"] (<- ru_lang);
+}

@@ -1,0 +1,5 @@
+!atomic_logic_statement
+<= nrel_identification:
+{
+  ["атомарная логическая формула"] (<- ru_lang);
+}

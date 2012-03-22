@@ -1,0 +1,6 @@
+!ru_lang
+
+<= nrel_identification:
+	{
+		["Русский язык"] (<- ru_lang);
+	}

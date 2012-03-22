@@ -1,0 +1,5 @@
+!rrel_solution_step_conclusion_data
+<= nrel_identification:
+{
+  ["заключение шага решения задачи_"] (<- ru_lang);
+}

@@ -1,0 +1,5 @@
+!nrel_solution
+<= nrel_identification:
+{
+  ["решение*"] (<- ru_lang);
+}

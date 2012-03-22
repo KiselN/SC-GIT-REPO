@@ -1,0 +1,14 @@
+!syntax_class_of_sc_element
+<= nrel_identification:
+	{
+		["синтаксически задаваемый класс sc-элементов"] (<- ru_lang);
+		["класс sc-элементов, обладающих некоторым общим синтаксическим свойством"] (<- ru_lang);
+		["Множество всевозможных синтаксически выделяемых классов sc-элементов"] (<- ru_lang);
+	}
+-> "sc_node"
+-> "sc_edge"
+-> "sc_arc_common"
+-> "sc_arc_main"
+-> "sc_border"
+-> "sc_arc"
+-> "sc_connector"

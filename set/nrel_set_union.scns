@@ -1,0 +1,5 @@
+!nrel_set_union
+<= nrel_identification:
+{
+  ["объединение множеств*"] (<- ru_lang);
+}

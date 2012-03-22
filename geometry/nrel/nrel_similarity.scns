@@ -1,0 +1,5 @@
+!nrel_similarity
+<= nrel_identification:
+{
+  ["подобие*"] (<- ru_lang);
+}

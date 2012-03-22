@@ -1,0 +1,5 @@
+!multistep_task
+<= nrel_identification:
+{
+  ["многоходовая задача"] (<- ru_lang);
+}

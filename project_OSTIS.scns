@@ -1,0 +1,45 @@
+!project_OSTIS
+
+<= nrel_decomposition:
+{
+	project_1;
+	project_2;
+	project_3;
+	project_4;
+	project_5;
+	project_6;
+	project_7;
+	project_8;
+	project_9;
+	project_A;
+}
+
+<- "project"
+<- "management"
+
+<= nrel_identification:
+	{
+		["Проект OSTIS"]
+		(<- ru_lang);
+		["OSTIS project"]
+		(<- en_lang);
+	}
+
+=> nrel_action_object:
+	"doc_OSTIS"
+
+=> nrel_goal:
+	[спланировать управление проектом OSTIS]
+
+=> nrel_authors:
+	golenkov_v_v
+
+=> nrel_head:
+	golenkov_v_v
+
+=> nrel_executors:
+	{
+	rrel_admin: grakova_n_v;
+	rrel_respon_of_proj: sharpio_o_d;
+	rrel_programmer: zhukov_i_i;
+	}

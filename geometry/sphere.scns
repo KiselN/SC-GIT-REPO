@@ -1,0 +1,5 @@
+!sphere
+<= nrel_identification:
+{
+  ["сфера"] (<- ru_lang);
+}

@@ -1,0 +1,5 @@
+!nrel_answer
+<= nrel_identification:
+{
+  ["ответ*"] (<- ru_lang);
+}

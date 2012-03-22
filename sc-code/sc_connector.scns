@@ -1,0 +1,13 @@
+!sc_connector
+<= nrel_identification:
+	{
+		["( sc-ребро ⋃ sc-дуга )"] (<- ru_lang);
+		["sc-ребро или sc-дуга"] (<- ru_lang);
+		["Понятие, являющееся результатом объединения Понятия sc-ребра и Понятия sc-дуги"] (<- ru_lang);
+		["атомарный связующий sc-элемент"] (<- ru_lang);
+	}
+<= nrel_subdivision:
+	{
+		"sc_edge";
+		"sc_arc";
+	}

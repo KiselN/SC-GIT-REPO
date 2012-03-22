@@ -1,0 +1,5 @@
+!nrel_text
+<= nrel_identification:
+{
+  ["текст*"] (<- ru_lang);
+}

@@ -1,0 +1,5 @@
+!convex_polygon
+<= nrel_identification:
+{
+  ["выпуклый многоугольник"] (<- ru_lang);
+}

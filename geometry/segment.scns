@@ -1,0 +1,5 @@
+!segment
+<= nrel_identification:
+{
+  ["отрезок"] (<- ru_lang);
+}

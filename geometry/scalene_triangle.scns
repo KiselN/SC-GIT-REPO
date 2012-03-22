@@ -1,0 +1,5 @@
+!scalene_triangle
+<= nrel_identification:
+{
+  ["разносторонний треугольник"] (<- ru_lang);
+}

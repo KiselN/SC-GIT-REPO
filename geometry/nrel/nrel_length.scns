@@ -1,0 +1,5 @@
+!nrel_length
+<= nrel_identification:
+{
+  ["длина*"] (<- ru_lang);
+}

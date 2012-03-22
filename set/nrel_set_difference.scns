@@ -1,0 +1,5 @@
+!nrel_set_difference
+<= nrel_identification:
+{
+  ["разность множеств*"] (<- ru_lang);
+}

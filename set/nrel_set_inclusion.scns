@@ -1,0 +1,5 @@
+!nrel_set_inclusion
+<= nrel_identification:
+{
+  ["включение множеств*"] (<- ru_lang);
+}

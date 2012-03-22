@@ -1,0 +1,5 @@
+!nrel_problem_situation_source
+<= nrel_identification:
+{
+  ["источник условия задачи*"] (<- ru_lang);
+}

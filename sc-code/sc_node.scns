@@ -1,0 +1,6 @@
+!sc_node
+<= nrel_identification:
+	{
+		["терминальный элемент sc-конструкции"] (<- ru_lang);
+	}
+<- sc_elements_alphabet

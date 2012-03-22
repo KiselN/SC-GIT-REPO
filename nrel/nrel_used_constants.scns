@@ -1,0 +1,5 @@
+!nrel_used_constants
+<= nrel_identification:
+{
+  ["используемые константы*"] (<- ru_lang);
+}

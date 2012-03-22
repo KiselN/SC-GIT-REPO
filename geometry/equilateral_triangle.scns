@@ -1,0 +1,5 @@
+!equilateral_triangle
+<= nrel_identification:
+{
+  ["равносторонний треугольник"] (<- ru_lang);
+}

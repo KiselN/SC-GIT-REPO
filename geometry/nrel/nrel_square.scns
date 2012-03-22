@@ -1,0 +1,5 @@
+!nrel_square
+<= nrel_identification:
+{
+  ["площадь*"] (<- ru_lang);
+}

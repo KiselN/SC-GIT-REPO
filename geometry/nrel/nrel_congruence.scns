@@ -1,0 +1,5 @@
+!nrel_congruence
+<= nrel_identification:
+{
+  ["конгруэнтность*"] (<- ru_lang);
+}

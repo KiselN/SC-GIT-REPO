@@ -1,0 +1,5 @@
+!nrel_problem_situation
+<= nrel_identification:
+{
+  ["условие задачи*"] (<- ru_lang);
+}

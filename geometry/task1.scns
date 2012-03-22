@@ -1,0 +1,176 @@
+!task1
+<= nrel_identification:
+{
+  ["Задача опр. площ. тр. вписан. в окр.-две его стор. яв-ся хорд. дан. окр.-одна из сторон прох. через центр дан. окр."] (<- ru_lang);
+}
+
+<- multistep_task
+
+=> nrel_problem_situation:
+	"Situation(Задача опр. площ. тр. вписан. в окр.-две его стор. яв-ся хорд. дан. окр.-одна из сторон прох. через центр дан. окр.)"
+	(
+		<= nrel_text:
+		[Определить площадь треугольника PQR, вписанного в окружность радиусом 5, если сторона PR проходит через центр данной окружности, а длина стороны PQ равна 6.]
+		<= nrel_text:
+		[$scns$
+			!"Trngl(PntP;PntQ;PntR)" 
+				<- triangle
+				=> nrel_side: 
+					"Seg(PntP;PntQ)"
+					(
+						<- segment
+						=> nrel_length:
+							number_6
+					)
+				=> nrel_side: 
+					"Seg(PntQ;PntR)"
+					(
+						<- segment
+						=> nrel_length:
+							number_5
+					)
+				=> nrel_side: 
+					"Seg(PntP;PntR)"
+					(
+						<- segment
+					)
+				=> nrel_inscribed:
+				"Circle(PntO;PntA)"
+				(
+					<- circle
+					=> nrel_center:
+						PntO
+						(
+							<- geometry_point
+						)
+					=> nrel_radius:
+						Seg(PntO;PntR)
+						(
+							<- segment
+						)
+				)
+		]
+		<= nrel_illustration:
+		[Image]
+	)
+
+<= nrel_solution:
+	"Solution(Задача опр. площ. тр. вписан. в окр.-две его стор. яв-ся хорд. дан. окр.-одна из сторон прох. через центр дан. окр.)"
+	(
+		-> rrel_1 : task1_step1
+			(
+				<= nrel_text:
+				[Т.к. треугольник PQR вписан в окружность, значит точка P, точка Q и точка R, которые являются его вершинами, принадлежат окружности(по определению вписанного в окружность многоугольника).] 
+				-> rrel_solution_step_source_data :
+					{
+						"Def(nrel_inscribed)";
+						[SCg];
+					}
+				-> rrel_solution_step_conclusion_data :
+					[SCg]
+				=> nrel_basic_consequence:
+				task1_step2
+				(
+					<= nrel_text:
+					[Точка P и точка R принадлежат окружности, следовательно отрезок PR является хордой окружности (O;R) (по определению хорды окружности).] 
+					-> rrel_solution_step_source_data :
+						{
+							"Def(nrel_chord)";
+							[SCg];
+							}
+					-> rrel_solution_step_conclusion_data :
+						[SCg]
+					=> nrel_basic_consequence:
+						task1_step3
+					(
+						<= nrel_text:
+						[Центр окружности точка O принадлежит отрезку PR, отрезок PR является хордой окружности (O;R), значит отрезок PR является диаметром данной окружности (по определению диаметра). Т.к. длина диаметра равна двум длинам радиуса окружности, то Формула (по свойству диаметра).] 
+						-> rrel_solution_step_source_data :
+							{
+								"Def(nrel_diameter)";
+								"Stat(nrel_diameter,nrel_radius)";
+								[SCg];
+								}
+						-> rrel_solution_step_conclusion_data :
+							[SCg]
+						=> nrel_basic_consequence:
+							task1_step4
+						(
+							<= nrel_text:
+							[Т.к. точки P,Q,R принадлежат окружности и точка Q не является центром окружности, то угол PQR является вписанным в окружность углом (по определению вписанного в окружность угла).] 
+							-> rrel_solution_step_source_data :
+								{
+									"Def(nrel_inscribed_angle)";
+									[SCg];
+									}
+							-> rrel_solution_step_conclusion_data :
+								[SCg]
+							=> nrel_basic_consequence:
+								task1_step5
+								(
+									<= nrel_text:
+									[Т.к. вписанный угол PQR опирается на диаметр PR, то он является прямым углом (по свойству вписанного угла).] 
+									-> rrel_solution_step_source_data :
+									{
+										"Stat(nrel_inscribed_angle;nrel_diameter;right_angle)";
+										[SCg];
+									}
+								-> rrel_solution_step_conclusion_data :
+								[SCg]
+								=> nrel_basic_consequence:
+									task1_step6
+									(
+										<= nrel_text:
+										[Т.к. прямой угол PQR также является углом треугольника PQR, то треугольник PQR является прямоугольным треугольником (по определению прямоугольного треугольника). ] 
+										-> rrel_solution_step_source_data :
+										{
+										"Def(right_triangle)";
+									[SCg];
+									}
+									-> rrel_solution_step_conclusion_data :
+									[SCg]
+									=> nrel_basic_consequence:
+										task1_step7
+										(
+											<= nrel_text:
+											[Рассчитаем длину стороны QR по теореме Пифагора: Формула] 
+											-> rrel_solution_step_source_data :
+											{
+												"Stat(right_triangle;nrel_hypotenuse;nrel_cathetus;nrel_congruence)";
+												[SCg];
+											}
+										-> rrel_solution_step_conclusion_data :
+										[SCg]
+										=> nrel_basic_consequence:
+											task1_step8
+											(
+												<= nrel_text:
+												[Рассчитаем площадь прямоугольного треугольника по следующей формуле: Формула] 
+												-> rrel_solution_step_source_data :
+												{
+													"Stat(right_triangle;nrel_square;nrel_cathetus)";
+													[SCg];
+												}
+												-> rrel_solution_step_conclusion_data :
+												[SCg]
+											)
+									)
+								)
+							)
+						)
+					)
+				)
+			)
+	)
+
+=> nrel_answer:
+	"Answer(Задача опр. площ. тр. вписан. в окр.-две его стор. яв-ся хорд. дан. окр.-одна из сторон прох. через центр дан. окр.)"
+	(
+		<= nrel_text:
+			[Площадь треугольника PQR равна 24.]
+		<= nrel_text:
+			[SCg]
+	)
+
+=> nrel_problem_situation_source:
+	"Парахневич В.А. - Сборник задач по геометрии"

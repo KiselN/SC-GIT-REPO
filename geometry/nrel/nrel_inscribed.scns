@@ -1,0 +1,5 @@
+!nrel_inscribed
+<= nrel_identification:
+{
+  ["вписанность*"] (<- ru_lang);
+}

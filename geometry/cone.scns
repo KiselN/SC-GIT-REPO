@@ -1,0 +1,88 @@
+!cone
+<= nrel_identification:
+	{
+		["Класс конусов"] (<- ru_lang);
+		["Понятие конуса"] (<- ru_lang);
+		["Множество всевозможных конусов"] (<- ru_lang);
+		["Множество знаков всевозможных конусов"] (<- ru_lang);
+	}
+=> nrel_inclusion:
+	geometrical_body
+	
+=> nrel_inclusion:
+	rotate_body
+
+<= nrel_inclusion:
+	truncated_cone
+
+<= nrel_decomposition:
+	{
+		direct_cone;
+		inclined_cone;
+	}
+
+<= nrel_superset_1:
+	{
+		nrel_congruence;
+		nrel_similarity_factor;
+		nrel_symmetry;
+	}
+
+<= nrel_superset_2:
+	{
+		nrel_forming;
+		nrel_altitude;
+		nrel_border;
+		nrel_basis;
+		nrel_vertex;
+		nrel_entering;
+		nrel_described;
+		nrel_volume;
+		nrel_surface_area;
+	}
+
+<= nrel_relations_intersect_with_described_set:
+{
+	nrel_set_inclusion;
+	nrel_set_intersection;
+	nrel_set_union;
+	nrel_set_difference;
+	nrel_set_decomposition;
+}
+	
+=> nrel_definition:
+	"definition(cone)"
+	(
+		= [геометрическое тело, ограниченное конической поверхностью и некоторой плоскостью]
+		<= nrel_used_constants:
+			{
+				geometrical_body;
+				cone_surface;
+				plane;
+			}
+	)
+	
+<- rrel_4th_logic_level_concept : Euclidean_geometry_knowledge_domain
+
+<= nrel_identification_rules:
+	{
+		[Конус ⋖ суффикс ⋗,,⋖ суффикс ⋗] (<- ru_lang);
+	}
+	
+<= nrel_statements:
+	{
+		"Stat(cone; nrel_square; nrel_radius; nrel_basis; nrel_forming)"
+		(
+			= [Площадь боковой поверхности конуса равна произведению числа LaTeX: \pi, радиуса основания и длины образующей]
+			= [Для каждого прямого конуса выполняется следующее числовое соотношение LaTeX: ~S = \pi R l, где LaTeX: ~S - площадь боковой поверхности, LaTeX: ~R - радиус основания, LaTeX: ~l - длина образующей]
+		);
+		"Stat(cone; nrel_volume; nrel_radius; nrel_basis; nrel_altitude)"
+		(
+			= [Объем прямого конуса равен одной трети произведения числа LaTeX: \pi, квадрата радиуса основания конуса и его высоты]
+			= [Для каждого прямого конуса выполняется следующее числовое соотношение LaTeX: ~V = \pi R^2 h, где LaTeX: ~V - объем конуса, LaTeX: ~R - радиус основания конуса, LaTeX: ~h - высота конуса]
+		);
+		"Stat(cone; nrel_basis; nrel_congruence)"
+		(
+			= [Конус можно получить вращением прямоугольного треугольника вокруг одного из его катетов]
+		);
+	}

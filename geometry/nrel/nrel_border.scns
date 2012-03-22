@@ -1,0 +1,5 @@
+!nrel_border
+<= nrel_identification:
+{
+  ["граница*"] (<- ru_lang);
+}

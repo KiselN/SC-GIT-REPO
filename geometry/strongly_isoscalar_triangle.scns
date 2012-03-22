@@ -1,0 +1,5 @@
+!strongly_isoscalar_triangle
+<= nrel_identification:
+{
+  ["строго равнобедренный треугольник"] (<- ru_lang);
+}

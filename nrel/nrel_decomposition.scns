@@ -1,0 +1,5 @@
+!nrel_decomposition
+<= nrel_identification:
+{
+  ["декомпозиция*"] (<- ru_lang);
+}

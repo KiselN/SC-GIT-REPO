@@ -1,0 +1,5 @@
+!rrel_example
+<= nrel_identification:
+{
+  ["пример_"] (<- ru_lang);
+}

@@ -1,0 +1,5 @@
+!rrel_solution_step_source_data
+<= nrel_identification:
+{
+  ["исходные данные шага решения задачи_"] (<- ru_lang);
+}

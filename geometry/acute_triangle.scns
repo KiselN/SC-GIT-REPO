@@ -1,0 +1,5 @@
+!acute_triangle
+<= nrel_identification:
+{
+  ["остроугольный треугольник"] (<- ru_lang);
+}

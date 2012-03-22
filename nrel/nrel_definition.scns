@@ -1,0 +1,5 @@
+!nrel_definition
+<= nrel_identification:
+{
+  ["определение*"] (<- ru_lang);
+}

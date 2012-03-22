@@ -1,0 +1,5 @@
+!nrel_side
+<= nrel_identification:
+{
+  ["сторона*"] (<- ru_lang);
+}
