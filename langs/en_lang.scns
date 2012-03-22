@@ -1,0 +1,7 @@
+!en_lang
+
+<= nrel_identification:
+	{
+		["Английский язык"] (<- ru_lang);
+		["English language"] (<- en_lang);
+	}
