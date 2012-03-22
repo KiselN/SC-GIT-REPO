@@ -1,0 +1,7 @@
+!image
+
+<= nrel_identification:
+	{
+		["изображение"] (<- ru_lang);
+		["image"] (<- en_lang);
+	}

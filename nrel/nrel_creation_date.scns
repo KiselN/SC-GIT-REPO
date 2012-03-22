@@ -1,0 +1,7 @@
+!nrel_creation_date
+
+<= nrel_identification:
+	{
+		["дата создания*"] (<- ru_lang);
+		["creation date*"] (<- en_lang);
+	}

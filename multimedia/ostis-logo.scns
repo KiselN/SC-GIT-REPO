@@ -1,0 +1,22 @@
+!ostis_logo
+= ["$image$/static/images/ostis-logo.png"]
+
+<- image
+=> nrel_size:
+	{
+		rrel_width: 128px;
+		rrel_height: 128px;
+	}
+	
+<= nrel_description:
+	{
+		["На изображении представлен логотип проекта OSTIS"] (<- ru_lang);
+		["Logotype of OSTIS project represented on this image"] (<- en_lang);
+	}
+
+=> nrel_creation_date:
+	{
+		rrel_day: 4;
+		rrel_month: february;
+		rrel_year: 2010;
+	}

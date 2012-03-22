@@ -1,0 +1,7 @@
+!rrel_height
+
+<= nrel_identification:
+	{
+		["высота_"] (<- ru_lang);
+		["height_"] (<- en_lang);
+	}

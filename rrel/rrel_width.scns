@@ -1,0 +1,7 @@
+!rrel_width
+
+<= nrel_identification:
+	{
+		["ширина_"] (<- ru_lang);
+		["width_"] (<- en_lang);
+	}
