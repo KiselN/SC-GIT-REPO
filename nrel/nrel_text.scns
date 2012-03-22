@@ -2,4 +2,5 @@
 <= nrel_identification:
 {
   ["текст*"] (<- ru_lang);
+  ["text*"] (<- en_lang);
 }

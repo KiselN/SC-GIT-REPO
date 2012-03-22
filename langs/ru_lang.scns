@@ -3,4 +3,5 @@
 <= nrel_identification:
 	{
 		["Русский язык"] (<- ru_lang);
+		["Английский язык"] (<- en_lang);
 	}

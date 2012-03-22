@@ -2,4 +2,5 @@
 <= nrel_identification:
 {
   ["включение*"] (<- ru_lang);
+  ["inclusion*"] (<- en_lang);
 }

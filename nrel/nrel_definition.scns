@@ -2,4 +2,5 @@
 <= nrel_identification:
 {
   ["определение*"] (<- ru_lang);
+  ["definition*"] (<- en_lang);
 }

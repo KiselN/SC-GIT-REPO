@@ -2,4 +2,5 @@
 <= nrel_identification:
 {
   ["правила идентификации элементов*"] (<- ru_lang);
+  ["rules of elements identification*"] (<- en_lang);
 }
