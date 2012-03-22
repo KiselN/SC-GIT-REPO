@@ -1,0 +1,8 @@
+!koronchik_d_n
+
+<= nrel_identification:
+	{
+		["Денис Корончик"] (<- ru_lang);
+		["Denis Koronchik"] (<- en_lang);
+		["$image$/static/images/koronchik_d_n.jpeg"] (<- image);
+	}

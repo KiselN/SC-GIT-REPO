@@ -15,6 +15,11 @@
 		["На изображении представлен логотип проекта OSTIS"] (<- ru_lang);
 		["Logotype of OSTIS project represented on this image"] (<- en_lang);
 	}
+	
+<= nrel_authors:
+	{
+		koronchik_d_n;
+	}
 
 => nrel_creation_date:
 	{
