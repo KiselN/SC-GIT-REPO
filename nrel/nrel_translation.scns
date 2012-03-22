@@ -1,0 +1,7 @@
+!nrel_translation
+
+<= nrel_identification:
+	{
+		["трансляция*"] (<- ru_lang);
+		["translation*"] (<- en_lang);
+	}

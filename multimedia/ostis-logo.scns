@@ -21,4 +21,20 @@
 		rrel_day: 4;
 		rrel_month: february;
 		rrel_year: 2010;
-	}
+	} 
+	(
+		<= nrel_translation:
+			{
+				["$html$ 4 февраля 2010 г."]
+				(
+					<- ru_lang
+					<- format_html
+				);
+				["$html$ 4 february 2010"]
+				(
+					<- en_lang
+					<- format_html
+				);
+			}
+	)
+
