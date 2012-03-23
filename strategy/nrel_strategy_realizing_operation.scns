@@ -1,0 +1,7 @@
+!nrel_strategy_realizing_operation
+
+<= nrel_identification:
+{
+  ["операция реализующая стратегию*"] (<- ru_lang);
+}
+

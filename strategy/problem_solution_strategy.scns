@@ -1,0 +1,7 @@
+!problem_solution_strategy
+
+<= nrel_identification:
+{
+  ["стратегия решения задач"] (<- ru_lang);
+}
+

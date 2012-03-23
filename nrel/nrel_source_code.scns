@@ -1,0 +1,5 @@
+!nrel_source_code
+<= nrel_identification:
+{
+  ["исходный код*"] (<- ru_lang);
+}

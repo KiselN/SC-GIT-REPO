@@ -1,0 +1,5 @@
+!nrel_disjunction
+<= nrel_identification:
+{
+  ["дизъюнкция*"] (<- ru_lang);
+}

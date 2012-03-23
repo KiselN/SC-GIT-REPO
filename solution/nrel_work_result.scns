@@ -1,0 +1,6 @@
+!nrel_work_result
+
+<= nrel_identification:
+	{
+		["результат работы*"] (<- ru_lang);
+	}

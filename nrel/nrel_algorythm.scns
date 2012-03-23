@@ -1,0 +1,5 @@
+!nrel_algorythm
+<= nrel_identification:
+{
+  ["алгоритм*"] (<- ru_lang);
+}

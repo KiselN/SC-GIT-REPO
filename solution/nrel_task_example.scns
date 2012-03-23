@@ -1,0 +1,5 @@
+!nrel_task_example
+<= nrel_identification:
+{
+  ["пример задачи*"] (<- ru_lang);
+}

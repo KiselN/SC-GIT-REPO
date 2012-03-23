@@ -1,0 +1,5 @@
+!sc_operation
+<= nrel_identification:
+{
+  ["sc-операция"] (<- ru_lang);
+}

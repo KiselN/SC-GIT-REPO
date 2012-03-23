@@ -1,0 +1,6 @@
+!nrel_initial_condition
+
+<= nrel_identification:
+	{
+		["условие инициирования*"] (<- ru_lang);
+	}

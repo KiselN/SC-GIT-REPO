@@ -1,0 +1,27 @@
+!strategy_postorder_tree_search
+
+<= nrel_identification:
+{
+  ["стратегия поиска в глубину"] (<- ru_lang);
+}
+
+<- problem_solution_strategy
+=> nrel_description:
+	[Cогласно механизму поиска в глубину первым будет найден именно тот вариант, который находится на самом большом уровне вложенности и удовлетворяет всем условиям]
+	
+=> nrel_initial_condition:
+		[SCg]
+		
+=> nrel_work_result:
+	{
+		[SCg];
+		[SCg];
+	}
+	(
+		<- nrel_disjunction
+	)
+
+=> nrel_strategy_realizing_operation:
+	oper_postorder_tree_search
+=> nrel_task_example:
+	task1
