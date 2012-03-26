@@ -1,0 +1,5 @@
+!sc_logic_conclusion_operation
+<= nrel_identification:
+{
+  ["sc-операция логического вывода"] (<- ru_lang);
+}

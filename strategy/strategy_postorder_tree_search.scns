@@ -10,12 +10,12 @@
 	[Cогласно механизму поиска в глубину первым будет найден именно тот вариант, который находится на самом большом уровне вложенности и удовлетворяет всем условиям]
 	
 => nrel_initial_condition:
-		[SCg]
+		["$image$ /static/images/postorder_tree_search1.png"]
 		
 => nrel_work_result:
 	{
-		[SCg];
-		[SCg];
+		["$image$ /static/images/postorder_tree_search2.png"];
+		["$image$ /static/images/postorder_tree_search3.png"];
 	}
 	(
 		<- nrel_disjunction
