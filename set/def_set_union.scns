@@ -1,0 +1,36 @@
+!def_set_union
+<= nrel_identification:
+{
+  ["Определение объединения двух множеств"] (<- ru_lang);
+  ["Определение(объединение*)"] (<- ru_lang);
+  ["Def(union*)"] (<- en_lang);
+}
+
+<- nrel_generality
+
+-> rrel_linked_variables:
+	[$image$ /static/images/def_union/SCG1.png]
+	
+-> "$node1"
+	(
+		<- nrel_implication
+		-> rrel_if: [$image$ /static/images/def_union/SCG2.png]
+		-> rrel_then:
+			"$node2"
+			(
+				<- nrel_biconditional
+				-> [$image$ /static/images/def_union/SCG3.png]
+				-> "$node3"
+				(
+					<- nrel_generality
+					-> rrel_linked_variables:
+						[$image$ /static/images/def_union/SCG4.png]
+					-> "$node4"
+					(
+						<- nrel_biconditional
+						-> [$image$ /static/images/def_union/SCG5.png]
+						-> [$image$ /static/images/def_union/SCG6.png]
+					)
+				)
+			)
+	)

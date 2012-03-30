@@ -1,0 +1,5 @@
+!nrel_generality
+<= nrel_identification:
+{
+  ["всеобщность*"] (<- ru_lang);
+}

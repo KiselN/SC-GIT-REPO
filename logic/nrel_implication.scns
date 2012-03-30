@@ -1,0 +1,5 @@
+!nrel_implication
+<= nrel_identification:
+{
+  ["импликация*"] (<- ru_lang);
+}

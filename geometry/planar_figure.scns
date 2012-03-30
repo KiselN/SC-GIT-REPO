@@ -1,0 +1,6 @@
+!planar_figure
+
+<= nrel_identification:
+	{
+		["планарная фигура"] (<- ru_lang);
+	}

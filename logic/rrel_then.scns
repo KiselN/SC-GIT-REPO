@@ -1,0 +1,5 @@
+!rrel_then
+<= nrel_identification:
+{
+  ["то_"] (<- ru_lang);
+}

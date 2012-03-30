@@ -1,0 +1,115 @@
+!triangleABC
+<= nrel_identification:
+{
+	["Треугк(ТчкA;ТчкB;ТчкC)"] (<- ru_lang);
+	["Trngl(PntA;PntB;PntC)"] (<- ru_lang);	
+	["Triangle(PointA;PointB;PointC)"] (<- ru_lang);
+	["Треугольник(ТочкаA;ТочкаB;ТочкаC)"] (<- ru_lang);
+	["Треугольник, вершинами которого являются Точка A, Точка B и Точка С"] (<- ru_lang);
+}
+
+
+
+<= nrel_semantic_square_center:
+	[$scns$
+		!"Trngl(PntA;PntB;PntC)"
+		<- acute_triangle
+		<- scalene_triangle
+		=> nrel_side:
+			"Seg(PntA;PntB)"
+			(
+				<- segment
+				=> nrel_boundary_point:
+					PntA
+				=> nrel_boundary_point:
+					PntB
+				-> PntA
+				-> PntB
+			)
+		=> nrel_side:
+			"Seg(PntB;PntC)"
+			(
+				<- segment
+				=> nrel_boundary_point:
+					PntB
+				=> nrel_boundary_point:
+					PntC
+				-> PntB
+				-> PntC
+			)
+		=> nrel_side:
+			"Seg(PntA;PntC)"
+			(
+				<- segment
+				=> nrel_boundary_point:
+					PntA
+				=> nrel_boundary_point:
+					PntC
+				-> PntA
+				-> PntC
+			)
+		=> nrel_vertex:
+			PntA
+			(
+				<- geometry_point
+			)
+		=> nrel_vertex:
+			PntB
+			(
+				<- geometry_point
+			)
+		=> nrel_vertex:
+			PntC
+			(
+				<- geometry_point
+			)
+			
+		=> nrel_interior_angle:
+			AngleAlpha
+			(
+				<- angle
+				=> nrel_vertex:
+					PntA
+				=> nrel_side:
+					"Seg(PntA;PntB)"
+				=> nrel_side:
+					"Seg(PntA;PntC)"
+			)
+		=> nrel_interior_angle:
+			AngleBeta
+			(
+				<- angle
+				=> nrel_vertex:
+					PntB
+				=> nrel_side:
+					"Seg(PntA;PntB)"
+				=> nrel_side:
+					"Seg(PntB;PntC)"
+			)
+		=> nrel_interior_angle:
+			AngleGamma
+			(
+				<- angle
+				=> nrel_vertex:
+					PntC
+				=> nrel_side:
+					"Seg(PntB;PntC)"
+				=> nrel_side:
+					"Seg(PntA;PntC)"
+			)
+	]
+	(
+		= [Треугольник ABC является остроугольным, разносторонним.Геометрические точки A, B и C являются вершинами Треугольника ABC. Отрезки a, b и c являются сторонами Треугольника ABC. Углы LaTeX: \alpha, LaTeX: \beta, LaTeX: \gamma являются внутренним углами Треугольника ABC. Точка A является граничной точкой отрезков c, b. Точка B является граничной точкой отрезков c, a.
+		Точка C является граничной точкой отрезков b, a.]
+	)
+	
+=> nrel_illustration:
+	["$image$ /static/images/illustration_triangleABC.png"]
+	
+<- rrel_example: limited_size_geometry_figure
+<- rrel_example: triangle
+<- rrel_example: acute_triangle
+<- rrel_example: polygon
+<- rrel_example: convex_polygon
+<- rrel_example: geometry_figure
+<- rrel_example: planar_figure

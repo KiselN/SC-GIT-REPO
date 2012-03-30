@@ -1,0 +1,6 @@
+!geometry_figure
+
+<= nrel_identification:
+	{
+		["геометрическая фигура"] (<- ru_lang);
+	}

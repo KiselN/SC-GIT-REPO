@@ -1,0 +1,6 @@
+!limited_size_geometry_figure
+
+<= nrel_identification:
+	{
+		["геометрическая фигура ограниченного размера"] (<- ru_lang);
+	}
