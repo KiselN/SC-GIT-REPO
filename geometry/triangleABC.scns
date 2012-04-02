@@ -2,15 +2,15 @@
 <= nrel_identification:
 {
 	["Треугк(ТчкA;ТчкB;ТчкC)"] (<- ru_lang);
-	["Trngl(PntA;PntB;PntC)"] (<- ru_lang);	
-	["Triangle(PointA;PointB;PointC)"] (<- ru_lang);
+	["Trngl(PntA;PntB;PntC)"] (<- en_lang);	
+	["Triangle(PointA;PointB;PointC)"] (<- en_lang);
 	["Треугольник(ТочкаA;ТочкаB;ТочкаC)"] (<- ru_lang);
 	["Треугольник, вершинами которого являются Точка A, Точка B и Точка С"] (<- ru_lang);
 }
 
 
 
-<= nrel_semantic_square_center:
+<- rrel_semantic_square_center:
 	[$scns$
 		!"Trngl(PntA;PntB;PntC)"
 		<- acute_triangle
