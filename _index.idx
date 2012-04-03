@@ -18,6 +18,7 @@ ball > geometry\ball.scns
 circle > geometry\circle.scns
 cone > geometry\cone.scns
 convex_polygon > geometry\convex_polygon.scns
+def_segment > geometry\Def(segment).scns
 direct_cone > geometry\direct_cone.scns
 equilateral_triangle > geometry\equilateral_triangle.scns
 geometrical_body > geometry\geometrical_body.scns
@@ -65,6 +66,7 @@ nrel_superset_1 > geometry\nrel\nrel_superset_1.scns
 nrel_superset_2 > geometry\nrel\nrel_superset_2.scns
 nrel_symmetry > geometry\nrel\nrel_symmetry.scns
 nrel_vertex > geometry\nrel\nrel_vertex.scns
+def_full_graph > graph\Def(full_graph).scns
 en_lang > langs\en_lang.scns
 ru_lang > langs\ru_lang.scns
 atomic_logic_statement > logic\atomic_logic_statement.scns
@@ -86,6 +88,7 @@ ostis_logo > multimedia\ostis-logo.scns
 nrel_algorythm > nrel\nrel_algorythm.scns
 nrel_authors > nrel\nrel_authors.scns
 nrel_basic_consequence > nrel\nrel_basic_consequence.scns
+nrel_comment > nrel\nrel_comment.scns
 nrel_creation_date > nrel\nrel_creation_date.scns
 nrel_decomposition > nrel\nrel_decomposition.scns
 nrel_definition > nrel\nrel_definition.scns
