@@ -1,0 +1,9 @@
+!scs_divider
+<= nrel_identification: {["Разделитель SCs-кода"] (<- ru_lang);}
+<= nrel_decomposition: 
+{
+	scs_divider_connector;
+	scs_divider_incidence;
+	scs_divider_colon;
+	scs_divider_semicolon;
+}

@@ -1,0 +1,15 @@
+!scs_divider_const_arc
+<= nrel_identification: 
+{
+	["константная scs-дуга"] (<- ru_lang);
+}
+<= nrel_representation:
+{
+	["⇒"];
+	["⇐"];
+}
+<= nrel_representation_standart_editor:
+{
+	["<="];
+	["=>"];
+}

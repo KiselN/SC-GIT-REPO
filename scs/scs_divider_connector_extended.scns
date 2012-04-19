@@ -1,0 +1,23 @@
+!scs_divider_connector_extended
+<= nrel_identification: 
+{
+	["SCs-разделитель, изображающий sc-коннектор, знак которого принадлежит первому расширению SCg-кода"] (<- ru_lang);
+}
+<= nrel_decomposition:
+{
+	scs_divider_const_edge;
+	scs_divider_var_edge;
+	scs_divider_const_arc;
+	scs_divider_var_arc;
+	scs_divider_var_pos_stat_accessory_arc;
+	scs_divider_const_neg_stat_accessory_arc;
+	scs_divider_var_neg_stat_accessory_arc;
+	scs_divider_const_fuz_stat_accessory_arc;
+	scs_divider_var_fuz_stat_accessory_arc;
+	scs_divider_const_pos_nonstat_accessory_arc;
+	scs_divider_var_pos_nonstat_accessory_arc;
+	scs_divider_const_neg_nonstat_accessory_arc;
+	scs_divider_var_neg_nonstat_accessory_arc;
+	scs_divider_const_fuz_nonstat_accessory_arc;
+	scs_divider_var_fuz_nonstat_accessory_arc;
+}

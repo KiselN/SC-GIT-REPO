@@ -1,0 +1,12 @@
+!scs_divider_connector
+<= nrel_identification: 
+{
+	["Разделитель коннектор"] (<- ru_lang);
+	["SCs-разделитель, изображающий sc-коннектор"] (<- ru_lang);
+	["SCs-разделитель, соответствующий sc-коннектору"] (<- ru_lang);
+}
+<= nrel_decomposition:
+{
+	scs_divider_connector_explicit;
+	scs_divider_connector_non_explicit;
+}

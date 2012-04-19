@@ -1,0 +1,26 @@
+!scs_divider_simple_semicolon
+<= nrel_identification: 
+{
+	["scs-разделитель простая точка с запятой"] (<- ru_lang);
+}
+<= nrel_representation:
+{
+	[";"];
+}
+<= nrel_representation_standart_editor:
+{
+	[";"];
+}
+<= nrel_explanation:
+	["Является разделителем перечисляемых имен sc-элементов, которые в sc.s-предложении выполняют одинаковую роль"]
+<= nrel_explanation:
+	["Использование данного разделителя является способом превращения нескольких sc.s-предложений, отличающихся только одним именем, в одно sc.s-предложение, в котором эти имена перечислены через ;"]
+<= nrel_using_example:
+	["Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD) ; Треугк(ТчкВ;ТчкС;ТчкD) => сторона*; включение* : Отр(ТчкВ;ТчкС); Отр(ТчкС;ТчкD);;"]
+	(
+		= [$image$ /static/images/scs_divider/common_example.png]
+		<= nrel_illustration:
+		[$image$ /static/images/scs_divider/common_illusration.png]
+	)
+	
+	

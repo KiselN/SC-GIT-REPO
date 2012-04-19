@@ -1,0 +1,15 @@
+!scs_divider_var_neg_nonstat_accessory_arc
+<= nrel_identification: 
+{
+	["переменная негативная нестационарная scs-дуга принадлежности"] (<- ru_lang);
+}
+<= nrel_representation:
+{
+	["~~∌"];
+	["∉~~"];
+}
+<= nrel_representation_standart_editor:
+{
+	["~~|>"];
+	["<|~~"];
+}

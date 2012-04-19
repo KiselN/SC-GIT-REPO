@@ -1,0 +1,11 @@
+!scs_divider_connector_non_explicit
+<= nrel_identification: 
+{
+	["SCs-разделитель, изображающий sc-коннектор, временно присутствующий в sc-памяти"] (<- ru_lang);
+	["SCs-разделитель, соответствующий sc-коннектору, временно присутствующему в sc-памяти"] (<- ru_lang);
+}
+<= nrel_decomposition:
+{
+	scs_divider_equality;
+	scs_divider_non_equality;
+}

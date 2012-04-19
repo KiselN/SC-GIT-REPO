@@ -1,0 +1,19 @@
+!scs_divider_equality
+<= nrel_identification: 
+{
+	["scs-разделитель равенство"] (<- ru_lang);
+}
+<= nrel_representation:
+{
+	["="];
+}
+<= nrel_representation_standart_editor:
+{
+	["="];
+}
+<= nrel_explanation:
+	["Разделяет имена синонимичных sc-элементов"]
+<= nrel_using_example:
+	[Поток 72170x = {721701;721702;721703};;]
+<= nrel_using_example:
+	[треугольник = многоугольник с тремя сторонами;;]

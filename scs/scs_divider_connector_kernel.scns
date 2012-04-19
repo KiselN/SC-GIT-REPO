@@ -1,0 +1,12 @@
+!scs_divider_connector_kernel
+<= nrel_identification: 
+{
+	["SCs-разделитель, изображающий sc-коннектор, знак которого принадлежит ядру SCg-кода"] (<- ru_lang);
+}
+<= nrel_decomposition:
+{
+	scs_divider_edge;
+	scs_divider_common_type_arc;
+	scs_divider_accessory_arc;
+	scs_divider_const_pos_stat_accessory_arc;
+}

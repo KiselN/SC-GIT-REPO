@@ -1,0 +1,15 @@
+!scs_divider_const_fuz_nonstat_accessory_arc
+<= nrel_identification: 
+{
+	["константная нечеткая нестационарная scs-дуга принадлежности"] (<- ru_lang);
+}
+<= nrel_representation:
+{
+	["~/∍"];
+	["∊/~"];
+}
+<= nrel_representation_standart_editor:
+{
+	["~/>"];
+	["</~"];
+}

@@ -1,0 +1,15 @@
+!scs_divider_incidence_without_number
+<= nrel_identification: 
+{
+	["scs-разделитель, разделяющий имя sc-коннектора и инцидентного ему sc-элемента"] (<- ru_lang);
+}
+<= nrel_representation:
+{
+	["⊢"];
+	["⊣"];
+}
+<= nrel_representation_standart_editor:
+{
+	["|-"];
+	["-|"];
+}

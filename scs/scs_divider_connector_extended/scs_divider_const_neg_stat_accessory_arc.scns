@@ -1,0 +1,15 @@
+!scs_divider_const_neg_stat_accessory_arc
+<= nrel_identification: 
+{
+	["константная негативная стационарная scs-дуга принадлежности"] (<- ru_lang);
+}
+<= nrel_representation:
+{
+	["∌"];
+	["∉"];
+}
+<= nrel_representation_standart_editor:
+{
+	["-|>"];
+	["<|-"];
+}

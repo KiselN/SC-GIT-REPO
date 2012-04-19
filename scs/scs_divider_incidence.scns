@@ -1,0 +1,12 @@
+!scs_divider_incidence
+<= nrel_identification: 
+{
+	["Разделитель инцидентность"] (<- ru_lang);
+	["SCs-разделитель, изображающий пару инцидентности"] (<- ru_lang);
+	["SCs-разделитель, соответсвующий паре инцидентности"] (<- ru_lang);
+}
+<= nrel_decomposition:
+{
+	scs_divider_incidence_without_number;
+	scs_divider_incidence_number_two;
+}

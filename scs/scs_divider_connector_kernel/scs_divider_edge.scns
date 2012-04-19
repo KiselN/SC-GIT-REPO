@@ -1,0 +1,13 @@
+!scs_divider_edge
+<= nrel_identification: 
+{
+	["scs-ребро"] (<- ru_lang);
+}
+<= nrel_representation:
+{
+	["↔"];
+}
+<= nrel_representation_standart_editor:
+{
+	["<>"];
+}

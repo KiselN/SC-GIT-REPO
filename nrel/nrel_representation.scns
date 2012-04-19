@@ -1,0 +1,5 @@
+!nrel_representation
+<= nrel_identification:
+{
+  ["отображение*"] (<- ru_lang);
+}

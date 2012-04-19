@@ -1,0 +1,13 @@
+!scs_divider_var_edge
+<= nrel_identification: 
+{
+	["переменное scs-ребро"] (<- ru_lang);
+}
+<= nrel_representation:
+{
+	["⇐⇒"];
+}
+<= nrel_representation_standart_editor:
+{
+	["<==>"];
+}

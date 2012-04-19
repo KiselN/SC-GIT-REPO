@@ -1,0 +1,15 @@
+!scs_divider_common_type_arc
+<= nrel_identification: 
+{
+	["scs-дуга общего вида"] (<- ru_lang);
+}
+<= nrel_representation:
+{
+	["→"];
+	["←"];
+}
+<= nrel_representation_standart_editor:
+{
+	["<"];
+	[">"];
+}

@@ -1,0 +1,24 @@
+!scs_divider_inclusion
+<= nrel_identification: 
+{
+	["scs-разделитель включение"] (<- ru_lang);
+}
+<= nrel_representation:
+{
+	["⊂"];
+	["⊃"];
+}
+<= nrel_explanation:
+	["Изображение связки отношения <i>включение*</i>"]
+<= nrel_using_example:
+	[треугольник ⊂ многоугольник;;]
+	(
+		= [многоугольник => включение*: треугольник;;]
+		= [$image$ /static/images/scs_divider/example_inclusion1.png]
+	)
+<= nrel_using_example:
+	[действительное число ⊃ натуральное число;;]
+	(
+		= [натуральное число <= включение*: действительное число;;]
+		= [$image$ /static/images/scs_divider/example_inclusion2.png]
+	)
