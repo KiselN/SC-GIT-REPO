@@ -1,0 +1,5 @@
+!nrel_previous_partition
+<= nrel_identification:
+{
+  ["предыдущий раздел*"] (<- ru_lang);
+}

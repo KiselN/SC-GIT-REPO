@@ -1,8 +1,11 @@
 !scs_divider_connector_extended
 <= nrel_identification: 
 {
-	["SCs-разделитель, изображающий sc-коннектор, знак которого принадлежит первому расширению SCg-кода"] (<- ru_lang);
+	["sc.s-разделитель, изображающий sc-коннектор, знак которого принадлежит первому расширению SCg-кода"] (<- ru_lang);
 }
+<- non_atomic_partition
+<= nrel_superpartition:
+	scs_divider_connector_explicit
 <= nrel_decomposition:
 {
 	scs_divider_const_edge;

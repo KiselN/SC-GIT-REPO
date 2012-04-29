@@ -1,8 +1,11 @@
 !scs_divider_edge
 <= nrel_identification: 
 {
-	["scs-ребро"] (<- ru_lang);
+	["sc.s-ребро"] (<- ru_lang);
 }
+<- atomic_partition
+<= nrel_superpartition:
+	scs_divider_connector_kernel
 <= nrel_representation:
 {
 	["↔"];
@@ -11,3 +14,5 @@
 {
 	["<>"];
 }
+=> nrel_translation:
+	[$image$ /static/images/scs_divider/scs_divider_connector_kernel/image002.gif]

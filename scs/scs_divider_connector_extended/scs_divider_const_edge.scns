@@ -1,8 +1,11 @@
 !scs_divider_const_edge
 <= nrel_identification: 
 {
-	["константное scs-ребро"] (<- ru_lang);
+	["константное sc.s-ребро"] (<- ru_lang);
 }
+<- atomic_partition
+<= nrel_superpartition:
+	scs_divider_connector_extended
 <= nrel_representation:
 {
 	["⇔"];
@@ -11,3 +14,5 @@
 {
 	["<=>"];
 }
+=> nrel_translation:
+	[$image$ /static/images/scs_divider/scs_divider_connector_extended/image013.gif]

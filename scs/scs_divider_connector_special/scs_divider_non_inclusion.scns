@@ -1,8 +1,11 @@
 !scs_divider_non_inclusion
 <= nrel_identification: 
 {
-	["scs-разделитель невключение"] (<- ru_lang);
+	["sc.s-разделитель невключение"] (<- ru_lang);
 }
+<- atomic_partition
+<= nrel_superpartition:
+	scs_divider_connector_special
 <= nrel_representation:
 {
 	["⊄"];

@@ -1,8 +1,11 @@
 !scs_divider_non_intersected_pair
 <= nrel_identification: 
 {
-	["scs-разделитель пара непересекающихся множеств"] (<- ru_lang);
+	["sc.s-разделитель пара непересекающихся множеств"] (<- ru_lang);
 }
+<- atomic_partition
+<= nrel_superpartition:
+	scs_divider_connector_special
 <= nrel_representation:
 {
 	[""]; 

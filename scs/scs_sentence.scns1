@@ -1,0 +1,15 @@
+!scs_sentence
+<= nrel_identification: 
+{
+	["SCs-предложение"] (<- ru_lang);
+}
+<= nrel_explanation: 
+	["SCs-предложение - совокупность имен sc-элементов и sc.s-разделителей, не противоречащая правилам использования данных разделителей"]
+<= nrel_decomposition:
+{
+	scs_sentence_1_level;
+	scs_sentence_2_level;
+	scs_sentence_3_level;
+	scs_sentence_4_level;
+	scs_sentence_5_level;
+}

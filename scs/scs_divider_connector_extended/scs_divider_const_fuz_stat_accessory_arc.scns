@@ -1,8 +1,11 @@
 !scs_divider_const_fuz_stat_accessory_arc
 <= nrel_identification: 
 {
-	["константная нечеткая стационарная scs-дуга принадлежности"] (<- ru_lang);
+	["константная нечеткая стационарная sc.s-дуга принадлежности"] (<- ru_lang);
 }
+<- atomic_partition
+<= nrel_superpartition:
+	scs_divider_connector_extended
 <= nrel_representation:
 {
 	["/∍"];
@@ -13,3 +16,7 @@
 	["-/>"];
 	["</-"];
 }
+=> nrel_translation:
+	[$image$ /static/images/scs_divider/scs_divider_connector_extended/image032.gif]
+=> nrel_translation:
+	[$image$ /static/images/scs_divider/scs_divider_connector_extended/image033.gif]

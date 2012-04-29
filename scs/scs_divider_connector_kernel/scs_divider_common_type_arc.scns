@@ -1,8 +1,11 @@
 !scs_divider_common_type_arc
 <= nrel_identification: 
 {
-	["scs-дуга общего вида"] (<- ru_lang);
+	["sc.s-дуга общего вида"] (<- ru_lang);
 }
+<- atomic_partition
+<= nrel_superpartition:
+	scs_divider_connector_kernel
 <= nrel_representation:
 {
 	["→"];
@@ -13,3 +16,7 @@
 	["<"];
 	[">"];
 }
+=> nrel_translation:
+	[$image$ /static/images/scs_divider/scs_divider_connector_kernel/image004.gif]
+=> nrel_translation:
+	[$image$ /static/images/scs_divider/scs_divider_connector_kernel/image005.gif]

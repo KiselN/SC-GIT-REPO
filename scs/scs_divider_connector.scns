@@ -1,10 +1,14 @@
 !scs_divider_connector
 <= nrel_identification: 
 {
-	["Разделитель коннектор"] (<- ru_lang);
-	["SCs-разделитель, изображающий sc-коннектор"] (<- ru_lang);
-	["SCs-разделитель, соответствующий sc-коннектору"] (<- ru_lang);
+	["sc.s-коннектор"] (<- ru_lang);
+	["sc.s-разделитель коннектор"] (<- ru_lang);
+	["sc.s-разделитель, изображающий sc-коннектор"] (<- ru_lang);
+	["sc.s-разделитель, соответствующий sc-коннектору"] (<- ru_lang);
 }
+<- non_atomic_partition
+<= nrel_superpartition:
+	scs_divider
 <= nrel_decomposition:
 {
 	scs_divider_connector_explicit;

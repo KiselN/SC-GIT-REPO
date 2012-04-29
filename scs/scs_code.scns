@@ -1,0 +1,21 @@
+!scs_code
+<= nrel_identification: 
+{
+	["Раздел OSTIS. SCs-код"] (<- ru_lang);
+}
+<- non_atomic_partition
+<= nrel_decomposition: 
+	{
+		scs_code_common_principles;
+		scs_text;
+		scs_sentence_1_level;
+		scs_sentence_2_level;
+		scs_sentence_3_level;
+		scs_sentence_4_level;
+		scs_sentence_5_level;
+		scs_divider;
+	}
+<= nrel_explanation: 
+	["SCs-код - строковый линейный вариант представления SC-кода. Предназначен для представления sc-конструкций в виде последовательностей символов,
+	которые могут быть отредактированы как при помощи стандартных текстовых редакторов, так и при помощи специализирвоанного sc.s-редактора.
+	С формальной точки зрения SCs-код  - множество sc.s-текстов."]

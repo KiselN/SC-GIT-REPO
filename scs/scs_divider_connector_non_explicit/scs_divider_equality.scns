@@ -1,8 +1,11 @@
 !scs_divider_equality
 <= nrel_identification: 
 {
-	["scs-разделитель равенство"] (<- ru_lang);
+	["sc.s-разделитель равенство"] (<- ru_lang);
 }
+<- atomic_partition
+<= nrel_superpartition:
+	scs_divider_connector_non_explicit
 <= nrel_representation:
 {
 	["="];
@@ -15,5 +18,13 @@
 	["Разделяет имена синонимичных sc-элементов"]
 <= nrel_using_example:
 	[Поток 72170x = {721701;721702;721703};;]
+	(
+		= [Поток 72170x <=> синонимия*: {721701;721702;721703};;]
+		= [$image$ /static/images/scs_divider/example_equality1.png]
+	)
 <= nrel_using_example:
 	[треугольник = многоугольник с тремя сторонами;;]
+	(
+		= [треугольник <=> синонимия*: многоугольник с тремя сторонами;;]
+		= [$image$ /static/images/scs_divider/example_equality2.png]
+	)

@@ -1,0 +1,5 @@
+!non_atomic_partition
+<= nrel_identification: 
+{
+	["неатомарный раздел"] (<- ru_lang);
+}

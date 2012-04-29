@@ -1,9 +1,12 @@
 !scs_divider_connector_explicit
 <= nrel_identification: 
 {
-	["SCs-разделитель, изображающий sc-коннектор, постоянно присутствующий в sc-памяти"] (<- ru_lang);
-	["SCs-разделитель, соответствующий sc-коннектору, постоянно присутствующему в sc-памяти"] (<- ru_lang);
+	["sc.s-разделитель, изображающий sc-коннектор, постоянно присутствующий в sc-памяти"] (<- ru_lang);
+	["sc.s-разделитель, соответствующий sc-коннектору, постоянно присутствующему в sc-памяти"] (<- ru_lang);
 }
+<- non_atomic_partition
+<= nrel_superpartition:
+	scs_divider_connector
 <= nrel_decomposition:
 {
 	scs_divider_connector_kernel;

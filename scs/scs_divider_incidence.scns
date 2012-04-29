@@ -1,12 +1,26 @@
 !scs_divider_incidence
 <= nrel_identification: 
 {
-	["Разделитель инцидентность"] (<- ru_lang);
-	["SCs-разделитель, изображающий пару инцидентности"] (<- ru_lang);
-	["SCs-разделитель, соответсвующий паре инцидентности"] (<- ru_lang);
+	["sc.s-разделитель инцидентность"] (<- ru_lang);
+	["sc.s-разделитель, изображающий связку инцидентности"] (<- ru_lang);
+	["sc.s-разделитель, соответсвующий связку инцидентности"] (<- ru_lang);
 }
-<= nrel_decomposition:
+<- atomic_partition
+<= nrel_superpartition:
+	scs_divider
+<= nrel_representation:
 {
-	scs_divider_incidence_without_number;
-	scs_divider_incidence_number_two;
+	["|"];
 }
+<= nrel_representation_standart_editor:
+{
+	["|"];
+}
+-> nrel_using_example:
+	[
+		Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD) | pair1 | Отр(ТчкВ;ТчкС);;<br>
+		включение* | arc2 | pair1;;
+	]
+	(
+		= [$image$ /static/images/scs_divider/example_incidence.png]
+	)

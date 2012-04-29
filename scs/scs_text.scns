@@ -1,0 +1,22 @@
+!scs_text
+<= nrel_identification: 
+{
+	["Раздел OSTIS. SCs-текст"] (<- ru_lang);
+}
+<- non_atomic_partition
+<= nrel_superpartition:
+	scs_code
+=> nrel_next_partition:
+	scs_sentence_1_level
+=> nrel_previous_partition:
+	scs_code_common_principles
+<= nrel_explanation: 
+	["SCs-текст  - последовательность sc.s-предложений, разделенных sc.s-разделителем двойная точка с запятой."]
+<= nrel_decomposition:
+{
+	scs_text_1_level;
+	scs_text_2_level;
+	scs_text_3_level;
+	scs_text_4_level;
+	scs_text_5_level;
+}

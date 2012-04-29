@@ -1,5 +1,0 @@
-!scs
-<= nrel_identification: 
-{
-	["SCs-код"] (<- ru_lang);
-}

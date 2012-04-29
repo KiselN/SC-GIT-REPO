@@ -1,8 +1,11 @@
 !scs_divider_var_pos_stat_accessory_arc
 <= nrel_identification: 
 {
-	["переменная позитивная стационарная scs-дуга принадлежности"] (<- ru_lang);
+	["переменная позитивная стационарная sc.s-дуга принадлежности"] (<- ru_lang);
 }
+<- atomic_partition
+<= nrel_superpartition:
+	scs_divider_connector_extended
 <= nrel_representation:
 {
 	["-∍"];
@@ -13,3 +16,7 @@
 	["<--"];
 	["-->"];
 }
+=> nrel_translation:
+	[$image$ /static/images/scs_divider/scs_divider_connector_extended/image023.gif]
+=> nrel_translation:
+	[$image$ /static/images/scs_divider/scs_divider_connector_extended/image024.gif]

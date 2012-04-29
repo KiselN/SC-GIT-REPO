@@ -1,0 +1,5 @@
+!atomic_partition
+<= nrel_identification: 
+{
+	["атомарный раздел"] (<- ru_lang);
+}
