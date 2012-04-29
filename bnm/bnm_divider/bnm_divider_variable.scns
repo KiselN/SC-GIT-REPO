@@ -1,0 +1,17 @@
+!bnm_divider_variable
+<= nrel_identification: 
+{
+	["скобки, ограничивающие лингвистические переменные"] (<- ru_lang);
+}
+<- atomic_partition
+<= nrel_superpartition:
+	bnm_divider
+<= nrel_representation:
+{
+	["<*"];
+	["*>"];
+}
+<= nrel_using_example:
+	[
+		<* sc.s-коннектор *>
+	]

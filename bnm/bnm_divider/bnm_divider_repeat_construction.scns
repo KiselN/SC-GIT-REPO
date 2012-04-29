@@ -1,0 +1,17 @@
+!bnm_divider_repeat_construction
+<= nrel_identification: 
+{
+	["скобки, ограничивающие конструкцию, которая может повторяться сколько угодно раз"] (<- ru_lang);
+}
+<- atomic_partition
+<= nrel_superpartition:
+	bnm_divider
+<= nrel_representation:
+{
+	["{*"];
+	["*}"];
+}
+<= nrel_using_example:
+	[
+		<* имя sc-элемента *> <* изображение sc-коннектора *> { \[{<* уточнение типа модификатора *>} +\] <* модификатор коннектора *> : } <* имя sc-элемента *> ;;
+	]
