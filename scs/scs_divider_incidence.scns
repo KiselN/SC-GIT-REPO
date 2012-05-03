@@ -5,10 +5,9 @@
 	["sc.s-разделитель, изображающий связку инцидентности"] (<- ru_lang);
 	["sc.s-разделитель, соответсвующий связку инцидентности"] (<- ru_lang);
 }
-<- atomic_partition
-<= nrel_superpartition:
+<= nrel_inclusion:
 	scs_divider
-<= nrel_representation:
+<= nrel_representation_scs_editor:
 {
 	["|"];
 }

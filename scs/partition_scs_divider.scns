@@ -1,0 +1,966 @@
+!partition_scs_divider
+<= nrel_identification: {["Раздел OSTIS. SCs-код. Разделители"] (<- ru_lang);}
+<- non_atomic_partition
+<= nrel_superpartition:
+	partition_scs_code
+<= nrel_basic_consequence:
+	partition_scs_code_5_level
+=[$scns$
+	!scs_divider
+	<= nrel_decomposition:
+	{
+		scs_divider_connector;
+		scs_divider_incidence;
+		scs_divider_modifier;
+		scs_divider_semicolon;
+		scs_divider_subsentence;
+	}
+	
+	!scs_divider_connector
+	<= nrel_identification: 
+	{
+		\["sc.s-коннектор"\] (<- ru_lang);
+		\["sc.s-разделитель коннектор"\] (<- ru_lang);
+		\["sc.s-разделитель, изображающий sc-коннектор"\] (<- ru_lang);
+		\["sc.s-разделитель, соответствующий sc-коннектору"\] (<- ru_lang);
+	}
+	<= nrel_inclusion:
+		scs_divider
+	<= nrel_decomposition:
+	{
+		scs_divider_connector_kernel;
+		scs_divider_connector_extended;
+		scs_divider_connector_special;
+	}
+	
+	!scs_divider_incidence
+<= nrel_identification: 
+{
+	\["sc.s-разделитель инцидентность"\] (<- ru_lang);
+	\["sc.s-разделитель, изображающий связку инцидентности"\] (<- ru_lang);
+	\["sc.s-разделитель, соответсвующий связку инцидентности"\] (<- ru_lang);
+}
+<= nrel_inclusion:
+	scs_divider
+<= nrel_representation_scs_editor:
+{
+	\["|"\];
+}
+<= nrel_representation_standart_editor:
+{
+	\["|"\];
+}
+-> nrel_using_example:
+	\[
+		Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD) | pair1 | Отр(ТчкВ;ТчкС);;<br>
+		включение* | arc2 | pair1;;
+	\]
+	(
+		= \[$image$ /static/images/scs_divider/example_incidence.png\]
+	)
+	
+	!scs_divider_modifier
+<= nrel_identification: 
+{
+	\["sc.s-разделитель модификатор коннектора"\] (<- ru_lang);
+}
+<= nrel_inclusion:
+	scs_divider
+<= nrel_decomposition: 
+{
+	scs_divider_simple_colon;
+	scs_divider_double_colon;
+	scs_divider_simple_plus;
+	scs_divider_double_plus;
+}
+
+!scs_divider_semicolon
+<= nrel_identification: 
+{
+	\["sc.s-разделитель точка с запятой"\] (<- ru_lang);
+	\["sc.s-разделитель, разделяющий составные части в рамках некоторого перечисления"\] (<- ru_lang);
+}
+<= nrel_inclusion:
+	scs_divider
+<= nrel_decomposition: 
+{
+	scs_divider_simple_semicolon;
+	scs_divider_double_semicolon;
+}
+
+!scs_divider_subsentence
+<= nrel_identification: 
+{
+	\["sc.s-разделитель встроенных предложений"\] (<- ru_lang);
+}
+<= nrel_inclusion:
+	scs_divider
+<= nrel_representation_scs_editor:
+{
+	\["("...")"\];
+}
+<= nrel_explanation:
+	\["Указывает границы всроенного sc.s-предложения в рамках sc.s-предложения. Если встроенное sc.s-предложение не содержит разделителей точка с запятой, то при записи границы ("...") могут быть опущены"\]
+-> nrel_using_example:
+	\[
+		Треугк(ТчкВ;ТчкС;ТчкD) => сторона*: Отр(ТчкС;ТчкD)(" => граничная точка*: ТчкС; ТчкD ") ;;
+	\]
+	(
+		= \[Треугк(ТчкВ;ТчкС;ТчкD) => сторона*: Отр(ТчкС;ТчкD);; Отр(ТчкС;ТчкD)=> граничная точка*: ТчкС; ТчкD;;\]
+		= \[$image$ /static/images/scs_divider/example_subsentence.png\]
+	)
+	
+	!scs_divider_connector_kernel
+<= nrel_identification: 
+{
+	\["sc.s-коннектор, соответствующий алфавиту SC-кода"\] (<- ru_lang);
+	\["sc.s-разделитель, изображающий sc-коннектор, знак которого принадлежит ядру SCg-кода"\] (<- ru_lang);
+}
+<= nrel_inclusion:
+	scs_divider_connector
+<= nrel_decomposition:
+{
+	scs_divider_edge;
+	scs_divider_common_type_arc;
+	scs_divider_accessory_arc;
+	scs_divider_const_pos_stat_accessory_arc;
+}
+
+!scs_divider_connector_extended
+<= nrel_identification: 
+{
+	\["sc.s-коннектор, соответствующий алфавиту SCg-кода"\] (<- ru_lang);
+	\["sc.s-разделитель, изображающий sc-коннектор, знак которого принадлежит первому расширению SCg-кода"\] (<- ru_lang);
+}
+<= nrel_inclusion:
+	scs_divider_connector
+<= nrel_decomposition:
+{
+	scs_divider_const_edge;
+	scs_divider_var_edge;
+	scs_divider_const_arc;
+	scs_divider_var_arc;
+	scs_divider_var_pos_stat_accessory_arc;
+	scs_divider_const_neg_stat_accessory_arc;
+	scs_divider_var_neg_stat_accessory_arc;
+	scs_divider_const_fuz_stat_accessory_arc;
+	scs_divider_var_fuz_stat_accessory_arc;
+	scs_divider_const_pos_nonstat_accessory_arc;
+	scs_divider_var_pos_nonstat_accessory_arc;
+	scs_divider_const_neg_nonstat_accessory_arc;
+	scs_divider_var_neg_nonstat_accessory_arc;
+	scs_divider_const_fuz_nonstat_accessory_arc;
+	scs_divider_var_fuz_nonstat_accessory_arc;
+}
+
+!scs_divider_connector_special
+<= nrel_identification: 
+{
+	\["дополнительный sc.s-коннектор"\] (<- ru_lang);
+	\["sc.s-разделитель, изображающий sc-коннектор, который принадлежит некоторому заранее известному множеству и для которого нет специального знака, принадлежащего SCg"\] (<- ru_lang);
+}
+<= nrel_inclusion:
+	scs_divider_connector
+<= nrel_decomposition:
+{
+	scs_divider_inclusion;
+	scs_divider_non_inclusion;
+	scs_divider_intersected_pair;
+	scs_divider_non_intersected_pair;
+	scs_divider_identifier;
+	scs_divider_semantically_equal_files;
+	scs_divider_semantically_non_equal_files;
+	scs_divider_translation;
+	scs_divider_semantic_inclusion;
+	scs_divider_equality;
+	scs_divider_non_equality;
+}
+
+!scs_divider_accessory_arc
+<= nrel_identification: 
+{
+	\["sc.s-дуга принадлежности"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_kernel
+<= nrel_representation_scs_editor:
+	\["••∍"\]
+<= nrel_representation_scs_editor:
+	\["••∊"\]
+<= nrel_representation_standart_editor:
+	\["<**"\]
+<= nrel_representation_standart_editor:
+	\["**>"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_kernel/image007.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_kernel/image008.gif\]
+	
+!scs_divider_common_type_arc
+<= nrel_identification: 
+{
+	\["sc.s-дуга общего вида"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_kernel
+<= nrel_representation_scs_editor:
+	\[">"\]
+<= nrel_representation_scs_editor:
+	\["<"\]
+<= nrel_representation_standart_editor:
+	\["<"\]
+<= nrel_representation_standart_editor:
+	\[">"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_kernel/image004.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_kernel/image005.gif\]
+	
+!scs_divider_const_pos_stat_accessory_arc
+<= nrel_identification: 
+{
+	\["константная позитивная стационарная sc.s-дуга принадлежности"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_kernel
+<= nrel_representation_scs_editor:
+	\["∍"\]
+<= nrel_representation_scs_editor:
+	\["∊"\]
+<= nrel_representation_standart_editor:
+	\["<-"\]
+<= nrel_representation_standart_editor:
+	\["->"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_kernel/image010.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_kernel/image011.gif\]
+	
+!scs_divider_edge
+<= nrel_identification: 
+{
+	\["sc.s-ребро"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_kernel
+<= nrel_representation_scs_editor:
+	\["-"\]
+<= nrel_representation_standart_editor:
+	\["<>"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_kernel/image002.gif\]
+	
+!scs_divider_const_arc
+<= nrel_identification: 
+{
+	\["константная sc.s-дуга"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["⇒"\]
+<= nrel_representation_scs_editor:
+	\["⇐"\]
+	
+<= nrel_representation_standart_editor:
+	\["<="\]
+<= nrel_representation_standart_editor:
+	\["=>"\]
+	
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image017.gif\]	
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image018.gif\]
+
+!scs_divider_const_edge
+<= nrel_identification: 
+{
+	\["константное sc.s-ребро"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["⇔"\]
+<= nrel_representation_standart_editor:
+	\["<=>"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image013.gif\]
+
+!scs_divider_const_fuz_nonstat_accessory_arc
+<= nrel_identification: 
+{
+	\["константная нечеткая нестационарная sc.s-дуга принадлежности"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["~/∍"\]
+<= nrel_representation_scs_editor:
+	\["∊/~"\]
+<= nrel_representation_standart_editor:
+	\["~/>"\]
+<= nrel_representation_standart_editor:
+	\["</~"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image050.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image051.gif\]
+	
+!scs_divider_const_fuz_stat_accessory_arc
+<= nrel_identification: 
+{
+	\["константная нечеткая стационарная sc.s-дуга принадлежности"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["/∍"\]
+<= nrel_representation_scs_editor:
+	\["∊/"\]
+<= nrel_representation_standart_editor:
+	\["-/>"\]
+<= nrel_representation_standart_editor:
+	\["</-"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image032.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image033.gif\]
+	
+!scs_divider_const_neg_nonstat_accessory_arc
+<= nrel_identification: 
+{
+	\["константная негативная нестационарная sc.s-дуга принадлежности"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["~∌"\]
+<= nrel_representation_scs_editor:
+	\["∉~"\]
+<= nrel_representation_standart_editor:
+	\["~|>"\]
+<= nrel_representation_standart_editor:
+	\["<|~"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image044.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image045.gif\]
+
+!scs_divider_const_neg_stat_accessory_arc
+<= nrel_identification: 
+{
+	\["константная негативная стационарная sc.s-дуга принадлежности"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["∌"\]
+<= nrel_representation_scs_editor:
+	\["∉"\]
+<= nrel_representation_standart_editor:
+	\["-|>"\]
+<= nrel_representation_standart_editor:
+	\["<|-"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image026.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image027.gif\]
+
+!scs_divider_const_pos_nonstat_accessory_arc
+<= nrel_identification: 
+{
+	\["константная позитивная нестационарная sc.s-дуга принадлежности"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["~∍"\]
+<= nrel_representation_scs_editor:
+	\["∊~"\]
+<= nrel_representation_standart_editor:
+	\["~>"\]
+<= nrel_representation_standart_editor:
+	\["<~"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image038.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image039.gif\]
+
+!scs_divider_var_arc
+<= nrel_identification: 
+{
+	\["переменная sc.s-дуга"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["=⇒"\]
+<= nrel_representation_scs_editor:
+	\["⇐="\]
+<= nrel_representation_standart_editor:
+	\["<=="\]
+<= nrel_representation_standart_editor:
+	\["==>"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image020.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image021.gif\]
+
+!scs_divider_var_edge
+<= nrel_identification: 
+{
+	\["переменное sc.s-ребро"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["⇐⇒"\]
+<= nrel_representation_standart_editor:
+	\["<==>"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image015.gif\]
+
+!scs_divider_var_fuz_nonstat_accessory_arc
+<= nrel_identification: 
+{
+	\["переменная нечеткая нестационарная sc.s-дуга принадлежности"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["~~/∍"\]
+<= nrel_representation_scs_editor:
+	\["∊/~~"\]
+<= nrel_representation_standart_editor:
+	\["~~/>"\]
+<= nrel_representation_standart_editor:
+	\["</~~"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image053.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image054.gif\]
+	
+!scs_divider_var_fuz_stat_accessory_arc
+<= nrel_identification: 
+{
+	\["переменная нечеткая стационарная sc.s-дуга принадлежности"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["-/∍"\]
+<= nrel_representation_scs_editor:
+	\["∊/-"\]
+<= nrel_representation_standart_editor:
+	\["--/>"\]
+<= nrel_representation_standart_editor:
+	\["</--"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image035.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image036.gif\]
+	
+!scs_divider_var_neg_nonstat_accessory_arc
+<= nrel_identification: 
+{
+	\["переменная негативная нестационарная sc.s-дуга принадлежности"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["~~∌"\]
+<= nrel_representation_scs_editor:
+	\["∉~~"\]
+<= nrel_representation_standart_editor:
+	\["~~|>"\]
+<= nrel_representation_standart_editor:
+	\["<|~~"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image047.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image048.gif\]
+	
+!scs_divider_var_neg_stat_accessory_arc
+<= nrel_identification: 
+{
+	\["переменная негативная стационарная sc.s-дуга принадлежности"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["-∌"\]
+<= nrel_representation_scs_editor:
+	\["∉-"\]
+<= nrel_representation_standart_editor:
+	\["--|>"\]
+<= nrel_representation_standart_editor:
+	\["<|--"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image029.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image030.gif\]
+	
+!scs_divider_var_pos_nonstat_accessory_arc
+<= nrel_identification: 
+{
+	\["переменная позитивная нестационарная sc.s-дуга принадлежности"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["~~∍"\]
+<= nrel_representation_scs_editor:
+	\["∊~~"\]
+<= nrel_representation_standart_editor:
+	\["~~>"\]
+<= nrel_representation_standart_editor:
+	\["<~~"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image041.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image042.gif\]
+	
+!scs_divider_var_pos_stat_accessory_arc
+<= nrel_identification: 
+{
+	\["переменная позитивная стационарная sc.s-дуга принадлежности"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_extended
+<= nrel_representation_scs_editor:
+	\["-∍"\]
+<= nrel_representation_scs_editor:
+	\["∊-"\]
+<= nrel_representation_standart_editor:
+	\["<--"\]
+<= nrel_representation_standart_editor:
+	\["-->"\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image023.gif\]
+=> nrel_representation_scg_code:
+	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image024.gif\]
+	
+!scs_divider_equality
+<= nrel_identification: 
+{
+	\["sc.s-разделитель равенство"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_non_explicit
+<= nrel_representation_scs_editor:
+	\["="\]
+<= nrel_representation_standart_editor:
+	\["="\]
+<= nrel_explanation:
+	\["Разделяет имена синонимичных sc-элементов"\]
+<= nrel_using_example:
+	\[Поток 72170x = {721701;721702;721703};;\]
+	(
+		= \[Поток 72170x <=> синонимия*: {721701;721702;721703};;\]
+		= \[$image$ /static/images/scs_divider/example_equality1.png\]
+	)
+<= nrel_using_example:
+	\[треугольник = многоугольник с тремя сторонами;;\]
+	(
+		= \[треугольник <=> синонимия*: многоугольник с тремя сторонами;;\]
+		= \[$image$ /static/images/scs_divider/example_equality2.png\]
+	)
+	
+!scs_divider_identifier
+<= nrel_identification: 
+{
+	\["sc.s-разделитель идентификатор"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	\["=•"\]
+<= nrel_representation_scs_editor:
+	\["•="\]
+<= nrel_explanation:
+	\["Изображение связки отношения <i>идентификатор*</i>". Разделяет имя sc-объекта и имя файла, в котором хранится один из возможных идентификаторов указанного sc-элемента. Каждому sc-элементу может быть поставлено в соответствие несколько его идентификаторов.\]
+<= nrel_using_example:
+	\[
+		треугольник =• &lb"triangle"&rb;;
+	\]
+	(
+		= \[ &lb"triangle"&rb <= идентификатор*: треугольник;;\]
+		= \[$image$ /static/images/scs_divider/example_identifier1.png\]
+	)
+<= nrel_using_example:
+	\[
+		&lb"square"&rb •= квадрат;;
+	\]
+	(
+		= \[ &lb"square"&rb <= идентификатор*: квадрат;;\]
+		= \[$image$ /static/images/scs_divider/example_identifier2.png\]
+	)
+
+!scs_divider_inclusion
+<= nrel_identification: 
+{
+	\["sc.s-разделитель включение"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	\["⊂"\]
+<= nrel_representation_scs_editor:
+	\["⊃"\]
+<= nrel_explanation:
+	\["Изображение связки отношения <i>включение*</i>"\]
+<= nrel_using_example:
+	\[треугольник ⊂ многоугольник;;\]
+	(
+		= \[многоугольник => включение*: треугольник;;\]
+		= \[$image$ /static/images/scs_divider/example_inclusion1.png\]
+	)
+<= nrel_using_example:
+	\[действительное число ⊃ натуральное число;;\]
+	(
+		= \[натуральное число <= включение*: действительное число;;\]
+		= \[$image$ /static/images/scs_divider/example_inclusion2.png\]
+	)
+	
+!scs_divider_intersected_pair
+<= nrel_identification: 
+{
+	\["sc.s-разделитель пара пересекающихся множеств"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	\[""\]
+<= nrel_explanation:
+	\["Изображение связки отношения <i>пара пересекающихся множеств*</i>"\]
+<= nrel_using_example:
+	\["треугольник *** правильный многоугольник;;"\]
+	(
+		= \[правильный многоугольник <=> пара пересекающихся множеств*: треугольник;;\]
+		= \[$image$ /static/images/scs_divider/example_intersection_pair1.png\]
+	)
+<= nrel_using_example:
+	\["натуральное число *** целое число;;"\]
+	(
+		= \[целое число <=> пара пересекающихся множеств*: натуральное число;;\]
+		= \[$image$ /static/images/scs_divider/example_intersection_pair2.png\]
+	)
+
+!scs_divider_non_equality
+<= nrel_identification: 
+{
+	\["sc.s-разделитель неравенство"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_non_explicit
+<= nrel_representation_scs_editor:
+	\["≠"\]
+<= nrel_representation_standart_editor:
+	\["|="\]
+<= nrel_explanation:
+	\["Разделяет имена sc-элементов, не являющихся синонимичными. Это иногда требуется чтобы подчеркнуть наличие семантической разницы между двумя знаками"\]
+<= nrel_using_example:
+	\[треугольник ≠ линейный треугольник;;\]
+	(
+		= \[синонимия* ∌ (треугольник <=> линейный треугольник);;\]
+		= \[$image$ /static/images/scs_divider/example_non_equality.png\]
+	)
+	
+!scs_divider_non_inclusion
+<= nrel_identification: 
+{
+	\["sc.s-разделитель невключение"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	\["⊄"\]
+<= nrel_representation_scs_editor:
+	\["⊅"\]
+<= nrel_explanation:
+	\["Изображение связки отношения <i>включение*</i>"\]
+<= nrel_using_example:
+	\[треугольник ⊄ правильный многоугольник;;\]
+	(
+		= \[включение* ∌ (правильный многоугольник => треугольник);;\]
+		= \[$image$ /static/images/scs_divider/example_non_inclusion1.png\]
+	)
+<= nrel_using_example:
+	\[действительное число ⊅ натуральное число;;\]
+	(
+		= \[включение* ∌ (целое число <= натуральное число);;\]
+		= \[$image$ /static/images/scs_divider/example_non_inclusion2.png\]
+	)
+
+!scs_divider_non_intersected_pair
+<= nrel_identification: 
+{
+	\["sc.s-разделитель пара непересекающихся множеств"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	\[""\]
+<= nrel_explanation:
+	\["Изображение связки, не принадлежащей отношению <i>пара пересекающихся множеств*</i>"\]
+<= nrel_using_example:
+	\[треугольник *** квадрат;;\]
+	(
+		= \[пара пересекающихся множеств* ∌ (квадрат <=> треугольник);;\]
+		= \[$image$ /static/images/scs_divider/example_non_intersection_pair1.png\]
+	)
+<= nrel_using_example:
+	\[иррациональное число *** целое число;;\]
+	(
+		= \[пара пересекающихся множеств* ∌ (иррациональное число <=> целое число);;\]
+		= \[$image$ /static/images/scs_divider/example_non_intersection_pair2.png\]
+	)
+	
+!scs_divider_semantic_inclusion
+<= nrel_identification:
+{
+	\["sc.s-разделитель семантическое включение"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	\["≗>"\]
+<= nrel_representation_scs_editor:
+	\["<≗"\]
+<= nrel_explanation:
+	\["Изображение связки, принадлежащей отношению <i>семантическое включение*</i>. Разделяет имя файла и обозначение sc-текста, которые связаны указанным отношением, либо имена двух файлов, связанных указанным отношением."\]
+<= nrel_using_example:
+	\[
+		 &lb"Треугольник Треугк(ТчкА;ТчкВ;ТчкС) является прямоугольным"&rb ≗> &lbТреугк(ТчкА;ТчкВ;ТчкС) <- прямоугольный треугольник; равнобедренный треугольник;;&rb;;
+	\]
+	(
+		= \[$image$ /static/images/scs_divider/example_non_semantic_inclusion.png\]
+	)
+	
+!scs_divider_semantically_equal_files
+<= nrel_identification: 
+{
+	\["sc.s-разделитель семантически эквивалентные файлы"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	\["≗"\]
+<= nrel_explanation:
+	\["Изображение связки отношения <i>семантическая эквивалентность*</i>. Разделяет имена двух файлов, которые являются семантически эквивалентными."\]
+<= nrel_using_example:
+	\[
+		&lb"треугольник"&rb ≗ &lb"triangle"&rb;;
+	\]
+	(
+		= \[ &lb"треугольник"&rb <=> семантическая эквивалентность*: &lb"triangle"&rb;;\]
+		= \[$image$ /static/images/scs_divider/example_semantically_equal_files.png\]
+	)
+	
+!scs_divider_semantically_non_equal_files
+<= nrel_identification: 
+{
+	\["sc.s-разделитель семантически неэквивалентные файлы"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	\[""\]
+<= nrel_explanation:
+	\["Изображение связки, не принадлежащей отношению <i>семантически эквивалентные файлы*</i>. Разделяет имена двух файлов, которые не являются семантически эквивалентными, если есть необходимость подчеркнуть наличие семантической разницы между содержимым некоторых файлов."\]
+<= nrel_using_example:
+	\[
+		&lb"линейный треугольник"&rb *** &lb"треугольник"&rb;;
+	\]
+	(
+		= \[семантическая эквивалентность* ∌ ( &lb"треугольник"&rb <=> \&lbлинейный треугольник"&rb);;\]
+		= \[$image$ /static/images/scs_divider/example_semantically_non_equal_files.png\]
+	)
+	
+!scs_divider_translation
+<= nrel_identification: 
+{
+	\["sc.s-разделитель трансляция"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	\["≗•"\]
+<= nrel_representation_scs_editor:
+	\["∙≗"\]
+<= nrel_explanation:
+	\["Изображение связки, принадлежащей отношению <i>трансляция*</i>. Разделяет обозначение sc-текста и имя файла, семантически эквивалентного данному sc-тексту."\]
+<= nrel_using_example:
+	\[
+		&lbТреугк(ТчкА;ТчкВ;ТчкС) <- прямоугольный треугольник&rb ≗• \&lbТреугольник Треугк(ТчкА;ТчкВ;ТчкС) является прямоугольным"&rb ;;
+	\]
+	(
+		= \[ &lbТреугк(ТчкА;ТчкВ;ТчкС) <- прямоугольный треугольник&rb => трансляция*: &lb"Треугольник Треугк(ТчкА;ТчкВ;ТчкС) является прямоугольным"&rb ;;\]
+		= \[$image$ /static/images/scs_divider/example_translation.png\]
+	)
+	
+!scs_divider_double_colon
+<= nrel_identification: 
+{
+	\["sc.s-разделитель двойное двоеточие"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_modifier
+<= nrel_representation_scs_editor:
+	\["::"\]
+<= nrel_representation_standart_editor:
+	\["::"\]
+<= nrel_explanation:
+	\["Является изображением переменных позитивных стационарных sc-дуг, проведенных из каждого из именуемых узлов в те sc-коннекторы, изображение которых находится перед перечислением имен вышеупомянутых узлов. Если указанные разделители встречаются в предложении несколько раз, то такая запись указывает, что все уточнения типа относятся к одному и тому же коннектору."\]
+	
+!scs_divider_double_plus
+<= nrel_identification: 
+{
+	\["sc.s-разделитель двойной плюс"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_modifier
+<= nrel_representation_scs_editor:
+	\["++"\]
+<= nrel_representation_standart_editor:
+	\["++"\]
+<= nrel_explanation:
+	\["Является изображением переменной позитивной стационарной sc-дуги, проведенной из узла, имя которого находится слева от данного разделителя, в sc-коннектор, связывающий модификатор, имя которого стоит после данного разделителя, и модифицируемый указанным модификатором sc-коннектор. Если указанные разделители встречаются в предложении несколько раз, то такая запись указывает, что все уточнения типа относятся к одному и тому же коннектору."\]
+	
+!scs_divider_simple_colon
+<= nrel_identification: 
+{
+	\["sc.s-разделитель простое двоеточие"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_modifier
+<= nrel_representation_scs_editor:
+	\[":"\]
+<= nrel_representation_standart_editor:
+	\[":"\]
+<= nrel_explanation:
+	\["Является изображением константных позитивных стационарных sc-дуг, проведенных из каждого из именуемых узлов в те sc-коннекторы, изображение которых находится перед перечислением имен вышеупомянутых узлов. Если указанные разделители встречаются в предложении несколько раз, то такая запись указывает, что все уточнения типа относятся к одному и тому же коннектору."\]
+<= nrel_using_example:
+	\[Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD) ; Треугк(ТчкВ;ТчкС;ТчкD) => сторона* : включение* : Отр(ТчкВ;ТчкС); Отр(ТчкС;ТчкD);;\]
+	(
+		= \[$image$ /static/images/scs_divider/common_example.png\]
+		<= nrel_illustration:
+		\[$image$ /static/images/scs_divider/common_illusration.png\]
+	)
+<= nrel_using_example:
+	\[
+		треугольник => идентификатор* : основной англоязычный идентификатор*: &lb"triangle"&rb;;		
+	\]
+	(
+		= \[$image$ /static/images/scs_divider/simple_colon_example.png\]
+	)
+
+!scs_divider_simple_plus
+<= nrel_identification: 
+{
+	\["sc.s-разделитель простой плюс"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_modifier
+<= nrel_representation_scs_editor:
+	\["+"\]
+<= nrel_representation_standart_editor:
+	\["+"\]
+<= nrel_explanation:
+	\["Является изображением константной позитивной стационарной sc-дуги, проведенной из узла, имя которого находится слева от данного разделителя, в sc-коннектор, связывающий модификатор, имя которого стоит после данного разделителя, и модифицируемый указанным модификатором sc-коннектор. Если указанные разделители встречаются в предложении несколько раз, то такая запись указывает, что все уточнения типа относятся к одному и тому же коннектору."\]
+<= nrel_using_example:
+	\[
+		треугольник <= признак равенства сторон'+разбиение*:
+		{ 
+			разносторонний треугольник;
+			строго равнобедренный треугольник;
+			равносторонний треугольник;
+		};;
+	\]
+	(
+		= \[$image$ /static/images/scs_divider/plus_example.png\]
+	)
+	
+!scs_divider_double_semicolon
+<= nrel_identification: 
+{
+	\["sc.s-разделитель двойная точка с запятой"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_semicolon
+<= nrel_representation_scs_editor:
+	\[";;"\]
+<= nrel_representation_standart_editor:
+	\[";;"\]
+<= nrel_explanation:
+	\["Разделяет sc.s-предложения в рамках sc.s-текста"\]
+	
+!scs_divider_simple_semicolon
+<= nrel_identification: 
+{
+	\["sc.s-разделитель простая точка с запятой"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_semicolon
+<= nrel_representation_scs_editor:
+	\[";"\]
+<= nrel_representation_standart_editor:
+	\[";"\]
+<= nrel_explanation:
+	\["Является разделителем компонентов сложного sc.s-предложения.
+		Если данный разделитель встречается правее изображения sc.s-коннектора, то <br>
+		1) sc-коннекторы проводятся к каждому из sc-элементов, имена которых перечислены через ; <br>
+		2) если имя элемента находится сразу после изображения sc-коннектора, то никаких дополнительных уточнений к типу коннектора нет. ( A => x; y;; ) <br>
+		3) если имя элемента находится сразу после разделителя ;, то уточнения к типу коннектора считаются теми же, что и для sc-элемента, стоящего левее разделителя ; . ( A =>k1: k2: x; y;; ) <br>
+		4) если после разделителя ; явно указаны дополнительные уточнения типа коннектора, то уточнения к типу коннектора для sc-элемента, стоящего левее разделителя ; не учитываются. ( A =>k1: x; k2: y;; ) <br>
+		Если данный разделитель встречается левее изображения sc.s-коннектора, то <br>
+		1) sc-коннекторы проводятся из каждого из sc-элементов, имена которых перечислены через ; слева от изображения коннектора <br>
+	"\]		
+<= nrel_explanation:
+	\["Использование данного разделителя является способом превращения нескольких sc.s-предложений, отличающихся только одним именем, в одно sc.s-предложение, в котором эти имена перечислены через ;"\]
+<= nrel_using_example:
+	\[Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD) ; Треугк(ТчкВ;ТчкС;ТчкD) => сторона* : включение* : Отр(ТчкВ;ТчкС); Отр(ТчкС;ТчкD);;<br>\]
+	(
+		= \[$image$ /static/images/scs_divider/common_example.png\]
+		<= nrel_illustration:
+		\[$image$ /static/images/scs_divider/common_illusration.png\]
+	)
+	
+	
+]

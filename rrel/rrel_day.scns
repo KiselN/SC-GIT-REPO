@@ -2,6 +2,6 @@
 
 <= nrel_identification:
 	{
-		["день_"] (<- ru_lang);
-		["day_"] (<- en_lang);
+		["день'"] (<- ru_lang);
+		["day'"] (<- en_lang);
 	}

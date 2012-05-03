@@ -1,0 +1,6 @@
+!nrel_syntax_structure
+
+<= nrel_identification:
+	{
+		["синтаксическая структура*"] (<- ru_lang);
+	}

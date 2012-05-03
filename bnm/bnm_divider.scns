@@ -1,10 +1,7 @@
 !bnm_divider
-<= nrel_identification: {["Раздел OSTIS. Разделитель метаязыка Бэкуса-Наура"] (<- ru_lang);}
-<- non_atomic_partition
-<= nrel_superpartition:
-	backus_naur_metalanguage
-=> nrel_previous_partition:
-	bnm_sentence
+<= nrel_identification: {["разделитель метаязыка Бэкуса-Наура"] (<- ru_lang);}
+<= nrel_describing_partition:
+	partition_bnm_divider
 <= nrel_decomposition:
 {
 	bnm_divider_variable;

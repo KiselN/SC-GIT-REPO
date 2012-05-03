@@ -1,13 +1,10 @@
 !bnm_sentence
 <= nrel_identification: 
 {
-	["Раздел OSTIS. Предложение метаязыка Бэкуса-Наура"] (<- ru_lang);
+	["предложение метаязыка Бэкуса-Наура"] (<- ru_lang);
 }
-<- non_atomic_partition
-<= nrel_superpartition:
-	backus_naur_metalanguage
-=> nrel_next_partition:
-	bnm_divider
+<= nrel_describing_partition:
+	partition_bnm_sentence
 <= nrel_explanation: 
 	["
 		Любой текст расширенного метаязыка Бэкуса-Наура есть последовательность предложений.<br>

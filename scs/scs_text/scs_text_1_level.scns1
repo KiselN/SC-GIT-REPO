@@ -1,0 +1,35 @@
+!scs_text_1_level
+<= nrel_identification: 
+{
+	["Раздел OSTIS. SCs-текст 1ого уровня"] (<- ru_lang);
+}
+<- atomic_partition
+<= nrel_superpartition:
+	scs_text
+<= nrel_explanation: 
+	["SCs-текст 1ого уровня - sc.s-текст, содержащий только sc.s-предложения 1ого уровня"]
+-> rrel_example:
+	[
+		включение* | AA_arc1 | A_pair4;;</br>
+		включение* | AA_arc2 | A_pair1;;</br>
+		включение* | AA_arc3 | A_pair5;;</br>
+		включение* | AA_arc4 | A_pair8;;</br>
+	
+		сторона* | AA_arc5 | A_pair2;;</br>
+		сторона* | AA_arc6 | A_pair3;;</br>
+		сторона* | AA_arc7 | A_pair7;;</br>
+		сторона* | AA_arc8 | A_pair6;;</br>
+
+		Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD) | A_pair1 | Отр(ТчкВ;ТчкС);;</br>
+		Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD) | A_pair2 | Отр(ТчкВ;ТчкС);;</br>
+		Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD) | A_pair3 | Отр(ТчкС;ТчкD);;</br>
+		Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD) | A_pair4 | Отр(ТчкС;ТчкD);;</br>
+
+		Треугк(ТчкВ;ТчкС;ТчкD) | A_pair5 | Отр(ТчкВ;ТчкС);;</br>
+		Треугк(ТчкВ;ТчкС;ТчкD) | A_pair6 | Отр(ТчкВ;ТчкС);;</br>
+		Треугк(ТчкВ;ТчкС;ТчкD) | A_pair7 | Отр(ТчкС;ТчкD);;</br>
+		Треугк(ТчкВ;ТчкС;ТчкD) | A_pair8 | Отр(ТчкС;ТчкD);;</br>
+	]
+	(
+		= [$image$ /static/images/scs_text_example_1.png]
+	)

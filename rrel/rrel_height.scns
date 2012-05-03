@@ -2,6 +2,6 @@
 
 <= nrel_identification:
 	{
-		["высота_"] (<- ru_lang);
-		["height_"] (<- en_lang);
+		["высота'"] (<- ru_lang);
+		["height'"] (<- en_lang);
 	}

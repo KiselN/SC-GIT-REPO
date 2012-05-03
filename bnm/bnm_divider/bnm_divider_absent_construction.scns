@@ -3,8 +3,7 @@
 {
 	["скобки, ограничивающие конструкцию, которая может отсутствовать"] (<- ru_lang);
 }
-<- atomic_partition
-<= nrel_superpartition:
+<= nrel_inclusion:
 	bnm_divider
 <= nrel_representation:
 {

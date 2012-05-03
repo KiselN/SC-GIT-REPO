@@ -3,14 +3,13 @@
 {
 	["sc.s-разделитель идентификатор"] (<- ru_lang);
 }
-<- atomic_partition
-<= nrel_superpartition:
+
+<= nrel_inclusion:
 	scs_divider_connector_special
-<= nrel_representation:
-{
-	["=∙"];
-	["∙="];
-}
+<= nrel_representation_scs_editor:
+	["=∙"]
+<= nrel_representation_scs_editor:
+	["∙="]
 <= nrel_explanation:
 	["Изображение связки отношения <i>идентификатор*</i>". Разделяет имя sc-объекта и имя файла, в котором хранится один из возможных идентификаторов указанного sc-элемента. Каждому sc-элементу может быть поставлено в соответствие несколько его идентификаторов.]
 <= nrel_using_example:

@@ -4,8 +4,7 @@
 	["sc.s-разделитель точка с запятой"] (<- ru_lang);
 	["sc.s-разделитель, разделяющий составные части в рамках некоторого перечисления"] (<- ru_lang);
 }
-<- non_atomic_partition
-<= nrel_superpartition:
+<= nrel_inclusion:
 	scs_divider
 <= nrel_decomposition: 
 {

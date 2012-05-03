@@ -1,6 +1,0 @@
-!nrel_scheme
-
-<= nrel_identification:
-	{
-		["схема*"] (<- ru_lang);
-	}

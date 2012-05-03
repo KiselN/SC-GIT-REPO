@@ -3,10 +3,9 @@
 {
 	["sc.s-разделитель встроенных предложений"] (<- ru_lang);
 }
-<- atomic_partition
-<= nrel_superpartition:
+<= nrel_inclusion:
 	scs_divider
-<= nrel_representation:
+<= nrel_representation_scs_editor:
 {
 	["("...")"];
 }

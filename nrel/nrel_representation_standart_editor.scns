@@ -1,5 +1,5 @@
 !nrel_representation_standart_editor
 <= nrel_identification:
 {
-  ["вариант для стандартных текстовых редакторов*"] (<- ru_lang);
+  ["отображение в стандартных редакторах*"] (<- ru_lang);
 }

@@ -3,13 +3,11 @@
 {
 	["sc.s-разделитель пара пересекающихся множеств"] (<- ru_lang);
 }
-<- atomic_partition
-<= nrel_superpartition:
+
+<= nrel_inclusion:
 	scs_divider_connector_special
-<= nrel_representation:
-{
-	[""]; 
-}
+<= nrel_representation_scs_editor:
+	[""]
 <= nrel_explanation:
 	["Изображение связки отношения <i>пара пересекающихся множеств*</i>"]
 <= nrel_using_example:

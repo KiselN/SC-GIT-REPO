@@ -3,17 +3,13 @@
 {
 	["sc.s-разделитель равенство"] (<- ru_lang);
 }
-<- atomic_partition
-<= nrel_superpartition:
+
+<= nrel_inclusion:
 	scs_divider_connector_non_explicit
-<= nrel_representation:
-{
-	["="];
-}
+<= nrel_representation_scs_editor:
+	["="]
 <= nrel_representation_standart_editor:
-{
-	["="];
-}
+	["="]
 <= nrel_explanation:
 	["Разделяет имена синонимичных sc-элементов"]
 <= nrel_using_example:

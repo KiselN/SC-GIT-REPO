@@ -1,11 +1,11 @@
 !scs_divider_connector_kernel
 <= nrel_identification: 
 {
+	["sc.s-коннектор, соответствующий алфавиту SC-кода"] (<- ru_lang);
 	["sc.s-разделитель, изображающий sc-коннектор, знак которого принадлежит ядру SCg-кода"] (<- ru_lang);
 }
-<- non_atomic_partition
-<= nrel_superpartition:
-	scs_divider_connector_explicit
+<= nrel_inclusion:
+	scs_divider_connector
 <= nrel_decomposition:
 {
 	scs_divider_edge;

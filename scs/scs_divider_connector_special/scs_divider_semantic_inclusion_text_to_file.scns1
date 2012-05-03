@@ -7,10 +7,9 @@
 <= nrel_superpartition:
 	scs_divider_connector_special
 <= nrel_representation:
-{
-	["≗∙>"];
-	["<∙≗"];
-}
+	["≗∙>"]
+<= nrel_representation:
+	["<∙≗"]
 <= nrel_explanation:
 	["Изображение связки, принадлежащей отношению <i>семантическое включение*</i>. Разделяет обозначение sc-текста и имя файла, в который семантически включается данный sc-текст."]
 <= nrel_using_example:

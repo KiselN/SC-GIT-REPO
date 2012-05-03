@@ -1,0 +1,17 @@
+!partition_scs_code
+<= nrel_identification: 
+{
+	["Раздел OSTIS. SCs-код"] (<- ru_lang);
+}
+<- non_atomic_partition
+<= nrel_decomposition: 
+	{
+		partition_scs_code_common_principles;
+		partition_scs_code_1_level;
+		partition_scs_code_2_level;
+		partition_scs_code_3_level;
+		partition_scs_code_4_level;
+		partition_scs_code_5_level;
+		partition_scs_divider;
+	}
+

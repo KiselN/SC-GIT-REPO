@@ -3,17 +3,13 @@
 {
 	["sc.s-разделитель неравенство"] (<- ru_lang);
 }
-<- atomic_partition
-<= nrel_superpartition:
+
+<= nrel_inclusion:
 	scs_divider_connector_non_explicit
-<= nrel_representation:
-{
-	["≠"];
-}
+<= nrel_representation_scs_editor:
+	["≠"]
 <= nrel_representation_standart_editor:
-{
-	["|="];
-}
+	["|="]
 <= nrel_explanation:
 	["Разделяет имена sc-элементов, не являющихся синонимичными. Это иногда требуется чтобы подчеркнуть наличие семантической разницы между двумя знаками"]
 <= nrel_using_example:

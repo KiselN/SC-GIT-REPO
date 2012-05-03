@@ -6,11 +6,11 @@
 	["sc.s-разделитель, изображающий sc-коннектор"] (<- ru_lang);
 	["sc.s-разделитель, соответствующий sc-коннектору"] (<- ru_lang);
 }
-<- non_atomic_partition
-<= nrel_superpartition:
+<= nrel_inclusion:
 	scs_divider
 <= nrel_decomposition:
 {
-	scs_divider_connector_explicit;
-	scs_divider_connector_non_explicit;
+	scs_divider_connector_kernel;
+	scs_divider_connector_extended;
+	scs_divider_connector_special;
 }

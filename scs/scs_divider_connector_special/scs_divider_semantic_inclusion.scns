@@ -3,14 +3,13 @@
 {
 	["sc.s-разделитель семантическое включение"] (<- ru_lang);
 }
-<- atomic_partition
-<= nrel_superpartition:
+
+<= nrel_inclusion:
 	scs_divider_connector_special
-<= nrel_representation:
-{
-	["≗>"];
-	["<≗"];
-}
+<= nrel_representation_scs_editor:
+	["≗>"]
+<= nrel_representation_scs_editor:
+	["<≗"]
 <= nrel_explanation:
 	["Изображение связки, принадлежащей отношению <i>семантическое включение*</i>. Разделяет имя файла и обозначение sc-текста, которые связаны указанным отношением, либо имена двух файлов, связанных указанным отношением."]
 <= nrel_using_example:

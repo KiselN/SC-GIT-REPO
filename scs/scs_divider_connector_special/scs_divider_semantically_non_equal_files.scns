@@ -3,13 +3,11 @@
 {
 	["sc.s-разделитель семантически неэквивалентные файлы"] (<- ru_lang);
 }
-<- atomic_partition
-<= nrel_superpartition:
+
+<= nrel_inclusion:
 	scs_divider_connector_special
-<= nrel_representation:
-{
-	[""];
-}
+<= nrel_representation_scs_editor:
+	[""]
 <= nrel_explanation:
 	["Изображение связки, не принадлежащей отношению <i>семантически эквивалентные файлы*</i>. Разделяет имена двух файлов, которые не являются семантически эквивалентными, если есть необходимость подчеркнуть наличие семантической разницы между содержимым некоторых файлов."]
 <= nrel_using_example:

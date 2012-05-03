@@ -4,8 +4,7 @@
 	["sc.s-разделитель, изображающий sc-коннектор, временно присутствующий в sc-памяти"] (<- ru_lang);
 	["sc.s-разделитель, соответствующий sc-коннектору, временно присутствующему в sc-памяти"] (<- ru_lang);
 }
-<- non_atomic_partition
-<= nrel_superpartition:
+<= nrel_inclusion:
 	scs_divider_connector
 <= nrel_decomposition:
 {

@@ -3,8 +3,7 @@
 {
 	["sc.s-разделитель модификатор коннектора"] (<- ru_lang);
 }
-<- non_atomic_partition
-<= nrel_superpartition:
+<= nrel_inclusion:
 	scs_divider
 <= nrel_decomposition: 
 {

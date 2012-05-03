@@ -3,16 +3,12 @@
 {
 	["sc.s-разделитель двойная точка с запятой"] (<- ru_lang);
 }
-<- atomic_partition
-<= nrel_superpartition:
+
+<= nrel_inclusion:
 	scs_divider_semicolon
-<= nrel_representation:
-{
-	[";;"];
-}
+<= nrel_representation_scs_editor:
+	[";;"]
 <= nrel_representation_standart_editor:
-{
-	[";;"];
-}
+	[";;"]
 <= nrel_explanation:
 	["Разделяет sc.s-предложения в рамках sc.s-текста"]
