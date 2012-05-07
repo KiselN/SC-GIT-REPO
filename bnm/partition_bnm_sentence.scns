@@ -3,13 +3,21 @@
 {
 	["Раздел OSTIS. Предложение метаязыка Бэкуса-Наура"] (<- ru_lang);
 }
-<- non_atomic_partition
+<- atomic_partition
 <= nrel_superpartition:
 	partition_backus_naur_metalanguage
-=> nrel_next_partition:
+=> nrel_basic_consequence:
 	partition_bnm_divider
+=[$scns$
+	!backus_naur_metalanguage
+	<= nrel_identification: 
+	{
+		\["Метаязык Бэкуса-Наура"\] (<- ru_lang);
+	}
+	<= nrel_explanation: 
+	\["Данный язык представляет собой вариант расширенной формы Бэкуса-Наура, широко используемой формальной системы описания синтаксиса линейных языков.<br>
+	  Может быть использован для описания синтаксических конструкций формальных линейных языков представления знаний, например SCs."\]
 
-=[$scns$	
 	!bnm_sentence
 	<= nrel_identification: 
 	{

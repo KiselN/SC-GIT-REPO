@@ -1,6 +1,6 @@
 !partition_scs_divider
 <= nrel_identification: {["Раздел OSTIS. SCs-код. Разделители"] (<- ru_lang);}
-<- non_atomic_partition
+<- atomic_partition
 <= nrel_superpartition:
 	partition_scs_code
 <= nrel_basic_consequence:
