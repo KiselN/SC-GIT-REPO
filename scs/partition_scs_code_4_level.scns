@@ -61,4 +61,25 @@
 		<= nrel_illustration:
 			\[$image$ /static/images/scs_divider/common_illusration.png\]
 	)
+-> rrel_example:
+	\[
+		X => r1: r2: r3: Y; Z ;;</br>
+	\]
+	(
+		= \[$image$ /static/images/scs_text_example_4-1.png\]
+	)
+-> rrel_example:
+	\[
+		X => Z; r1: r2: r3: Y ;;</br>
+	\]
+	(
+		= \[$image$ /static/images/scs_text_example_4-2.png\]
+	)
+-> rrel_example:
+	\[
+		X => r1: r2: Y; r3: Z ;;</br>
+	\]
+	(
+		= \[$image$ /static/images/scs_text_example_4-3.png\]
+	)
 ]

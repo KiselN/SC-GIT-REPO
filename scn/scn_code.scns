@@ -1,0 +1,5 @@
+!scn_code
+<= nrel_identification: 
+{
+	["SCn-код"] (<- ru_lang);
+}
