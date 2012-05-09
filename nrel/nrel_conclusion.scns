@@ -1,0 +1,5 @@
+!nrel_conclusion
+<= nrel_identification:
+{
+  ["заключение*"] (<- ru_lang);
+}
