@@ -1,10 +1,11 @@
 !partition_scs_code
 <= nrel_identification: 
 {
-	["Раздел OSTIS. SCs-код"] (<- ru_lang);
+	["Раздел OSTIS. SCs-код 0.1.0"] (<- ru_lang);
+	["Раздел OSTIS. SCs-код версии 0.1.0"] (<- ru_lang);
 }
 <- non_atomic_partition
-
+<- version_describing_scs_code
 => nrel_introduction:
 	[$scns$
 	!scs_code
@@ -37,4 +38,3 @@
 		partition_scs_code_5_level;
 		partition_scs_divider;
 	}
-

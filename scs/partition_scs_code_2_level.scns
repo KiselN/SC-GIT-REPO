@@ -1,7 +1,7 @@
 !partition_scs_code_2_level
 <= nrel_identification: 
 {
-	["Раздел OSTIS. SCs-код. Уровень 2"] (<- ru_lang);
+	["Раздел OSTIS. SCs-код 0.1.0. Уровень 2"] (<- ru_lang);
 }
 <- atomic_partition
 <= nrel_superpartition:
@@ -12,6 +12,16 @@
 	partition_scs_code_1_level
 	
 = [$scns$
+	!scs_code_2_level
+	=> nrel_explanation:
+	\["
+		На данном уровне SCs-кода вводятся средства минимизации числа специально придумываемых имен sc-коннекторов.<br>
+		К таким средствам относятся: <br>
+		1) Алфавит изображений sc-коннекторов, отражающих тип изображаемых sc-коннекторов.<br>
+		2) Неатомарные имена sc-коннекторов, построенные на основе sc-коннекторов.<br>
+	"\]
+	
+
 !scs_sentence_2_level
 <= nrel_identification: 
 {

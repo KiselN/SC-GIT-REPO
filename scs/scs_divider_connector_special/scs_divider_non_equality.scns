@@ -5,7 +5,7 @@
 }
 
 <= nrel_inclusion:
-	scs_divider_connector_non_explicit
+	scs_divider_connector_special
 <= nrel_representation_scs_editor:
 	["≠"]
 <= nrel_representation_standart_editor:

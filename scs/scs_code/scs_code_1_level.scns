@@ -1,0 +1,5 @@
+!scs_code_1_level
+	<= nrel_identification: 
+	{
+		["SCs-код уровня 1"] (<- ru_lang);
+	}
