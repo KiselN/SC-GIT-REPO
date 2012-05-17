@@ -45,5 +45,7 @@
 		partition_scs_code_3_level;
 		partition_scs_code_4_level;
 		partition_scs_code_5_level;
+		partition_scs_code_6_level;
+		partition_scs_code_7_level;
 		partition_scs_divider;
 	}
