@@ -165,8 +165,12 @@
 {
 	scs_divider_inclusion;
 	scs_divider_non_inclusion;
+	scs_divider_var_inclusion;
+	scs_divider_var_non_inclusion;
 	scs_divider_intersected_pair;
 	scs_divider_non_intersected_pair;
+	scs_divider_var_intersected_pair;
+	scs_divider_var_non_intersected_pair;
 	scs_divider_identifier;
 	scs_divider_semantically_equal_files;
 	scs_divider_semantically_non_equal_files;
@@ -406,13 +410,13 @@
 <= nrel_inclusion:
 	scs_divider_connector_extended
 <= nrel_representation_scs_editor:
-	\["=⇒"\]
+	\["_⇒"\]
 <= nrel_representation_scs_editor:
-	\["⇐="\]
+	\["_⇐"\]
 <= nrel_representation_standart_editor:
-	\["<=="\]
+	\["_<="\]
 <= nrel_representation_standart_editor:
-	\["==>"\]
+	\["_=>"\]
 => nrel_representation_scg_code:
 	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image020.gif\]
 => nrel_representation_scg_code:
@@ -427,9 +431,9 @@
 <= nrel_inclusion:
 	scs_divider_connector_extended
 <= nrel_representation_scs_editor:
-	\["⇐⇒"\]
+	\["_⇔"\]
 <= nrel_representation_standart_editor:
-	\["<==>"\]
+	\["_<=>"\]
 => nrel_representation_scg_code:
 	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image015.gif\]
 
@@ -442,13 +446,13 @@
 <= nrel_inclusion:
 	scs_divider_connector_extended
 <= nrel_representation_scs_editor:
-	\["~~/∍"\]
+	\["_~/∍"\]
 <= nrel_representation_scs_editor:
-	\["∊/~~"\]
+	\["_∊/~"\]
 <= nrel_representation_standart_editor:
-	\["~~/>"\]
+	\["_~/>"\]
 <= nrel_representation_standart_editor:
-	\["</~~"\]
+	\["_</~"\]
 => nrel_representation_scg_code:
 	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image053.gif\]
 => nrel_representation_scg_code:
@@ -463,13 +467,13 @@
 <= nrel_inclusion:
 	scs_divider_connector_extended
 <= nrel_representation_scs_editor:
-	\["-/∍"\]
+	\["_/∍"\]
 <= nrel_representation_scs_editor:
-	\["∊/-"\]
+	\["_∊/"\]
 <= nrel_representation_standart_editor:
-	\["--/>"\]
+	\["_-/>"\]
 <= nrel_representation_standart_editor:
-	\["</--"\]
+	\["_</-"\]
 => nrel_representation_scg_code:
 	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image035.gif\]
 => nrel_representation_scg_code:
@@ -484,13 +488,13 @@
 <= nrel_inclusion:
 	scs_divider_connector_extended
 <= nrel_representation_scs_editor:
-	\["~~∌"\]
+	\["_~∌"\]
 <= nrel_representation_scs_editor:
-	\["∉~~"\]
+	\["_∉~"\]
 <= nrel_representation_standart_editor:
-	\["~~|>"\]
+	\["_~|>"\]
 <= nrel_representation_standart_editor:
-	\["<|~~"\]
+	\["_<|~"\]
 => nrel_representation_scg_code:
 	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image047.gif\]
 => nrel_representation_scg_code:
@@ -507,11 +511,11 @@
 <= nrel_representation_scs_editor:
 	\["-∌"\]
 <= nrel_representation_scs_editor:
-	\["∉-"\]
+	\["_∉"\]
 <= nrel_representation_standart_editor:
-	\["--|>"\]
+	\["_-|>"\]
 <= nrel_representation_standart_editor:
-	\["<|--"\]
+	\["_<|-"\]
 => nrel_representation_scg_code:
 	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image029.gif\]
 => nrel_representation_scg_code:
@@ -526,13 +530,13 @@
 <= nrel_inclusion:
 	scs_divider_connector_extended
 <= nrel_representation_scs_editor:
-	\["~~∍"\]
+	\["_~∍"\]
 <= nrel_representation_scs_editor:
-	\["∊~~"\]
+	\["_∊~"\]
 <= nrel_representation_standart_editor:
-	\["~~>"\]
+	\["_~>"\]
 <= nrel_representation_standart_editor:
-	\["<~~"\]
+	\["_<~"\]
 => nrel_representation_scg_code:
 	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image041.gif\]
 => nrel_representation_scg_code:
@@ -547,13 +551,13 @@
 <= nrel_inclusion:
 	scs_divider_connector_extended
 <= nrel_representation_scs_editor:
-	\["-∍"\]
+	\["_∍"\]
 <= nrel_representation_scs_editor:
-	\["∊-"\]
+	\["_∊"\]
 <= nrel_representation_standart_editor:
-	\["<--"\]
+	\["_<-"\]
 <= nrel_representation_standart_editor:
-	\["-->"\]
+	\["_->"\]
 => nrel_representation_scg_code:
 	\[$image$ /static/images/scs_divider/scs_divider_connector_extended/image023.gif\]
 => nrel_representation_scg_code:
@@ -566,7 +570,7 @@
 }
 
 <= nrel_inclusion:
-	scs_divider_connector_non_explicit
+	scs_divider_connector_special
 <= nrel_representation_scs_editor:
 	\["="\]
 <= nrel_representation_standart_editor:
@@ -643,6 +647,26 @@
 		= \[натуральное число <= включение*: действительное число;;\]
 		= \[$image$ /static/images/scs_divider/example_inclusion2.png\]
 	)
+
+!scs_divider_var_inclusion
+<= nrel_identification: 
+{
+	\["переменный sc.s-разделитель включение"\] (<- ru_lang);
+}	
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	\["_⊂"\]
+<= nrel_representation_scs_editor:
+	\["_⊃"\]
+<= nrel_explanation:
+	\["Изображение переменной связки отношения <i>включение*</i>"\]
+<= nrel_using_example:
+	\[v1 _⊂ v2;;\]
+	(
+		= \[v1 _=> включение*:: v2;;\]
+		= \[$image$ /static/images/scs_divider/example_var_inclusion1.png\]
+	)
 	
 !scs_divider_intersected_pair
 <= nrel_identification: 
@@ -653,22 +677,40 @@
 <= nrel_inclusion:
 	scs_divider_connector_special
 <= nrel_representation_scs_editor:
-	\[""\]
+	\["⊃⊂"\]
 <= nrel_explanation:
 	\["Изображение связки отношения <i>пара пересекающихся множеств*</i>"\]
 <= nrel_using_example:
-	\["треугольник *** правильный многоугольник;;"\]
+	\["треугольник ⊃⊂ правильный многоугольник;;"\]
 	(
 		= \[правильный многоугольник <=> пара пересекающихся множеств*: треугольник;;\]
 		= \[$image$ /static/images/scs_divider/example_intersection_pair1.png\]
 	)
 <= nrel_using_example:
-	\["натуральное число *** целое число;;"\]
+	\["натуральное число ⊃⊂ целое число;;"\]
 	(
 		= \[целое число <=> пара пересекающихся множеств*: натуральное число;;\]
 		= \[$image$ /static/images/scs_divider/example_intersection_pair2.png\]
 	)
 
+!scs_divider_var_intersected_pair
+<= nrel_identification: 
+{
+	\["переменный sc.s-разделитель пара пересекающихся множеств"\] (<- ru_lang);
+}
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	\["_⊃⊂"\]
+<= nrel_explanation:
+	\["Изображение переменной связки отношения <i>пара пересекающихся множеств*</i>"\]
+<= nrel_using_example:
+	\["v1 _⊃⊂ v2;;"\]
+	(
+		= \[v1 _<=> пара пересекающихся множеств*:: v2;;\]
+		= \[$image$ /static/images/scs_divider/example_var_intersection_pair1.png\]
+	)
+	
 !scs_divider_non_equality
 <= nrel_identification: 
 {
@@ -676,7 +718,7 @@
 }
 
 <= nrel_inclusion:
-	scs_divider_connector_non_explicit
+	scs_divider_connector_special
 <= nrel_representation_scs_editor:
 	\["≠"\]
 <= nrel_representation_standart_editor:
@@ -703,7 +745,7 @@
 <= nrel_representation_scs_editor:
 	\["⊅"\]
 <= nrel_explanation:
-	\["Изображение связки отношения <i>включение*</i>"\]
+	\["Изображение связки, не принадлежащей отношению <i>включение*</i>"\]
 <= nrel_using_example:
 	\[треугольник ⊄ правильный многоугольник;;\]
 	(
@@ -717,6 +759,27 @@
 		= \[$image$ /static/images/scs_divider/example_non_inclusion2.png\]
 	)
 
+!scs_divider_var_non_inclusion
+<= nrel_identification: 
+{
+	\["переменный sc.s-разделитель невключение"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	\["_⊄"\]
+<= nrel_representation_scs_editor:
+	\["_⊅"\]
+<= nrel_explanation:
+	\["Изображение переменной связки, не принадлежащей отношению <i>включение*</i>"\]
+<= nrel_using_example:
+	\[v1 _⊄ v2;;\]
+	(
+		= \[включение* _∌ (v1 _=> v2);;\]
+		= \[$image$ /static/images/scs_divider/example_var_non_inclusion1.png\]
+	)
+	
 !scs_divider_non_intersected_pair
 <= nrel_identification: 
 {
@@ -726,20 +789,40 @@
 <= nrel_inclusion:
 	scs_divider_connector_special
 <= nrel_representation_scs_editor:
-	\[""\]
+	\["⊃|⊂"\]
 <= nrel_explanation:
 	\["Изображение связки, не принадлежащей отношению <i>пара пересекающихся множеств*</i>"\]
 <= nrel_using_example:
-	\[треугольник *** квадрат;;\]
+	\[треугольник ⊃|⊂ квадрат;;\]
 	(
 		= \[пара пересекающихся множеств* ∌ (квадрат <=> треугольник);;\]
 		= \[$image$ /static/images/scs_divider/example_non_intersection_pair1.png\]
 	)
 <= nrel_using_example:
-	\[иррациональное число *** целое число;;\]
+	\[иррациональное число ⊃|⊂ целое число;;\]
 	(
 		= \[пара пересекающихся множеств* ∌ (иррациональное число <=> целое число);;\]
 		= \[$image$ /static/images/scs_divider/example_non_intersection_pair2.png\]
+	)
+
+	
+!scs_divider_var_non_intersected_pair
+<= nrel_identification: 
+{
+	\["переменный sc.s-разделитель пара непересекающихся множеств"\] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	\["_⊃|⊂"\]
+<= nrel_explanation:
+	\["Изображение переменной связки, не принадлежащей отношению <i>пара пересекающихся множеств*</i>"\]
+<= nrel_using_example:
+	\[v1 _⊃|⊂ v2;;\]
+	(
+		= \[пара пересекающихся множеств* _∌ (v1 _<=> v2);;\]
+		= \[$image$ /static/images/scs_divider/example_var_non_intersection_pair1.png\]
 	)
 	
 !scs_divider_semantic_inclusion
