@@ -1,7 +1,0 @@
-!nrel_size
-
-<= nrel_identification:
-	{
-		["размер*"] (<- ru_lang);
-		["size*"] (<- en_lang);
-	}

@@ -1,6 +1,0 @@
-!nrel_statements
-<= nrel_identification:
-{
-  ["утверждения*"] (<- ru_lang);
-  ["statements*"] (<- en_lang);
-}

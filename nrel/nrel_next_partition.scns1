@@ -1,5 +1,0 @@
-!nrel_next_partition
-<= nrel_identification:
-{
-  ["следующий раздел*"] (<- ru_lang);
-}

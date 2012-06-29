@@ -1,7 +1,0 @@
-!rrel_month
-
-<= nrel_identification:
-	{
-		["месяц'"] (<- ru_lang);
-		["month'"] (<- en_lang);
-	}

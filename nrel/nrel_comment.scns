@@ -1,7 +1,0 @@
-!nrel_comment
-
-<= nrel_identification:
-	{
-		["комментарий*"] (<- ru_lang);
-		["comment*"] (<- en_lang);
-	}

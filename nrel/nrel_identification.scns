@@ -1,6 +1,0 @@
-!nrel_identification
-<= nrel_identification:
-{
-  ["идентификация*"] (<- ru_lang);
-  ["identification*"] (<- en_lang);
-}

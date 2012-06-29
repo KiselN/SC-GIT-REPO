@@ -1,6 +1,0 @@
-!nrel_basic_consequence
-<= nrel_identification:
-{
-	["базовая последовательность*"] (<- ru_lang);
-	["base sequence*"] (<- en_lang);
-}

@@ -1,0 +1,5 @@
+/!* keyword: nrel_used_constants */
+nrel_used_constants => nrel_main_ru_idtf: 
+  [* используемые константы* *] ;;
+nrel_used_constants => nrel_main_en_idtf: 
+  [* used constants* *] ;;

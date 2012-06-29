@@ -1,0 +1,5 @@
+/!* keyword: nrel_text */
+nrel_text => nrel_main_ru_idtf: 
+  [* текст* *] ;;
+nrel_text => nrel_main_en_idtf:   
+  [* text* *] ;;

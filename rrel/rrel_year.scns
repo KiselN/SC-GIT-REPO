@@ -1,7 +1,0 @@
-!rrel_year
-
-<= nrel_identification:
-	{
-		["год_"] (<- ru_lang);
-		["year_"] (<- en_lang);
-	}

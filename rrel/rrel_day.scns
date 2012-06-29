@@ -1,7 +1,0 @@
-!rrel_day
-
-<= nrel_identification:
-	{
-		["день'"] (<- ru_lang);
-		["day'"] (<- en_lang);
-	}

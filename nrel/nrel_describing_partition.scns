@@ -1,5 +1,0 @@
-!nrel_describing_partition
-<= nrel_identification:
-{
-  ["описывающий раздел*"] (<- ru_lang);
-}

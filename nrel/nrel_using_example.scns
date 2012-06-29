@@ -1,5 +1,0 @@
-!nrel_using_example
-<= nrel_identification:
-{
-  ["пример использования*"] (<- ru_lang);
-}

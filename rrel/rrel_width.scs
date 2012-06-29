@@ -1,0 +1,6 @@
+/!* keyword: rrel_width */
+rrel_width => nrel_main_ru_idtf: 
+		[*ширина'*] ;;
+rrel_width => nrel_main_en_idtf: 
+		[*width'*] ;;
+	

@@ -1,5 +1,0 @@
-!nrel_superpartition
-<= nrel_identification:
-{
-  ["надраздел*"] (<- ru_lang);
-}

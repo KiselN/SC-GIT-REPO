@@ -1,7 +1,0 @@
-!nrel_authors
-
-<= nrel_identification:
-	{
-		["авторы*"] (<- ru_lang);
-		["authors*"] (<- en_lang);
-	}

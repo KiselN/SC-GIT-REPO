@@ -1,6 +1,0 @@
-!rrel_semantic_square_center
-
-<= nrel_identification:
-	{
-		["центр семантической окрестности'"] (<- ru_lang);
-	}

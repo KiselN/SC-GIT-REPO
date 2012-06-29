@@ -1,5 +1,0 @@
-!nrel_introduction
-<= nrel_identification:
-{
-  ["введение*"] (<- ru_lang);
-}

@@ -1,0 +1,5 @@
+/!* keyword: nrel_creation_date */
+nrel_creation_date => nrel_main_ru_idtf: 
+		[* дата создания* *] ;;
+nrel_creation_date => nrel_main_en_idtf: 
+		[* creation date* *] ;;

@@ -1,0 +1,5 @@
+/!* keyword: nrel_definition_type_statement */
+nrel_definition_type_statement => nrel_main_ru_idtf: 
+  [* утверждение определяющего типа* *] ;;
+nrel_definition_type_statement => nrel_main_en_idtf: 
+  [* statement of defining type* *] ;;

@@ -1,7 +1,0 @@
-!nrel_description
-
-<= nrel_identification:
-	{
-		["описание*"] (<- ru_lang);
-		["description*"] (<- en_lang);
-	}

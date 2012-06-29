@@ -1,5 +1,0 @@
-!nrel_explanation
-<= nrel_identification:
-{
-  ["пояснение*"] (<- ru_lang);
-}

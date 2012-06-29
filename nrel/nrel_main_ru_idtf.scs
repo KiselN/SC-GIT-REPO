@@ -1,0 +1,5 @@
+/!* keyword: nrel_main_ru_idtf */
+nrel_main_ru_idtf => nrel_main_ru_idtf: 
+  [* основной русскоязычный идентификатор* *] ;;
+nrel_main_ru_idtf => nrel_main_en_idtf:   
+  [* main russian identifier* *] ;;

@@ -1,0 +1,26 @@
+/* SCS-code0.1.0.Level 6 */
+/* keyword: postorder_tree_search*/
+
+"postorder_tree_search" => "nrel_identificator":
+  ["sc-операция поиска в глубину"] (" <- "ru_lang" ");;
+"postorder_tree_search" => "nrel_decription":
+	["DESCRIPTION"];;
+"postorder_tree_search" <= "nrel_authors":
+{
+	"Pupkin";
+	"Sidorov";
+	"Petrov";
+};;
+"postorder_tree_search" <- "logic_conclusion_operation";;
+"postorder_tree_search" => "nrel_specification" : [$gwf$ PATH];;
+"postorder_tree_search" => "nrel_algorythm" : "postorder_tree_search_algorythm";;
+"postorder_tree_search" <= "nrel_necessary_procedures":
+{
+	"PROC1";
+	"PROC2";
+};;
+"postorder_tree_search" <= "nrel_necessary_operations":
+{
+	"OPER1";
+	"OPER2";
+};;

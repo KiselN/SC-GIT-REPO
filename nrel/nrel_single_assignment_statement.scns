@@ -1,6 +1,0 @@
-!nrel_single_assignment_statement
-<= nrel_identification:
-{
-  ["утверждение об однозначном задании*"] (<- ru_lang);
-  ["statement about an unequivocal task*"] (<- en_lang);
-}

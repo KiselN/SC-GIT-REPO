@@ -1,0 +1,6 @@
+/!* keyword: nrel_description */
+nrel_description => nrel_main_ru_idtf: 
+		[* описание* *] ;;
+nrel_description => nrel_main_en_idtf: 		
+		[* description* *] ;;
+	

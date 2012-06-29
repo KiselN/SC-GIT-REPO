@@ -1,0 +1,5 @@
+/!* keyword: nrel_statements */
+nrel_statements => nrel_main_ru_idtf: 
+  [* утверждения* *] ;;
+nrel_statements => nrel_main_en_idtf: 
+  [* statements* *] ;;
