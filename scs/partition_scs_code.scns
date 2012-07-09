@@ -7,7 +7,7 @@
 <- non_atomic_partition
 <- version_describing_scs_code
 => nrel_introduction:
-	[$scns$
+	[
 	!scs_code
 	<= nrel_identification: 
 	{
