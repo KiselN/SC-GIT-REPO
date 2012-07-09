@@ -1,0 +1,20 @@
+!scs_divider_semantically_non_equal_files
+<= nrel_identification: 
+{
+	["sc.s-разделитель семантически неэквивалентные файлы"] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	[""]
+<= nrel_explanation:
+	["Изображение связки, не принадлежащей отношению <i>семантически эквивалентные файлы*</i>. Разделяет имена двух файлов, которые не являются семантически эквивалентными, если есть необходимость подчеркнуть наличие семантической разницы между содержимым некоторых файлов."]
+<= nrel_using_example:
+	[
+		\["линейный треугольник"\] *** \["треугольник"\];;
+	]
+	(
+		= [семантическая эквивалентность* ∌ ( \["треугольник"\] <=> \["линейный треугольник"\]);;]
+		= [$image$ /static/images/scs_divider/example_semantically_non_equal_files.png]
+	)

@@ -1,0 +1,5 @@
+!scs_code_4_level
+	<= nrel_identification: 
+	{
+		["SCs-код уровня 4"] (<- ru_lang);
+	}

@@ -1,0 +1,28 @@
+!scs_divider_simple_colon
+<= nrel_identification: 
+{
+	["sc.s-разделитель простое двоеточие"] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_modifier
+<= nrel_representation_scs_editor:
+	[":"]
+<= nrel_representation_standart_editor:
+	[":"]
+<= nrel_explanation:
+	["Является изображением константных позитивных стационарных sc-дуг, проведенных из каждого из именуемых узлов в те sc-коннекторы, изображение которых находится перед перечислением имен вышеупомянутых узлов. Если указанные разделители встречаются в предложении несколько раз, то такая запись указывает, что все уточнения типа относятся к одному и тому же коннектору."]
+<= nrel_using_example:
+	[Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD) ; Треугк(ТчкВ;ТчкС;ТчкD) => сторона* : включение* : Отр(ТчкВ;ТчкС); Отр(ТчкС;ТчкD);;]
+	(
+		= [$image$ /static/images/scs_divider/common_example.png]
+		<= nrel_illustration:
+		[$image$ /static/images/scs_divider/common_illusration.png]
+	)
+<= nrel_using_example:
+	[
+		треугольник => идентификатор* : основной англоязычный идентификатор*: \["triangle"\];;		
+	]
+	(
+		= [$image$ /static/images/scs_divider/simple_colon_example.png]
+	)

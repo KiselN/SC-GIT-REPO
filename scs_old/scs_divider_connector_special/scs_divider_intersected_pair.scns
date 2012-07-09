@@ -1,0 +1,24 @@
+!scs_divider_intersected_pair
+<= nrel_identification: 
+{
+	["sc.s-разделитель пара пересекающихся множеств"] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	[""]
+<= nrel_explanation:
+	["Изображение связки отношения <i>пара пересекающихся множеств*</i>"]
+<= nrel_using_example:
+	["треугольник *** правильный многоугольник;;"]
+	(
+		= [правильный многоугольник <=> пара пересекающихся множеств*: треугольник;;]
+		= [$image$ /static/images/scs_divider/example_intersection_pair1.png]
+	)
+<= nrel_using_example:
+	["натуральное число *** целое число;;"]
+	(
+		= [целое число <=> пара пересекающихся множеств*: натуральное число;;]
+		= [$image$ /static/images/scs_divider/example_intersection_pair2.png]
+	)

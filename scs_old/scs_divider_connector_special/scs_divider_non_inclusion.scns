@@ -1,0 +1,26 @@
+!scs_divider_non_inclusion
+<= nrel_identification: 
+{
+	["sc.s-разделитель невключение"] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_special
+<= nrel_representation_scs_editor:
+	["⊄"]
+<= nrel_representation_scs_editor:
+	["⊅"]
+<= nrel_explanation:
+	["Изображение связки отношения <i>включение*</i>"]
+<= nrel_using_example:
+	[треугольник ⊄ правильный многоугольник;;]
+	(
+		= [включение* ∌ (правильный многоугольник => треугольник);;]
+		= [$image$ /static/images/scs_divider/example_non_inclusion1.png]
+	)
+<= nrel_using_example:
+	[действительное число ⊅ натуральное число;;]
+	(
+		= [включение* ∌ (целое число <= натуральное число);;]
+		= [$image$ /static/images/scs_divider/example_non_inclusion2.png]
+	)

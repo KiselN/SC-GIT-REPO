@@ -1,0 +1,13 @@
+!scs_divider_semicolon
+<= nrel_identification: 
+{
+	["sc.s-разделитель точка с запятой"] (<- ru_lang);
+	["sc.s-разделитель, разделяющий составные части в рамках некоторого перечисления"] (<- ru_lang);
+}
+<= nrel_inclusion:
+	scs_divider
+<= nrel_decomposition: 
+{
+	scs_divider_simple_semicolon;
+	scs_divider_double_semicolon;
+}

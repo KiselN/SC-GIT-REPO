@@ -1,0 +1,20 @@
+!scs_divider_const_pos_stat_accessory_arc
+<= nrel_identification: 
+{
+	["константная позитивная стационарная sc.s-дуга принадлежности"] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_connector_kernel
+<= nrel_representation_scs_editor:
+	["∍"]
+<= nrel_representation_scs_editor:
+	["∊"]
+<= nrel_representation_standart_editor:
+	["<-"]
+<= nrel_representation_standart_editor:
+	["->"]
+=> nrel_representation_scg_code:
+	[$image$ /static/images/scs_divider/scs_divider_connector_kernel/image010.gif]
+=> nrel_representation_scg_code:
+	[$image$ /static/images/scs_divider/scs_divider_connector_kernel/image011.gif]

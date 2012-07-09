@@ -1,0 +1,14 @@
+!scs_divider_double_semicolon
+<= nrel_identification: 
+{
+	["sc.s-разделитель двойная точка с запятой"] (<- ru_lang);
+}
+
+<= nrel_inclusion:
+	scs_divider_semicolon
+<= nrel_representation_scs_editor:
+	[";;"]
+<= nrel_representation_standart_editor:
+	[";;"]
+<= nrel_explanation:
+	["Разделяет sc.s-предложения в рамках sc.s-текста"]
