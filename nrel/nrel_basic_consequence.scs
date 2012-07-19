@@ -1,5 +1,5 @@
 /!* keyword: nrel_basic_consequence */
 nrel_basic_consequence => nrel_main_ru_idtf: 
-	[* базовая последовательность* *];;
+	[ базовая последовательность* ];;
 nrel_basic_consequence => nrel_main_en_idtf: 	
-	[* base sequence* *];;
+	[ base sequence* ];;

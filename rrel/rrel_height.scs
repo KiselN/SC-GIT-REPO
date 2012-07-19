@@ -1,6 +1,6 @@
 /!* keyword: rrel_height */
 rrel_height => nrel_main_ru_idtf: 
-		[*высота'*] ;;
+		[высота'] ;;
 rrel_height => nrel_main_en_idtf: 		
-		[*height'*] ;;
+		[height'] ;;
 	

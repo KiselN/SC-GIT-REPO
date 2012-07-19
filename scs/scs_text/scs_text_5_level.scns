@@ -1,5 +1,0 @@
-!scs_text_5_level
-	<= nrel_identification: 
-	{
-		["sc.s-текст уровня 5"] (<- ru_lang);
-	}

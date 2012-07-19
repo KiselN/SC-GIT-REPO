@@ -1,8 +1,8 @@
 /!* keyword: scn_code_1_level*/
 scn_code_1_level => nrel_main_ru_idtf: 
-	[*SCn-код уровня 1*];;
+	[SCn-код уровня 1];;
 scn_code_1_level => nrel_explanation:
-	[*
+	[
 		Данный уровень SCn-кода представляет собой определенный способ форматирования произвольных sc.s-текстов.<br><br>
 		Правила форматирования:<br>
 		1) Для заданного sc.s-текста выделить ключевые описываемые sc-элементы и их имена.<br>
@@ -13,8 +13,8 @@ scn_code_1_level => nrel_explanation:
 		4) Каждое sc.s-предложение, входящее в состав некоторой sc.n-статьи записать с новой строки (начиная с первого символа строки).<br>
 		5) Увеличить интервал между разными sc.n-статьями.<br>
 		6) Все вхождения идентификатора, который указан в заголовке соответствующей sc.n-статьи, в sc.s-предложение, выделяются шрифтом.<br>
-	*];;
+	];;
 scn_code_1_level -> rrel_example:
-		[#image:/static/images/scn/scn_text_example_1_1.png];;
+		[*image:/static/images/scn/scn_text_example_1_1.png];;
 scn_code_1_level -> rrel_example:
-		[#image:/static/images/scn/scn_text_example_1_2.png];;
+		[*image:/static/images/scn/scn_text_example_1_2.png];;

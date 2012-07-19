@@ -1,5 +1,5 @@
 /!* keyword: nrel_identification */
 nrel_identification => nrel_main_ru_idtf: 
-  [* идентификация* *] ;;
+  [ идентификация* ] ;;
 nrel_identification => nrel_main_en_idtf:   
-  [* identification* *] ;;
+  [ identification* ] ;;

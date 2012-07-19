@@ -1,4 +1,4 @@
 /!* keyword: nrel_previous_partition */
 !nrel_previous_partition
 nrel_previous_partition => nrel_main_ru_idtf: 
-  [* предыдущий раздел* *] ;;
+  [ предыдущий раздел* ] ;;

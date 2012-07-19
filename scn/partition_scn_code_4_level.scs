@@ -1,12 +1,12 @@
-/!* keyword: partition_scn_code_4_level*/
-partition_scn_code_4_level => nrel_main_ru_idtf: 
-	[*Раздел OSTIS. SCn-код 0.1.0. Уровень 4*] (* <- ru_lang *);;
-partition_scn_code_4_level <- atomic_partition;;
-partition_scn_code_4_level <= nrel_superpartition:
-	partition_scn_code;;
-partition_scn_code_4_level <= nrel_basic_consequence:
-	partition_scn_code_3_level;;
+/!* keyword: Partition_SCn_code_4_level*/
+Partition_SCn_code_4_level => nrel_main_ru_idtf: 
+	[Раздел OSTIS. SCn-код 0.1.0. Уровень 4] (* <- ru_lang *);;
+Partition_SCn_code_4_level <- atomic_partition;;
+Partition_SCn_code_4_level <= nrel_superpartition:
+	Partition_SCn_code;;
+Partition_SCn_code_4_level <= nrel_basic_consequence:
+	Partition_SCn_code_3_level;;
 
-partition_scn_code_4_level = [
+Partition_SCn_code_4_level = [
 	#scs:scn/scn_code_4_level.scs
 ];;

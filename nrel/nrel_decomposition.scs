@@ -1,5 +1,5 @@
 /!* keyword: nrel_decomposition */
 nrel_decomposition => nrel_main_ru_idtf: 
-  [* декомпозиция* *] ;;
+  [ декомпозиция* ] ;;
 nrel_decomposition => nrel_main_en_idtf: 
-  [* decomposition* *] ;;
+  [ decomposition* ] ;;
