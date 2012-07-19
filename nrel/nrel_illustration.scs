@@ -1,5 +1,5 @@
 /!* keyword: nrel_illustration */
 nrel_illustration => nrel_main_ru_idtf: 
-  [* иллюстрация* *] ;;
+  [ иллюстрация* ] ;;
 nrel_illustration => nrel_main_en_idtf: 
-  [* illustration* *] ;;
+  [ illustration* ] ;;

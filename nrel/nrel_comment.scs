@@ -1,6 +1,6 @@
 /!* keyword: nrel_comment */
 nrel_comment => nrel_main_ru_idtf: 
-		[* комментарий* *] ;;
+		[ комментарий* ] ;;
 nrel_comment => nrel_main_en_idtf: 
-		[* comment* *] ;;
+		[ comment* ] ;;
 	

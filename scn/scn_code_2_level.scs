@@ -1,8 +1,8 @@
 /!* keyword: scn_code_2_level*/
 scn_code_2_level => nrel_main_ru_idtf: 
-	[*SCn-код уровня 2*];;
+	[SCn-код уровня 2];;
 scn_code_2_level => nrel_explanation:
-	[*
+	[
 		Данный уровень SCn-кода отличается от предыдущего тем, что форматирование sc.s-предложений
 		производится не только в вертикальном, но и горизонтальном направлении.<br><br>
 		Правила форматирования:<br>
@@ -23,8 +23,8 @@ scn_code_2_level => nrel_explanation:
 		разделителя двоеточие изображается с новой строки, начиная с символа, стоящего под первым символом первого модификатора.<br>
 		5) Вводятся закадровые (фоновые) вертикальные линии для более четкого определения уровня вложенности sc.s-предложений в рамках sc.n-статьи.<br>
 		6) Может быть удален sc.s-разделитель точка с запятой ;.<br>
-	*];;
+	];;
 scn_code_2_level -> rrel_example:
-		[#image:/static/images/scn/scn_text_example_2_1.png];;
+		[image:/static/images/scn/scn_text_example_2_1.png];;
 scn_code_2_level -> rrel_example:
-		[#image:/static/images/scn/scn_text_example_2_2.png];;
+		[image:/static/images/scn/scn_text_example_2_2.png];;

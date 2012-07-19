@@ -1,5 +1,5 @@
 /!* keyword: nrel_translation */
 nrel_translation => nrel_main_ru_idtf: 
-		[* трансляция* *] ;;		
+		[ трансляция* ] ;;		
 nrel_translation => nrel_main_en_idtf: 
-		[* translation* *] ;;
+		[ translation* ] ;;

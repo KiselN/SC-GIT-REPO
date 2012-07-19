@@ -1,6 +1,6 @@
 /!* keyword: rrel_year */
 rrel_year => nrel_main_ru_idtf: 
-		[*год'*] ;;
+		[год'] ;;
 rrel_year => nrel_main_en_idtf: 		
-		[*year'*] ;;
+		[year'] ;;
 	

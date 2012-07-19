@@ -1,5 +1,5 @@
 /!* keyword: nrel_single_assignment_statement */
 nrel_single_assignment_statement => nrel_main_ru_idtf:
-  [* утверждение об однозначном задании* *] ;;
+  [ утверждение об однозначном задании* ] ;;
 nrel_single_assignment_statement => nrel_main_en_idtf:
-  [* statement about an unequivocal task* *] ;;
+  [ statement about an unequivocal task* ] ;;

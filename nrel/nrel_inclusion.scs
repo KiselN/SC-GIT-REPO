@@ -1,6 +1,5 @@
 /!* keyword: nrel_inclusion */
-!nrel_inclusion
 nrel_inclusion => nrel_main_ru_idtf: 
-  [* включение* *] ;;
+  [ включение* ] ;;
 nrel_inclusion => nrel_main_en_idtf: 
-  [* inclusion* *] ;;
+  [ inclusion* ] ;;

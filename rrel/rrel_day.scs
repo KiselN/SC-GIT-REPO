@@ -1,5 +1,5 @@
 /!* keyword: rrel_day */
 rrel_day => nrel_main_ru_idtf: 
-		[* день' *] ;;
+		[ день' ] ;;
 rrel_day => nrel_main_en_idtf: 
-		[* day' *] ;;
+		[ day' ] ;;

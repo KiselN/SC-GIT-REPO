@@ -1,0 +1,5 @@
+/!* keyword: nrel_subdividing */
+nrel_subdividing => nrel_main_ru_idtf: 
+  [ разбиение* ] ;;
+nrel_subdividing => nrel_main_en_idtf: 
+  [ subdividing* ] ;;

@@ -1,6 +1,6 @@
 /!* keyword: nrel_size */
 nrel_size => nrel_main_ru_idtf: 	
-		[* размер* *] ;;
+		[ размер* ] ;;
 nrel_size => nrel_main_en_idtf: 
-		[* size* *] ;;
+		[ size* ] ;;
 	
