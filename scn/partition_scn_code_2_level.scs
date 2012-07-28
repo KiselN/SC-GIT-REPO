@@ -9,5 +9,5 @@ Partition_SCn_code_2_level => nrel_basic_consequence:
 Partition_SCn_code_2_level <= nrel_basic_consequence:
 	Partition_SCn_code_1_level;;
 Partition_SCn_code_2_level = [
-	#scs:scn/scn_code_2_level.scs
+	"../scn/scn_code_2_level.scs"
 ];;

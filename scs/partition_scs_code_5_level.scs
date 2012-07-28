@@ -8,6 +8,6 @@ Partition_SCs_code_5_level => nrel_basic_consequence:
 	Partition_SCs_code_6_level;;
 Partition_SCs_code_5_level <= nrel_basic_consequence:
 	Partition_SCs_code_4_level;;
-Partition_SCs_code_5_level = [
-	#scs:scs/merged_content/Partition_SCs_code_5_level_content.scs
-];;
+Partition_SCs_code_5_level = 
+	"../scs/merged_content/Partition_SCs_code_5_level_content.scs"
+;;

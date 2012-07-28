@@ -20,5 +20,5 @@ scs_divider_simple_plus <= nrel_using_example:
 		};;
 	]
 	(*
-		≗ [image:/static/images/scs_divider/plus_example.png];;
+		<=> nrel_semantic_equivalence: "../../images/scs_divider/plus_example.png";;
 	*);;

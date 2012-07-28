@@ -12,12 +12,12 @@ scs_divider_equality <= nrel_explanation:
 scs_divider_equality <= nrel_using_example:
 	[Поток 72170x = {721701;721702;721703};;]
 	(*
-		≗ [Поток 72170x <=> синонимия*: {721701;721702;721703};;] ;;
-		≗ [image:/static/images/scs_divider/example_equality1.png] ;;
+		<=> nrel_semantic_equivalence: [Поток 72170x <=> синонимия*: {721701;721702;721703};;] ;;
+		<=> nrel_semantic_equivalence: "../../images/scs_divider/example_equality1.png" ;;
 	*);;
 scs_divider_equality <= nrel_using_example:
 	[*треугольник = многоугольник с тремя сторонами;;*]
 	(*
-		≗ [треугольник <=> синонимия*: многоугольник с тремя сторонами;;] ;;
-		≗ [image:/static/images/scs_divider/example_equality2.png] ;;
+		<=> nrel_semantic_equivalence: [треугольник <=> синонимия*: многоугольник с тремя сторонами;;] ;;
+		<=> nrel_semantic_equivalence: "../../images/scs_divider/example_equality2.png" ;;
 	*);;

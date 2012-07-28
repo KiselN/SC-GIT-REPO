@@ -11,12 +11,12 @@ scs_divider_non_intersected_pair <= nrel_explanation:
 scs_divider_non_intersected_pair <= nrel_using_example:
 	[треугольник ⊃|⊂ квадрат;;]
 	(*
-		≗ [пара пересекающихся множеств* ∌ (квадрат <=> треугольник);;] ;;
-		≗ [image:/static/images/scs_divider/example_non_intersection_pair1.png] ;;
+		<=> nrel_semantic_equivalence: [пара пересекающихся множеств* ∌ (квадрат <=> треугольник);;] ;;
+		<=> nrel_semantic_equivalence: "../../images/scs_divider/example_non_intersection_pair1.png" ;;
 	*);;
 scs_divider_non_intersected_pair <= nrel_using_example:
 	[иррациональное число ⊃|⊂ целое число;;]
 	(*
-		≗ [пара пересекающихся множеств* ∌ (иррациональное число <=> целое число);;] ;;
-		≗ [image:/static/images/scs_divider/example_non_intersection_pair2.png] ;;
+		<=> nrel_semantic_equivalence: [пара пересекающихся множеств* ∌ (иррациональное число <=> целое число);;] ;;
+		<=> nrel_semantic_equivalence: "../../images/scs_divider/example_non_intersection_pair2.png" ;;
 	*);;

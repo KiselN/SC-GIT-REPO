@@ -13,14 +13,14 @@ scs_divider_simple_colon <= nrel_explanation:
 scs_divider_simple_colon <= nrel_using_example:
 	[Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD) ; Треугк(ТчкВ;ТчкС;ТчкD) => сторона* : включение* : Отр(ТчкВ;ТчкС); Отр(ТчкС;ТчкD);;]
 	(*
-		≗ [image:/static/images/scs_divider/common_example.png];;
+		<=> nrel_semantic_equivalence: "../../images/scs_divider/common_example.png";;
 		<= nrel_illustration:
-		[image:/static/images/scs_divider/common_illusration.png];;
+		"../../images/scs_divider/common_illusration.png";;
 	*);;
 scs_divider_simple_colon <= nrel_using_example:
 	[
 		треугольник => идентификатор* : основной англоязычный идентификатор*: \[triangle*\*];;		
 	]
 	(*
-		≗ [image:/static/images/scs_divider/simple_colon_example.png] ;;
+		<=> nrel_semantic_equivalence: "../../images/scs_divider/simple_colon_example.png" ;;
 	*);;

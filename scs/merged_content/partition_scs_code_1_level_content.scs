@@ -26,7 +26,7 @@ scs_sentence_1_level <= nrel_explanation:
 		<* имя элемента *> может отсутствовать, тогда sc-элемент, описанный как <* тип элемента *> / будет воспринят как sc-элемент указанного типа без идентификатора.<br>
 		sc-элемент без указания типа по умолчанию считается sc-узлом.
 	];;
-scs_sentence_1_level => nrel_generalized_syntax_structure: 
+scs_sentence_1_level => nrel_generalized_syntax_structure:
 	[
 		<* sc.s-предложение уровня 1*> ::= <* имя первого элемента тройки *> | <* имя коннектора *> | <* имя второго элемента тройки *> ;;
 	]
@@ -66,8 +66,8 @@ scs_text_1_level -> rrel_example:
 			Треугк(ТчкВ;ТчкС;ТчкD) | sc-arc-common/pair4 | Отр(ТчкC;ТчкD);;</br>
 		]
 		(*
-			≗ [image:/static/images/scs_text_example_1.png];;
+			≗ "../../images/scs_text_example_1.png";;
 			≗ [sc-элементы <i>Треугк(ТчкВ;ТчкС;ТчкD)</i> и <i>Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD)</i> связаны бинарными отношениями <i>включение*</i> и <i>сторона*</i> с sc-элементами Отр(ТчкВ;ТчкС) и Отр(ТчкC;ТчкD).];;
 			<= nrel_illustration:
-				[image:/static/images/scs_divider/common_illusration.png];;
+				"../../images/scs_divider/common_illusration.png";;
 		*);;

@@ -13,6 +13,6 @@ scs_divider_const_fuz_nonstat_accessory_arc <= nrel_representation_standart_edit
 scs_divider_const_fuz_nonstat_accessory_arc <= nrel_representation_standart_editor:
 	[</~];;
 scs_divider_const_fuz_nonstat_accessory_arc => nrel_representation_scg_code:
-	[image:/static/images/scs_divider/scs_divider_connector_extended/image050.gif];;
+	"../../images/scs_divider/scs_divider_connector_extended/image050.gif";;
 scs_divider_const_fuz_nonstat_accessory_arc => nrel_representation_scg_code:
-	[image:/static/images/scs_divider/scs_divider_connector_extended/image051.gif];;
+	"../../images/scs_divider/scs_divider_connector_extended/image051.gif";;

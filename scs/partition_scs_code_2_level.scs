@@ -9,6 +9,6 @@ Partition_SCs_code_2_level => nrel_basic_consequence:
 Partition_SCs_code_2_level <= nrel_basic_consequence:
 	Partition_SCs_code_1_level;;
 	
-Partition_SCs_code_2_level = [
-	#scs:scs/merged_content/Partition_SCs_code_2_level_content.scs
-];;
+Partition_SCs_code_2_level = 
+	"../scs/merged_content/Partition_SCs_code_2_level_content.scs"
+;;

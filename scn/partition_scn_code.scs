@@ -14,5 +14,5 @@ Partition_SCn_code <= nrel_decomposition:
 
 Partition_SCn_code => nrel_introduction:
 	[
-		#scs:scn/scn_code.scs
+		"../scn/scn_code.scs"
 	];;

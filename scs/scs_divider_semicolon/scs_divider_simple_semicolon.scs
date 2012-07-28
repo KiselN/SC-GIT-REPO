@@ -23,7 +23,7 @@ scs_divider_simple_semicolon <= nrel_explanation:
 scs_divider_simple_semicolon <= nrel_using_example:
 	[Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD) ; Треугк(ТчкВ;ТчкС;ТчкD) => сторона* : включение* : Отр(ТчкВ;ТчкС); Отр(ТчкС;ТчкD);;<br>]
 	(*
-		≗ [image:/static/images/scs_divider/common_example.png] ;;
+		<=> nrel_semantic_equivalence: "../../images/scs_divider/common_example.png" ;;
 		<= nrel_illustration:
-		[image:/static/images/scs_divider/common_illusration.png] ;;
+		"../../images/scs_divider/common_illusration.png" ;;
 	*);;

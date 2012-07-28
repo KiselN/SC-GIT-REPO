@@ -13,6 +13,6 @@ scs_divider_semantically_non_equal_files <= nrel_using_example:
 		\[линейный треугольник*\*] *** \[треугольник*\*];;
 	]
 	(*
-		≗ [семантическая эквивалентность* ∌ ( \[треугольник*\*] <=> \[линейный треугольник*\*]);;] ;;
-		≗ [image:/static/images/scs_divider/example_semantically_non_equal_files.png] ;;
+		<=> nrel_semantic_equivalence: [семантическая эквивалентность* ∌ ( \[треугольник*\*] <=> \[линейный треугольник*\*]);;] ;;
+		<=> nrel_semantic_equivalence: "../../images/scs_divider/example_semantically_non_equal_files.png" ;;
 	*);;

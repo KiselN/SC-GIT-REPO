@@ -13,12 +13,12 @@ scs_divider_non_inclusion <= nrel_explanation:
 scs_divider_non_inclusion <= nrel_using_example:
 	[треугольник ⊄ правильный многоугольник;;]
 	(*
-		≗ [включение* ∌ (правильный многоугольник => треугольник);;] ;;
-		≗ [image:/static/images/scs_divider/example_non_inclusion1.png] ;;
+		<=> nrel_semantic_equivalence: [включение* ∌ (правильный многоугольник => треугольник);;] ;;
+		<=> nrel_semantic_equivalence: "../../images/scs_divider/example_non_inclusion1.png" ;;
 	*);;
 scs_divider_non_inclusion <= nrel_using_example:
 	[действительное число ⊅ натуральное число;;]
 	(*
-		≗ [включение* ∌ (целое число <= натуральное число);;] ;;
-		≗ [image:/static/images/scs_divider/example_non_inclusion2.png] ;;
+		<=> nrel_semantic_equivalence: [включение* ∌ (целое число <= натуральное число);;] ;;
+		<=> nrel_semantic_equivalence: "../../images/scs_divider/example_non_inclusion2.png" ;;
 	*);;

@@ -14,5 +14,5 @@ scs_divider_semantic_inclusion <= nrel_using_example:
 		 \[Треугольник Треугк(ТчкА;ТчкВ;ТчкС) является прямоугольным*\*] ≗> \[*Треугк(ТчкА;ТчкВ;ТчкС) <- прямоугольный треугольник; равнобедренный треугольник;;\*];;
 	]
 	(*
-		≗ [image:/static/images/scs_divider/example_non_semantic_inclusion.png] ;;
+		<=> nrel_semantic_equivalence: "../../images/scs_divider/example_non_semantic_inclusion.png" ;;
 	*);;

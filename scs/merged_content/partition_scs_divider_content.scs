@@ -8,7 +8,7 @@ scs_divider <= nrel_decomposition:
 	scs_divider_connector;
 	scs_divider_incidence;
 	scs_divider_modifier;
-	//scs_divider_semicolon;
+	/*scs_divider_semicolon;*/
 	scs_divider_simple_semicolon;
 	scs_divider_double_semicolon;
 	scs_divider_subsentence
@@ -66,7 +66,7 @@ scs_divider_connector_kernel => nrel_ru_idtf:
 scs_divider_connector_kernel <= nrel_inclusion:
 	scs_divider_connector;;
 scs_divider_connector_kernel <= nrel_explanation:
-	[image:/static/images/scs_divider/table_kernel.png];;
+	"../../images/scs_divider/table_kernel.png";;
 scs_divider_connector_kernel <= nrel_decomposition:
 {
 	scs_divider_edge;
@@ -120,7 +120,7 @@ scs_divider_incidence -> nrel_using_example:
 		включение* | arc2 | pair1;;
 	]
 	(*
-		≗ [image:/static/images/scs_divider/example_incidence.png] ;;
+		<=> nrel_semantic_equivalence: "../../images/scs_divider/example_incidence.png" ;;
 	*);;
 	
 /!* keyword: scs_divider_modifier */
@@ -174,9 +174,9 @@ scs_divider_simple_semicolon <= nrel_explanation:
 scs_divider_simple_semicolon <= nrel_using_example:
 	[Четырехугк(ТчкА;ТчкВ;ТчкС;ТчкD) ; Треугк(ТчкВ;ТчкС;ТчкD) => сторона* : включение* : Отр(ТчкВ;ТчкС); Отр(ТчкС;ТчкD);;<br>]
 	(*
-		≗ [image:/static/images/scs_divider/common_example.png] ;;
+		<=> nrel_semantic_equivalence: "../../images/scs_divider/common_example.png" ;;
 		<= nrel_illustration:
-		[image:/static/images/scs_divider/common_illusration.png] ;;
+		"../../images/scs_divider/common_illusration.png" ;;
 	*);;
 
 /!* keyword: scs_divider_subsentence */
@@ -195,6 +195,6 @@ scs_divider_subsentence -> nrel_using_example:
 		Треугк(ТчкВ;ТчкС;ТчкD) => сторона*: Отр(ТчкС;ТчкD)(* => граничная точка*: ТчкС; ТчкD *) ;;
 	]
 	(*
-		≗ [*Треугк(ТчкВ;ТчкС;ТчкD) => сторона*: Отр(ТчкС;ТчкD);; Отр(ТчкС;ТчкD)=> граничная точка*: ТчкС; ТчкD;;*];;
-		≗ [*#image:/static/images/scs_divider/example_subsentence.png*];;
+		<=> nrel_semantic_equivalence: [*Треугк(ТчкВ;ТчкС;ТчкD) => сторона*: Отр(ТчкС;ТчкD);; Отр(ТчкС;ТчкD)=> граничная точка*: ТчкС; ТчкD;;*];;
+		<=> nrel_semantic_equivalence: [*#image:/static/images/scs_divider/example_subsentence.png*];;
 	*);;
