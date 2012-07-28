@@ -32,6 +32,23 @@ scs_divider_connector <= nrel_decomposition:
 	scs_divider_connector_special
 };;
 
+/!* keyword: scs_divider_connector_kernel */
+scs_divider_connector_kernel => nrel_main_ru_idtf: 
+	[sc.s-коннектор, соответствующий алфавиту SC-кода] ;;
+scs_divider_connector_kernel => nrel_ru_idtf: 	
+	[sc.s-разделитель, изображающий sc-коннектор, знак которого принадлежит ядру SCg-кода] ;;
+scs_divider_connector_kernel <= nrel_inclusion:
+	scs_divider_connector;;
+scs_divider_connector_kernel <= nrel_decomposition:
+{
+	scs_divider_edge;
+	scs_divider_common_type_arc;
+	scs_divider_accessory_arc;
+	scs_divider_const_pos_stat_accessory_arc
+};;
+scs_divider_connector_kernel <= nrel_explanation:
+	"../../images/scs_divider/table_kernel.png";;
+
 /!* keyword: scs_divider_connector_extended */
 scs_divider_connector_extended => nrel_main_ru_idtf: 
 	[sc.s-коннектор, соответствующий алфавиту SCg-кода] ;;
@@ -57,23 +74,8 @@ scs_divider_connector_extended <= nrel_decomposition:
 	scs_divider_const_fuz_nonstat_accessory_arc;
 	scs_divider_var_fuz_nonstat_accessory_arc
 };;
-
-/!* keyword: scs_divider_connector_kernel */
-scs_divider_connector_kernel => nrel_main_ru_idtf: 
-	[sc.s-коннектор, соответствующий алфавиту SC-кода] ;;
-scs_divider_connector_kernel => nrel_ru_idtf: 	
-	[sc.s-разделитель, изображающий sc-коннектор, знак которого принадлежит ядру SCg-кода] ;;
-scs_divider_connector_kernel <= nrel_inclusion:
-	scs_divider_connector;;
-scs_divider_connector_kernel <= nrel_explanation:
-	"../../images/scs_divider/table_kernel.png";;
-scs_divider_connector_kernel <= nrel_decomposition:
-{
-	scs_divider_edge;
-	scs_divider_common_type_arc;
-	scs_divider_accessory_arc;
-	scs_divider_const_pos_stat_accessory_arc
-};;
+scs_divider_connector_extended <= nrel_explanation:
+	"../../images/scs_divider/table_extended.png";;
 
 /!* keyword: scs_divider_connector_special */
 scs_divider_connector_special => nrel_main_ru_idtf: 
@@ -96,6 +98,8 @@ scs_divider_connector_special <= nrel_decomposition:
 	scs_divider_equality;
 	scs_divider_non_equality
 };;
+scs_divider_connector_special <= nrel_explanation:
+	"../../images/scs_divider/table_special.png";;
 
 /!* keyword: scs_divider_incidence */
 scs_divider_incidence => nrel_main_ru_idtf:
