@@ -19,7 +19,7 @@ scs_divider_simple_colon <= nrel_using_example:
 	*);;
 scs_divider_simple_colon <= nrel_using_example:
 	[
-		треугольник => идентификатор* : основной англоязычный идентификатор*: \[triangle*\*];;		
+		треугольник => идентификатор* : основной англоязычный идентификатор*: \[triangle**\];;		
 	]
 	(*
 		<=> nrel_semantic_equivalence: "../../images/scs_divider/simple_colon_example.png" ;;
