@@ -3,7 +3,7 @@ scs_divider => nrel_main_ru_idtf:
 	[sc.s-разделитель] ;;
 scs_divider <= nrel_describing_partition:
 	Partition_scs_divider;;
-scs_divider <= nrel_decomposition:
+scs_divider <= nrel_subdividing:
 {
 	scs_divider_connector;
 	scs_divider_incidence;
@@ -25,7 +25,7 @@ scs_divider_connector => nrel_ru_idtf:
 	[sc.s-разделитель, соответствующий sc-коннектору] ;;
 scs_divider_connector <= nrel_inclusion:
 	scs_divider;;
-scs_divider_connector <= nrel_decomposition:
+scs_divider_connector <= nrel_subdividing:
 {
 	scs_divider_connector_kernel;
 	scs_divider_connector_extended;
@@ -39,7 +39,7 @@ scs_divider_connector_kernel => nrel_ru_idtf:
 	[sc.s-разделитель, изображающий sc-коннектор, знак которого принадлежит ядру SCg-кода] ;;
 scs_divider_connector_kernel <= nrel_inclusion:
 	scs_divider_connector;;
-scs_divider_connector_kernel <= nrel_decomposition:
+scs_divider_connector_kernel <= nrel_subdividing:
 {
 	scs_divider_edge;
 	scs_divider_common_type_arc;
@@ -56,7 +56,7 @@ scs_divider_connector_extended => nrel_ru_idtf:
 	[sc.s-разделитель, изображающий sc-коннектор, знак которого принадлежит первому расширению SCg-кода] ;;
 scs_divider_connector_extended <= nrel_inclusion:
 	scs_divider_connector;;
-scs_divider_connector_extended <= nrel_decomposition:
+scs_divider_connector_extended <= nrel_subdividing:
 {
 	scs_divider_const_edge;
 	scs_divider_var_edge;
@@ -84,7 +84,7 @@ scs_divider_connector_special => nrel_ru_idtf:
 	[sc.s-разделитель, изображающий sc-коннектор, который принадлежит некоторому заранее известному множеству и для которого нет специального знака, принадлежащего SCg] ;;
 scs_divider_connector_special <= nrel_inclusion:
 	scs_divider_connector;;
-scs_divider_connector_special <= nrel_decomposition:
+scs_divider_connector_special <= nrel_subdividing:
 {
 	scs_divider_inclusion;
 	scs_divider_non_inclusion;
@@ -132,7 +132,7 @@ scs_divider_modifier => nrel_main_ru_idtf:
 	[модификатор sc.s-коннектора] ;;
 scs_divider_modifier <= nrel_inclusion:
 	scs_divider;;
-scs_divider_modifier <= nrel_decomposition: 
+scs_divider_modifier <= nrel_subdividing: 
 {
 	scs_divider_simple_colon;
 	scs_divider_double_colon;

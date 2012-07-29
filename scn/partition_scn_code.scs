@@ -1,6 +1,6 @@
 /!* keyword: Partition_SCn_code */
 Partition_SCn_code => nrel_main_ru_idtf: 
-	[Раздел OSTIS. SCn-код] (* <- ru_lang *);;
+	[Раздел. SCn-код] (* <- ru_lang *);;
 
 Partition_SCn_code <- non_atomic_partition;;
 

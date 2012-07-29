@@ -1,6 +1,6 @@
 /!* keyword: Partition_SCs_code_4_level */
 Partition_SCs_code_4_level => nrel_main_ru_idtf: 
-	[Раздел OSTIS. SCs-код. Уровень 4] ;;
+	[Раздел. SCs-код. Уровень 4] ;;
 Partition_SCs_code_4_level <- atomic_partition;;
 Partition_SCs_code_4_level <= nrel_superpartition:
 	Partition_SCs_code;;
