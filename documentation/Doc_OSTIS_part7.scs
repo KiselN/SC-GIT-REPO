@@ -1,0 +1,10 @@
+/!* keyword: Doc_OSTIS_part7 */
+Doc_OSTIS_part7 => nrel_main_ru_idtf: 
+	[Раздел. Технология проектирования sc-моделей интерфейсов 
+	интеллектуальных систем] ;;
+Doc_OSTIS_part7 <= nrel_introduction:
+	Introduction_design_technology_sc_interface_design_of_IS;;
+Doc_OSTIS_part7 <= nrel_decomposition:
+	{
+		Subsection_sc_interface_model_of_intelligent_systems
+	};;

@@ -1,0 +1,14 @@
+/!* keyword: Doc_OSTIS_part4 */
+Doc_OSTIS_part4 => nrel_main_ru_idtf: 
+	[Раздел. Технология проектирования sc-моделей баз знаний] ;;
+Doc_OSTIS_part4 <= nrel_introduction:
+	Inroduction_design_technology_sc_models_KB;;
+Doc_OSTIS_part4 <= nrel_decomposition:
+	{
+		Subsection_structure_sc_models_kb;
+		sc_compatible_family_of_languages;
+		Subsection_design_automation_tools;
+		Subsection_control_system_of_collective_development;
+		Subsection_collaborative_development_methodology
+	};;
+

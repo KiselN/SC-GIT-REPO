@@ -1,0 +1,9 @@
+/!* keyword: Doc_OSTIS_part6 */
+Doc_OSTIS_part6 => nrel_main_ru_idtf: 
+	[Раздел. Технология проектирования sc-моделей машин обработки знаний] ;;
+Doc_OSTIS_part6 <= nrel_introduction:
+	Introduction_Design_technology_sc_machine_models_of_kp;;
+Doc_OSTIS_part6 <= nrel_decomposition:
+	{
+		Subsection_sc_model_virtual_machine
+	};;
