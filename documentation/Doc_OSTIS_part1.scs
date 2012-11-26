@@ -1,0 +1,18 @@
+/!* keyword: Doc_OSTIS_part1 */
+Doc_OSTIS_part1 => nrel_main_ru_idtf: 
+	[Раздел. SC-модели интеллектуальных систем];;
+Doc_OSTIS_part1 => nrel_ru_idtf:
+	[Раздел OSTIS. sc-модель интеллектуальной системы];;
+Doc_OSTIS_part1 => nrel_ru_idtf:
+	[Раздел. Принципы построение аnrelбстрактных унифицированных логико-семантических моделей интеллектуальных систем];;
+Doc_OSTIS_part1 <= nrel_introduction:
+	Inroduction_SCmodelIS;;
+Doc_OSTIS_part1 <= nrel_decomposition:
+	{
+		Subsection_SC_code;
+		Subsection_virtual_SC_machine;
+		Subsection_SCP;
+		Subsection_virtual_SCp_machine
+	};;
+Doc_OSTIS_part1 <= nrel_conclusion: 
+		Conclusion_SCmodelIS ;;

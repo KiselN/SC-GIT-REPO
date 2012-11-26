@@ -1,0 +1,5 @@
+/!* keyword: documentation_section */
+documentation_section => nrel_main_ru_idtf: 
+  [ раздел документации ] ;;
+documentation_section => nrel_main_en_idtf: 
+  [ documentation section ] ;;

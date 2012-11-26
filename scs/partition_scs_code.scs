@@ -18,6 +18,5 @@ Partition_SCs_code <= nrel_decomposition:
 	
 Partition_SCs_code <- non_atomic_partition;;
 Partition_SCs_code => nrel_introduction:
-	
 		"../scs/scs_code.scs"
 	;;

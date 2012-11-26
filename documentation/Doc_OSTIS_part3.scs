@@ -1,0 +1,11 @@
+/!* keyword: Doc_OSTIS_part3 */
+Doc_OSTIS_part3 => nrel_main_ru_idtf: 
+	[Раздел. Реализация абстрактных sc-моделей интеллектуальных систем] ;;
+Doc_OSTIS_part3 <=nrel_introduction:
+	Inroduction_impl_abstr_sc_models;;
+Doc_OSTIS_part3 <= nrel_decomposition:
+	{
+		Subsection_Software_implementation;
+		Subsection_hardware_implementation 
+	};;
+

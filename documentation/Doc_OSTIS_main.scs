@@ -1,0 +1,35 @@
+/!* keyword: Doc_OSTIS_main */
+Doc_OSTIS_main => nrel_main_ru_idtf: 
+	[Документация OSTIS] ;;
+Doc_OSTIS_main => nrel_ru_idtf: 
+	[Документация по проектированию интеллектуальных систем на основе технологии OSTIS] ;;
+Doc_OSTIS_main => nrel_ru_idtf: 
+	[Документация Проекта OSTIS] ;;
+Doc_OSTIS_main => nrel_ru_idtf: 
+	[Документация Технологии OSTIS] ;;
+
+Doc_OSTIS_main => nrel_introduction: 
+		Introduction_OSTIS ;;
+
+Doc_OSTIS_main => nrel_annotation: 
+		Annotation_OSTIS ;;
+
+Doc_OSTIS_main <- documentation_section;;
+
+Doc_OSTIS_main <= nrel_decomposition: 
+	{
+		Doc_OSTIS_part1;
+		Doc_OSTIS_part2;
+		Doc_OSTIS_part3;
+		Doc_OSTIS_part4;
+		Doc_OSTIS_part5;
+		Doc_OSTIS_part6;
+		Doc_OSTIS_part7;
+		Doc_OSTIS_part8;
+		Doc_OSTIS_part9;
+		Doc_OSTIS_part10;
+		Doc_OSTIS_part11;
+		Doc_OSTIS_part12
+	};;
+Doc_OSTIS_main => nrel_conclusion: 
+		Conclusion_OSTIS ;;

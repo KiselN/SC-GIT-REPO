@@ -1,0 +1,10 @@
+/!* keyword: Doc_OSTIS_part5 */
+Doc_OSTIS_part5 => nrel_main_ru_idtf: 
+	[Раздел. Технология проектирования программ, ориентированных на 
+	обработку sc-моделей баз знаний] ;;
+Doc_OSTIS_part5 <= nrel_introduction:
+	Introduction_designt_echnology_programs;;
+Doc_OSTIS_part5 <= nrel_decomposition:
+	{
+		Subsection_Scp_design_technology_program
+	};;

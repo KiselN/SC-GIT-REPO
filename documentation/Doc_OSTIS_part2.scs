@@ -1,0 +1,13 @@
+/!* keyword: Doc_OSTIS_part2 */
+Doc_OSTIS_part2 => nrel_main_ru_idtf: 
+	[Раздел. Способы представления и кодирования sc-текстов] ;;
+Doc_OSTIS_part2 <= nrel_introduction:
+		Introduction_part2;;
+Doc_OSTIS_part2 <= nrel_decomposition:
+	{
+		Subsection_SCg_code;
+		Subsection_SCs_code;
+		Subsection_SCn_code;
+		Subsection_rulles_make_idtf_SCelem;
+		Subsection_Formats
+	};;

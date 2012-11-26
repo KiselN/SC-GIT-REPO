@@ -1,0 +1,11 @@
+/!* keyword: Doc_OSTIS_part8 */
+Doc_OSTIS_part8 => nrel_main_ru_idtf: 
+	[Раздел. Комплексная методика проектирования sc-моделей различных классов
+	 интеллектуальных систем] ;;
+Doc_OSTIS_part8 <= nrel_introduction:
+	Introduction_comprehensive_method_of_designing_sc_models;;
+Doc_OSTIS_part8 <= nrel_decomposition:
+	{
+		Subsection_complex_method_sc_design_models_of_IIS;
+		Subsection_complex_method_sc_design_models_of_ITS
+	};;

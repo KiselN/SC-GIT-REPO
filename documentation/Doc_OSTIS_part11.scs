@@ -1,0 +1,14 @@
+/!* keyword: Doc_OSTIS_part11 */
+Doc_OSTIS_part11 => nrel_main_ru_idtf: 
+	[Раздел. IMS.OSTIS] ;;
+Doc_OSTIS_part11 <= nrel_decomposition:
+	{
+		Section_1_IMS_OSTIS;
+		Section_2_IMS_OSTIS;
+		Section_3_IMS_OSTIS;
+		Section_4_IMS_OSTIS;
+		Section_5_IMS_OSTIS;
+		Section_6_IMS_OSTIS;
+		Section_7_IMS_OSTIS;
+		Section_8_IMS_OSTIS
+	};;
