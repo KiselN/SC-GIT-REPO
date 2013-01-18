@@ -1,0 +1,57 @@
+/!* keyword: scs_subidentification_2 */
+scs_subidentification_2 => nrel_main_ru_idtf: 
+	[Раздел OSTIS. Общие требования, предъявляемые к sc-идентификаторам] ;;
+	
+scs_subidentification_2 <= nrel_superpartition:
+scs_identification_1;;
+
+scs_subidentification_2 <= nrel_next_partition:
+scs_subidentification_3;;
+
+scs_subidentification_2 = nrel_introduction:
+[В базе знаний хранятся как константные элементы, так и <br> переменные. Для именования переменных элементов <br> используется символ нижнего подчеркивания, который ставится <br> перед именем переменной. Для именования константных <br> элементов не существует каких-либо особых признаков, <br> поэтому будем считать элементы константными, если в начале <br> его идентификатора не используется знак нижнего подчеркивания
+
+scs_subidentification_2 => nrel_ru_idtf:
+[идентификатор sc-переменной];;
+
+scs_subidentification_2 => nrel_rule_rename:
+[При идентификации переменных узлов используется нижнее подчеркивание перед sc-идентификатором];;
+
+scs_subidentification_2 -> rrel_example:
+"../../OSTIS_NEW/scg_example/gwf_var.png";;
+
+scs_subidentification_2 => nrel_ru_idtf:
+[идентификатор sc-константы];;
+
+scs_subidentification_2 => nrel_rule_rename:
+[При идентификации константных узлов не используется нижнее подчеркивание перед sc-идентификатором];;
+
+scs_subidentification_2 -> rrel_example:
+"../../OSTIS_NEW/scg_example/kvadrat.png";;
+
+scs_subidentification_2 => nrel_comment:
+[Среди sc-элементов существует необходимость особым образом выделять знаки отношений между объектами. Выделяют ролевые отношения (или атрибуты) и неролевые отношения. Для идентификации ролевых отношений в конце имени элемента ставится штрих (‘). Для идентификации неролевого отношения в конце имени элемента ставится знак звездочки (*).];;
+
+scs_subidentification_2 => nrel_ru_idtf:
+[идентификатор неролевого отношения];;
+
+scs_subidentification_2 => nrel_rule_rename:
+[При идентификации sc-узла, являющегося знаком отношения, в конце идентификатора ставится звездочкам]
+(*
+	scs_subidentification_2 => scs_rustext;;
+*);;
+
+scs_subidentification_2 <= nrel_example:
+"../../OSTIS_NEW/scg_example/vkl.png";;
+
+scs_subidentification_2 => nrel_ru_idtf:
+[идентификатор ролевого отношения];;
+
+scs_subidentification_2 => nrel_rule_rename:
+[При идентификации sc-узла, являющегося знаком атрибутивного отношения, в конце идентификатора ставится штрих]
+(*
+	scs_subidentification_2 => scs_rustext;;
+*)
+
+scs_subidentification_2 -> rrel_example:
+"../../OSTIS_NEW/scg_example/aksioma.png";;

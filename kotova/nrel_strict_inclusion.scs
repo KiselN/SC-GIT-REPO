@@ -1,0 +1,36 @@
+/!* keyword: nrel_strict_inclusion*/
+nrel_strict_inclusion <= nrel_superpartition:  
+	[120. Семантический язык множеств /* раздел 3-го уровня */] ;;
+nrel_strict_inclusion => nrel_main_ru_idtf: 
+	[Строгое включение*] ;;	
+
+nrel_strict_inclusion=> nrel_ru_idtf: 
+	[строгое подмножество*] ;;
+nrel_strict_inclusion => nrel_ru_idtf: 
+	[отношение строгого включения*] ;;
+nrel_strict_inclusion => nrel_ru_idtf: 
+	[быть строгим подмножеством] ;;
+nrel_strict_inclusion=> nrel_ru_idtf: 
+	[быть строгим включением одного множества /*собственного подмножества*/ в другое /*надмножество*/] ;; 
+nrel_strict_inclusion => nrel_ru_idtf: 
+	[быть собственным подмножеством] ;;
+nrel_strict_inclusion=> nrel_ru_idtf: 
+	[множество всевозможных ориентированных пар, каждая из которых связывает некоторое множество с его собственным подмножеством] ;;
+nrel_strict_inclusion => nrel_ru_idtf: 
+	[теоретико-множественное строгое включение] ;;
+	
+
+nrel_strict_inclusion=> nrel_definition:
+	[ Отношение строго включения – это отношение, при котором одно множество является подмножеством другого и эти множества не равны. ] ;; 
+
+nrel_strict_inclusion  <-  Notion  ;;
+nrel_strict_inclusion  <-  Cantor_Set_1  ;;
+nrel_strict_inclusion <-  Relation  ;;
+	
+	
+nrel_strict_inclusion => nrel_explanation: 
+	[Множество sj является надмножеством si, а si является подмножеством sj.] ;;
+
+nrel_strict_inclusion=> nrel_comment:
+		"D:/OSTIS/DOC/SC-GIT-REPO/images/nrel_strict_inclusion.png";;
+

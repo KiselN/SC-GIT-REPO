@@ -1,0 +1,36 @@
+/!* keyword: nrel_equality*/
+nrel_equality <= nrel_superpartition:  
+	[120. Семантический язык множеств /* раздел 3-го уровня */] ;;
+nrel_equality => nrel_main_ru_idtf: 
+	[равенство*] ;;	
+
+	nrel_equality => nrel_ru_idtf: 
+	[равные множества*] ;;
+   nrel_equality => nrel_ru_idtf: 
+	[отношение равенства*] ;;
+	nrel_equality => nrel_ru_idtf: 
+	[отношение равенства множеств*] ;;
+	 nrel_equality => nrel_ru_idtf: 
+	[множество всевозможных неориентированных пар, каждая из которых связывает равные друг другу множества] ;; 
+	nrel_equality => nrel_ru_idtf: 
+	[теоретико-множественное равенство] ;;
+	nrel_equality => nrel_ru_idtf: 
+	[быть равными множествами] ;;
+
+
+nrel_equality => nrel_definition:
+	[ Любые два множества являются равными тогда и только тогда, когда первое является включением второго и второе является включением первого. ] ;; 	
+	nrel_equality => nrel_explanation:
+	"D:/OSTIS/DOC/SC-GIT-REPO/images/nrel_equality.png";;
+	
+nrel_equality  <-  Notion  ;;
+nrel_equality  <-  Cantor_Set_1  ;;
+nrel_equality  <-  Relation  ;;
+
+
+nrel_equality => nrel_explanation: 
+	[для каждой пары множеств {si,sj} из семейства множеств {s1, s2, …, sn} имеет место следующее: <si,sj> ? включение*, если множество si является надмножеством sj, а sj является подмножеством si; <sj, si> ? включение*, если множество sj является надмножеством si, а si является подмножеством sj] ;;
+
+nrel_equality => nrel_comment:
+		"../sc-git-repo/images/nrel_equality1.png";;
+

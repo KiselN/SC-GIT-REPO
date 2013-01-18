@@ -1,0 +1,249 @@
+/!* keyword: Alphabet */
+Alphabet => nrel_main_ru_idtf:
+	[100. Алфавит и инцидентность элементов унифицированных семантических сетей] ;;
+ Alphabet <= nrel_introduction:
+[
+Рассмотрим синтаксическую типологию sc-элементов.<br>
+] ;;
+
+
+
+/!* keyword: scs_element */
+scs_element => nrel_main_ru_idtf: 
+	[sc-элемент] ;;
+scs_element => nrel_ru_idtf: 
+	[элементарный фрагмент sc-конструкции] ;;
+scs_element => nrel_ru_idtf: 
+	[атомарный фрагмент sc-конструкции] ;;
+scs_element => nrel_ru_idtf: 
+	[неделимый фрагмент sc-конструкции] ;;
+scs_element => nrel_ru_idtf: 
+	[символ, входящий в состав sc-конструкции] ;;
+scs_element => nrel_ru_idtf: 
+	[примитив, входящий в состав sc-конструкции] ;;
+	scs_element <= nrel_subdividing:
+{
+	scs_node;
+	scs_edge;
+	scs_arc_of_the_general_form;
+	scs_arc_core;
+	scs_link
+};;
+
+
+/!* keyword: Alphabet_of_scs_element */
+Alphabet_of_scs_element => nrel_main_ru_idtf: 
+	[Алфавит sc-элементов] ;;
+Alphabet_of_scs_element => nrel_ru_idtf: 
+	[синтаксический вид sc-элементов] ;;
+Alphabet_of_scs_element => nrel_ru_idtf: 
+	[синтаксический тип sc-элементов] ;;
+Alphabet_of_scs_element => nrel_ru_idtf: 
+	[основной синтаксически задаваемый класс sc-элементов] ;;
+Alphabet_of_scs_element => nrel_ru_idtf: 
+	[синтаксически задаваемый класс sc-элементов, принадлежащий Алфавиту SC-кода] ;;
+Alphabet_of_scs_element => nrel_ru_idtf: 
+	[неявно задаваемый класс sc-элементов] ;;
+Alphabet_of_scs_element => nrel_ru_idtf: 
+	[класс sc-элементов, выделение которого не требует введения специальных ключевых sc-элементов] ;;
+Alphabet_of_scs_element => nrel_ru_idtf: 
+	[Семейство основных синтаксически задаваемых классов sc-элементов] ;;
+Alphabet_of_scs_element => nrel_ru_idtf: 
+	[Семейство основных синтаксически выделяемых и попарно непересекающихся классов sc-элементов] ;;
+Alphabet_of_scs_element => nrel_ru_idtf: 
+	[Алфавит элементов унифицированных семантических сетей] ;;
+Alphabet_of_scs_element => nrel_ru_idtf: 
+	[Алфавит атомарных фрагментов sc-конструкций] ;;
+Alphabet_of_scs_element => nrel_ru_idtf: 
+	[Алфавит SC-кода] ;;
+Alphabet_of_scs_element -> scs_node;;
+Alphabet_of_scs_element -> 	scs_edge;;
+Alphabet_of_scs_element -> scs_arc_of_the_general_form;;
+Alphabet_of_scs_element -> scs_arc_core;;
+Alphabet_of_scs_element -> scs_link;;
+
+/!* keyword: scs_node */
+scs_node => nrel_main_ru_idtf: 
+	[sc-узел] ;;
+scs_node => nrel_ru_idtf: 
+	[терминальный элемент sc-конструкции] ;;
+scs_node <- Alphabet_of_scs_element;;
+
+
+/!* keyword: scs_edge */
+scs_edge => nrel_main_ru_idtf: 
+	[sc-ребро] ;;
+scs_edge => nrel_ru_idtf: 
+	[атомарный связующий sc-элемент, являющийся неориентированной парой sc-элементов, либо такой ориентированной парой sc-элементов, направленность которой в текущий момент не известна] ;;
+scs_edge => nrel_ru_idtf: 
+	[атомарный неориентированный связующий sc-элемент] ;;
+scs_edge => nrel_ru_idtf: 
+	[неориентированный sc-коннектор] ;;
+scs_edge <- Alphabet_of_scs_element;;
+
+
+/!* keyword: scs_arc_of_the_general_form */
+scs_arc_of_the_general_form => nrel_main_ru_idtf: 
+	[sc-дуга общего вида] ;;
+scs_arc_of_the_general_form => nrel_ru_idtf: 
+	[атомарный связующий sc-элемент, являющийся ориентированной парой sc-элементов, но не являющийся sc-дугой основного вида] ;;
+scs_arc_of_the_general_form <- Alphabet_of_scs_element;;
+
+
+/!* keyword: scs_arc_core */
+scs_arc_core => nrel_main_ru_idtf: 
+	[sc-дуга основного вида] ;;
+scs_arc_core => nrel_ru_idtf: 
+	[основная sc-дуга] ;;
+scs_arc_core => nrel_ru_idtf: 
+	[базовая sc-дуга] ;;
+scs_arc_core => nrel_ru_idtf: 
+	[sc-дуга, являющаяся знаком конкретной связки стационарной принадлежности] ;;
+scs_arc_core => nrel_ru_idtf: 
+	[константная позитивная стационарная sc-дуга принадлежности] ;;
+scs_arc_core <- Alphabet_of_scs_element;;	
+
+
+
+/!* keyword: scs_link */
+scs_link => nrel_main_ru_idtf: 
+	[sc-ссылка] ;;
+scs_link => nrel_ru_idtf: 
+	[sc-ссылка из sc-памяти на фрагмент или подсистему соответствующей sc-системы] ;;
+scs_link => nrel_ru_idtf: 
+	[sc-рамка инородной информационной конструкции или другой части sc-системы] ;;
+scs_link => nrel_ru_idtf: 
+	[sc-рамка информационной конструкции, которая не является sc-конструкцией, или другой части sc-системы] ;;
+scs_link => nrel_ru_idtf: 
+	[sc-ссылка на sc-файл, внешнюю программу или самостоятельную подсистему] ;;
+scs_link => nrel_ru_idtf: 
+	[знак части sc-системы] ;;
+scs_link <- Alphabet_of_scs_element;;	
+scs_link <= nrel_explanation:
+	[Особенность синтаксически выделяемых классов sc-элементов заключается в том, что принадлежность sc-элемента соответствующему синтаксически выделяемому классу sc-элементов 
+	задаётся путём придания этому sc-элементу соответствующего синтаксически различимого признака (свойства, характеристики, метки).
+	Каждому синтаксически выделяемому классу sc-элементов, принадлежащему алфавиту SC-кода, взаимно однозначно соответствует свой синтаксически задаваемый признак.<br><br>
+	Подчеркнём, что все основные (входящие в алфавит) синтаксически выделяемые классы (виды) sc-элементов являются попарно непересекающимися классами. Это означает, что каждый 
+	sc-элемент не может принадлежать сразу нескольким синтаксически выделяемым классам sc-элементов (например, не может быть одновременно sc-узлом и sc-ребром). Но некоторые sc-элементы
+	в процессе обработки sc-конструкций могут переходить из одного синтаксически выделяемого класса sc-элементов в другой (например, некоторые sc-узлы могут стать sc-рёбрами,
+	некоторые sc-рёбра могут стать sc-дугами общего вида, а некоторые sc-дуги общего вида могут стать sc-дугами основного вида). Подробнее об этом см. в разделе 103 и разделе 107.<br><br>
+	Кроме тех основных синтаксически задаваемых видов sc-элементов, которые принадлежат Алфавиту SC-кода для рассмотрения синтаксиса и семантики SC-кода введем также несколько таких
+	синтаксически задаваемых видов sc-элементов, которые не принадлежат Алфавиту SC-кода. К таким видам sc-элементов, в частности, относятся понятие sc-дуги и понятие sc-коннектора.<br>
+	];;
+	
+	
+	/!* keyword: scs_arc */
+scs_arc => nrel_main_ru_idtf: 
+	[sc-дуга] ;;
+scs_arc => nrel_ru_idtf: 
+	[ sc-дуга общего вида ? sc-дуга основного вида] ;;
+scs_arc => nrel_ru_idtf: 
+	[ sc-дуга общего или основного вида] ;;
+scs_arc => nrel_ru_idtf: 
+	[ Понятие, являющееся результатом объединения Понятия sc-дуги общего вида и Понятия sc-дуга основного вида] ;;
+scs_arc => nrel_ru_idtf: 
+	[ атомарный связующий sc-элемент, являющийся ориентированной парой sc-элементов] ;;
+scs_arc => nrel_ru_idtf: 
+	[ ориентированный sc-коннектор ] ;;	
+scs_arc <= nrel_subdividing:
+{
+	scs_arc_of_the_general_form;
+	scs_arc_core
+};;
+
+
+/!* keyword: scs_connector */
+scs_connector => nrel_main_ru_idtf: 
+	[sc-коннектор] ;;
+scs_connector => nrel_ru_idtf: 
+	[ sc-ребро ⋃ sc-дуга ] ;;
+scs_connector => nrel_ru_idtf: 
+	[ sc-ребро или sc-дуга] ;;
+scs_connector => nrel_ru_idtf: 
+	[ Понятие, являющееся результатом объединения Понятия sc-ребра и Понятия sc-дуги] ;;
+scs_connector => nrel_ru_idtf: 
+	[ атомарный связующий sc-элемент] ;;
+	
+scs_connector <= nrel_subdividing:
+{
+	scs_edge;
+	scs_arc
+};;
+scs_connector <= nrel_explanation:
+	[Есть принципиальная разница между понятием синтаксически выделяемого класса
+	sc-элементов и понятием семантически выделяемого класса sc-элементов.
+	];;
+
+	
+/!* keyword: Syntactically_distinguish_class_of_elements */
+Syntactically_distinguish_class_of_elements => nrel_main_ru_idtf: 
+	[синтаксически выделяемый класс sc-элементов] ;;
+Syntactically_distinguish_class_of_elements => nrel_ru_idtf: 
+	[ синтаксически задаваемый класс sc-элементов] ;;
+Syntactically_distinguish_class_of_elements => nrel_ru_idtf: 
+	[ класс sc-элементов, обладающих некоторым общим синтаксическим свойством] ;;
+Syntactically_distinguish_class_of_elements => nrel_ru_idtf:  
+	[ Множество всевозможных синтаксически выделяемых классов sc-элементов] ;;
+Syntactically_distinguish_class_of_elements => nrel_inclusion:
+	alphabet_of_scCod ;;
+Syntactically_distinguish_class_of_elements -> scs_node;;
+Syntactically_distinguish_class_of_elements -> 	scs_edge;;
+Syntactically_distinguish_class_of_elements -> scs_arc_of_the_general_form;;
+Syntactically_distinguish_class_of_elements -> scs_arc_core;;
+Syntactically_distinguish_class_of_elements -> scs_frame;;
+Syntactically_distinguish_class_of_elements -> scs_arc;;
+Syntactically_distinguish_class_of_elements -> scs_connector;;
+
+
+/!* keyword: semantic_class_elements */
+semantic_class_elements => nrel_main_ru_idtf: 
+	[семантически выделяемый класс sc-элементов] ;;
+semantic_class_elements => nrel_ru_idtf: 
+	[ семантически класс sc-элементов] ;;
+semantic_class_elements => nrel_ru_idtf: 
+	[ Множество всевозможных семантически выделяемых классов sc-элементов] ;;
+	
+
+semantic_class_elements <= nrel_explanation:
+	[Различные семантически выделяемые классы sc-элементов рассмотрены в 
+	разделе 103, разделе 104, разделе 105, разделе 106.<br>
+	];;
+	
+	
+	
+/!* keyword: Sc_stucture */
+Sc_stucture => nrel_main_ru_idtf: 
+	[структура sc-конструкций] ;;	
+Sc_stucture <= nrel_explanation:
+	[Кроме алфавита sc-элементов (алфавита SC-кода) структура sc-конструкций задаётся 
+	двумя бинарными ориентированными отношениями инцидентности, которые связывают sc-элементы между собой:
+	<br>
+	];;	
+
+Sc_stucture <= nrel_subdividing:
+{
+	sc_component_connector ;
+	Second_component_scarc
+};;
+
+
+Sc_stucture <= nrel_explanation:
+	[Отношение быть компонентом sc-коннектора* связывает либо sc-дугу с её первым компонентом (т.е. с sc-элементом, из которого эта sc-дуга выходит),
+либо sc-ребро с его обоими компонентами. Оба компонента sc-ребра считаются одинаковыми (аналогичными) компонентами в том смысле, что они в рамках 
+sc-ребра выполняют одинаковые роли. Компонентом sc-дуги может быть другая sc-дуга, т. е. sc-дуга может выходить из другой sc-дуги. Аналогичным образом
+компонентом sc-ребра может быть другое sc-ребро. По этой причине рассматриваемые отношения инцидентности должны быть ориентированными, поскольку, например,
+для двух sc-дуг, связанных этим отношением, необходимо явно указать роль каждой из этих sc-дуг, по отношению к другой – роль выходящей sc-дуги или роль первого
+компонента этой sc-дуги (т.е. роль sc-элемента, из которого рассматриваемая sc-дуга выходит).<br><br>
+	Инцидентность sc-дуги с её вторым компонентом связывает sc-дугу с sc-элементом, в который эта sc-дуга входит. Данное отношение инцидентности, как и рассмотренное
+выше отношение инцидентности, является ориентированным по аналогичным причинам.<br><br>
+	У sc-ребра отсутствует компонент под номером два (оба компонента sc-ребра формально считаются просто компонентами). В редких случаях sc-ребро может обозначать
+ориентированную пару sc-элементов, когда компоненты этой пары известны, а её направленность – нет. Это означает, что некоторые sc-ребра (те, которые обозначают ориентированные пары)
+могут быть преобразованы в sc-дуги (если появилась информация об ориентации обозначаемых ими ориентированных пар), т.е. указанное sc-ребро "переходит" в класс sc-дуг,
+ а одной из пар инцидентности, связывающей это sc-ребро с одним из его компонентов, приписывается Отношение быть вторым компонентом sc-дуги*, которое является строгим
+ подмножеством более общего отношения – Отношения быть компонентом sc-коннектора*. Таким образом, с формальной точки зрения, sc-ребро представляет собой такой sc-коннектор,
+ у которого есть два компонента, но ни один из них не является вторым, а sc-дуга представляет собой такой sc-коннектор, у которого один компонент является вторым компонентом
+ (компонентом номер два), а другой компонент – просто компонентом (без номера).
+	];;
+
+
+

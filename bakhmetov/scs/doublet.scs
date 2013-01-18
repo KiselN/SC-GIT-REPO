@@ -1,0 +1,24 @@
+/!* keyword: doublet */
+doublet => nrel_main_ru_idtf: 
+	[Пара] ;;
+doublet => nrel_ru_idtf: 
+	[двухмощное множество] ;
+	[множество с двумя вхождениями элементов];;
+
+doublet <= nrel_definition:
+	[
+	Множество является парой тогда и только тогда, когда существует один элемент, принадлежащий ему двукратно, либо два элемента - однократно.
+	] (* <=> nrel_semantic_equivalence: "../../images/doublet.png";; *) ;;
+doublet <= nrel_inclusion: 
+	[понятие];
+	[канторовское множество];
+	[нерефлексивное множество];
+	[нетранзитивное множество];
+	[бесконечное множество];
+	[семантически нормализованное множество];
+	[класс множеств различного семантического типа];;
+doublet <= nrel_explanation: "../../images/doubletImage.png"(* <= nrel_comment: [/*в SCg-коде*/];; *);;
+doublet <= nrel_explanation:
+	[
+		Пара точек А и В образуют праямую АВ.
+	] (* <=> nrel_semantic_equivalence: "../../images/doubletExample.png" (* <= nrel_comment: [/*в SCg-коде*/];; *);; *);;

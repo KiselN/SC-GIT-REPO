@@ -1,0 +1,33 @@
+/!* keyword: scs_identification */
+scs_identification => nrel_main_ru_idtf: 
+	[Раздел OSTIS. sc-идентификатор] ;;
+	
+scs_identification => nrel_ru_idtf:
+[Идентификация sc-элементов];;
+
+scs_identification => nrel_ru_idtf:
+[Правила построения идентификаторов sc-элементов];;
+
+scs_identification => nrel_ru_idtf:
+[Раздел БЗ OSTIS, описывающий sc-идентификаторы];;
+
+scs_identification <- scs_ostis_section;;
+
+scs_identification <- scs_ostis_nonatomic;;
+
+
+scs_identification <= nrel_introduction:
+[Данный раздел описывает правила построения идентификаторов sc-элементов];;
+
+scs_identification => nrel_annotation: 
+		[...] ;;
+		
+scs_identification <= nrel_decomposition: 
+	{
+		scs_identification_1;
+		scs_identification_2;
+		scs_identification_3;
+		scs_identification_4;
+		scs_identification_5;
+		scs_identification_6
+	};;

@@ -1,0 +1,29 @@
+/!* keyword: nrel_сross*/
+nrel_сross <= nrel_superpartition:  
+	[120. Семантический язык множеств /* раздел 3-го уровня */] ;;
+nrel_сross => nrel_main_ru_idtf: 
+	[пересекающиеся*] ;;	
+
+nrel_сross => nrel_ru_idtf: 
+	[пересекающиеся множества*] ;;
+nrel_сross => nrel_ru_idtf: 
+	[отношение пересекающихся множеств*] ;;
+
+nrel_сross  <-  Notion  ;;
+nrel_сross  <-  Cantor_Set_1  ;;
+nrel_сross <-  Relation  ;;
+
+nrel_сross => nrel_explanation:
+	[Пример изображения пересекающихся множеств.<br>
+	];;
+	
+nrel_сross => nrel_comment:
+	"D:/OSTIS/DOC/SC-GIT-REPO/images/nrel_сross.png";;
+
+
+nrel_сross => nrel_explanation:
+	[Симметричное отношение пересекается с рефлексивным отношением.<br>
+	];;
+	
+nrel_сross => nrel_comment:
+	"D:/OSTIS/DOC/SC-GIT-REPO/images/nrel_сross1.png";;

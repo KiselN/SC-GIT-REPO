@@ -1,0 +1,71 @@
+/!* keyword: scs_identification_4 */
+scs_identification_4 => nrel_main_ru_idtf: 
+	[Раздел ОSTIS. Правила построения неатомарных sc-идентификаторов sc-коннекторов, используемых в sc.s-текстах второго уровня сложности] ;;
+
+scs_identification4 <= nrel_superpartition:
+scs_identification;;
+
+scs_identification4 <= nrel_next_partition:
+scs_identification5;;
+
+scs_identification <- scs_atomic;;
+
+scs_identification4 <= nrel_explanation:
+[В sc.s-предложениях уровня 6 разрешается использовать любые виды неатомарных идентификаторов.];;
+
+scs_identification4 => nrel_ru_idtf:
+[идентификатор-контур];;
+
+scs_identification4 <= nrel_explanation:
+[Идентификатор узла, который обозначает семантически <br>
+ эквивалентную sc-конструкцию для текста в скобках, записанного на некотором внешнем языке, <br>
+ т.е. результат трансляции текста в скобках в SC-код];;
+ 
+scs_identification4 <= nrel_example:
+[нарисовать];;
+
+scs_identification4 => nrel_ru_idtf:
+[идентификатор-ссылка];;
+
+scs_identification4 <= nrel_explanation:
+[Идентификатор узла, который является ссылкой на файл, содержимым <br>
+ которого является некоторый текст в скобках, записанный на каком-либо внешнем языке];;
+ 
+scs_identification4 <= nrel_example:
+[нарисовать];;
+
+scs_identification4 => nrel_ru_idtf:
+[идентификатор-множество];;
+
+scs_identification4 <= nrel_explanation:
+[Идентификатор множества (контура), которому принадлежат элементы, <br>
+перечисленные в скобках через знак точки с запятой «;», т.е. идентификаторы объектов,<br>
+ входящих в идентифицируемое множество. В скобках должны быть перечислены все элементы <br>
+ идентифицируемого множества. Если перечисляются не все элементы идентифицированного множества, <br>
+ то после последнего элемента ставится знак «;», а далее ставится знак «…»];;
+ 
+scs_identification4 <= nrel_example:
+"../../OSTIS_NEW/scg_example/example1.png";;
+
+scs_identification4 => nrel_ru_idtf:
+[идентификатор-кортеж];;
+
+scs_identification4 <= nrel_explanation:
+[Идентификатор ориентированного множества, которому принадлежат элементы, <br>
+перечисленные в скобках через знак точки с запятой «;», т.е. идентификаторы, входящие<br>
+ в идентифицируемое множество. При этом всем элементам описываемого множества <br>
+ указывается роль, соответствующая порядку следования имени элемента в перечислении];;
+ 
+scs_identification4 <= nrel_example:
+"../../OSTIS_NEW/scg_example/example2.png";;
+
+scs_identification4 => nrel_ru_idtf:
+[идентификатор-операция];;
+
+scs_identification4 <= nrel_explanation:
+[Идентификатор узла, являющегося результатом арифметической, <br>
+теоретико-множественной или логической операции, записанной на <br>
+алгебраическом языке в круглых скобках];;
+ 
+scs_identification4 <= nrel_example:
+"../../OSTIS_NEW/scg_example/example3.png";;

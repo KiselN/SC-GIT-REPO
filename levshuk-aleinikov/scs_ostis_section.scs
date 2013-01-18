@@ -1,0 +1,5 @@
+/!* keyword: scs_ostis_section */
+scs_ostis_section => nrel_main_ru_idtf: 
+	[раздел OSTIS] ;;
+scs_ostis_section => nrel_main_en_idtf: 
+	[OSTIS section] ;;

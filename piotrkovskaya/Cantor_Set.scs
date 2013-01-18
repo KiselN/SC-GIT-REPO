@@ -1,0 +1,51 @@
+/!* keyword: Cantor_Set */
+Cantor_Set => nrel_main_ru_idtf:
+	[Канторовское множество] ;;
+Cantor_Set => nrel_main_en_idtf: 
+  [ Cantor_Set ] ;;	
+Cantor_Set <= nrel_superpartition:  
+	[120. Семантический язык множеств /* раздел 3-го уровня */] ;;
+Cantor_Set => nrel_ru_idtf:
+	[канторовское множество] ;;
+
+Cantor_Set => nrel_ru_idtf: 
+	[множество] ;;
+Cantor_Set => nrel_ru_idtf: 
+	[классическое множество] ;;
+Cantor_Set => nrel_ru_idtf: 
+	[множество без кратных вхождений элементов] ;;
+	
+Cantor_Set => nrel_ru_idtf: 
+	[множество без кратных принадлежностей элементов] ;;
+Cantor_Set => nrel_ru_idtf: 
+	[множество всех канторовских множеств] ;;
+Cantor_Set => nrel_ru_idtf: 
+	[понятие канторовского множества] ;;
+
+Cantor_Set => nrel_definition:
+	[ Множество является канторовским множеством тогда и только тогда, когда каждый его элемент в это множество входит однократно. ] ;; 
+
+  
+Cantor_Set  <-  Notion  ;;
+Cantor_Set  <-  Cantor_Set_1  ;;
+Cantor_Set  <- Reflexive_Set  ;;
+Cantor_Set  <-   Not_Transitive_Set  ;;
+Cantor_Set  <-  Endless  ;;
+Cantor_Set  <-  Semantically_Normalized_Set  ;;
+Cantor_Set  <-  Class_of_Sets_of_Different_Types_of_Semantic  ;;
+
+Cantor_Set => nrel_explanation:
+	[
+		Канторовскими множествами являются понятие множества, понятие канторовского множества, понятие пустого множества, понятие принадлежности, понятие включения и другие.
+	];;
+Cantor_Set => nrel_explanation:
+	[
+		Понятие геометрической фигуры является канторовским множеством.
+	];;		
+Cantor_Set => nrel_explanation:
+	[
+		Понятие натуральное число является канторовским множеством.
+	];;		
+
+Cantor_Set => nrel_comment:
+		"../sc-git-repo/images/Cantor_Set.png";;

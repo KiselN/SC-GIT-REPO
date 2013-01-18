@@ -1,0 +1,6 @@
+/!* keyword: nrel_rule_rename */
+nrel_rule_rename => nrel_main_ru_idtf: 
+	[правило именования*] ;;
+	
+nrel_rule_rename => nrel_main_en_idtf: 
+	[rename rule*] ;;

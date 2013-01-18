@@ -1,0 +1,44 @@
+/!* keyword: Subtraction_of_Set */
+Subtraction_of_Set => nrel_main_ru_idtf: 
+	[Вычитание множеств*] ;;
+Subtraction_of_Set => nrel_main_en_idtf: 
+  [ subtraction of set ] ;;	
+Subtraction_of_Set <= nrel_superpartition:  
+	[120. Семантический язык множеств /*раздел третьего уровня*/] ;;
+Subtraction_of_Set => nrel_ru_idtf: 
+	[вычитание множеств*] ;;
+Subtraction_of_Set  => nrel_ru_idtf: 
+	[операция вычитания множеств*] ;;
+Subtraction_of_Set => nrel_ru_idtf: 
+	[отношение вычитания множеств*] ;;
+Subtraction_of_Set => nrel_ru_idtf: 
+	[разность множеств*] ;;
+
+Subtraction_of_Set => nrel_explanation:
+	[
+		Множество sk является вычитанием множества si из множества sj тогда и только тогда, когда каждый элемент x принадлежит множеству sk в том и только том случае, когда он принадлежит множеству sj, и не принадлежит множеству si.
+	];;	
+	
+Subtraction_of_Set => nrel_comment:
+		"../sc-git-repo/images/Subtraction_of_Set.png";;
+Subtraction_of_Set <- Notion  ;;
+Subtraction_of_Set <- Cantor_Set ;;
+Subtraction_of_Set <- Relation ;;
+
+Subtraction_of_Set => nrel_explanation:
+	[
+		
+Пример изображения отношения вычитание множеств
+	];;	
+	
+Subtraction_of_Set => nrel_comment:
+		"../sc-git-repo/images/Subtraction_of_Set_1.png";;
+
+Subtraction_of_Set => nrel_explanation:
+	[
+		
+Вычитание множества иррациональных чисел из множества алгебраических чисел будет множество рациональных чисел.
+	];;	
+	
+Subtraction_of_Set => nrel_comment:
+		"../sc-git-repo/images/Subtraction_of_Set_2.png";;		

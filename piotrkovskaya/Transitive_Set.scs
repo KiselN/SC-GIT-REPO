@@ -1,0 +1,5 @@
+/!* keyword: Transitive_Set */
+Transitive_Set => nrel_main_ru_idtf: 
+	[ транзитивное множество ] ;;
+Transitive_Set => nrel_ru_idtf: 
+	[ множество, все элементы которого являются его подможествами ] ;;

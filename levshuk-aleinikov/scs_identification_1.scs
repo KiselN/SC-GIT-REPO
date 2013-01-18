@@ -1,0 +1,28 @@
+/!* keyword: scs_identification_1 */
+scs_identification_1 => nrel_main_ru_idtf: 
+	[Раздел OSTIS. Общее положение построения идентификаторов sc-элементов] ;;
+
+scs_identification_1 <= nrel_superpartition:
+[Раздел OSTIS. sc-идентификатор];;
+
+scs_identification_1 => nrel_next_partition:
+[Раздел OSTIS. Правила построения атомарных sc-идентификаторов, используемых в scs-текстах первого уровня сложности];;
+
+scs_identification_1 <- scs_ostis_nonatomic;;
+
+scs_identification_1 <= nrel_introduction:
+[Данный раздел описывает общие правила построения идентификаторов sc-элементов];;
+
+scs_identification_1 => nrel_annotation: 
+		[...] ;;
+		
+scs_identification_1 <= nrel_decomposition: 
+	{
+		scs_subidentification_1;
+		scs_subidentification_2;
+		scs_subidentification_3;
+		scs_subidentification_4;
+		scs_subidentification_5;
+		scs_subidentification_6;
+		scs_subidentification_7
+	};;

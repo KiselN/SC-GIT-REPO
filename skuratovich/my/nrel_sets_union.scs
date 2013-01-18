@@ -1,0 +1,35 @@
+/!* keyword: nrel_sets_union */
+nrel_sets_union => nrel_main_ru_idtf: 
+	[объединение*] ;;
+nrel_sets_union => nrel_ru_idtf: 
+	[операция объединения*] ;
+	[отношение объединения*];
+	[множество ориентированных троек, каждая из которых связывает некоторые два множества с результатом их объединения];
+	[теоретико-множественное объединение];;
+
+nrel_sets_union <= nrel_definition:
+	[Множество si является объединением семейства множеств sj тогда и только тогда, когда каждый элемент x принадлежит множеству si в том и только том случае, когда существует множество sk, которому принадлежит элемент x и которое принадлежит семейству sj.];;
+nrel_sets_union <= nrel_comment: [/*в SCg-коде*/];;
+nrel_sets_union <=> nrel_semantic_equivalence: "../../images/nrel_sets_union.png";;
+nrel_sets_union <= nrel_inclusion: 
+	[понятие];
+	[канторовское множество];
+	[отношение];;
+	
+nrel_sets_union <= rrel_example:
+	[
+		Пример изображения отношения объединения множеств.
+	];;
+	nrel_sets_union <= nrel_comment: [/*в SCg-коде*/];;
+	nrel_sets_union <= nrel_illustration: "../../images/exnrel_sets_union1.png";;
+	nrel_sets_union <= nrel_comment: 
+		[/*на теоретико-множественном математическом языке*/];;
+	nrel_sets_union <=> nrel_semantic_equivalence:
+		[<{sj,si}, объединение_:s> включение* объединение*];;
+		
+	nrel_sets_union <= rrel_example:
+	[
+		При объединении цепи и цикла получаем маршрут.
+	];;
+	nrel_sets_union <= nrel_illustration: "../../images/exnrel_sets_union2.png"(* <= nrel_comment: [/*в SCg-коде*/];; *);;
+	

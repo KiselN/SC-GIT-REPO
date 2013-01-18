@@ -1,0 +1,36 @@
+/!* keyword: scs_subidentification_4 */
+scs_subidentification_4 => nrel_main_ru_idtf: 
+	[Раздел OSTIS. Общие требования, предъявляемые к sc-идентификаторам] ;;
+	
+scs_subidentification_4 <= nrel_superpartition:
+scs_identification_1;;
+
+scs_subidentification_4 <= nrel_next_partition:
+scs_subidentification_5;;
+
+scs_subidentification_4 => nrel_ru_idtf:
+[строковые sc-идентификатор];;
+
+scs_subidentification_4 <= nrel_explanation:
+[Наиболее часто используемыми sc-идентификаторами являются строковые sc-идентификаторы, <br>
+которые представляют собой строку символов какого-либо фиксированного алфавита. <br>
+Представляет собой строку символов фиксированного алфавита.
+];;
+
+scs_subidentification_4 <= nrel_subdividing:
+{
+	scs_atomic_id;
+	scs_nonatomic_id
+};;
+
+scs_subidentification_4 => nrel_ru_idtf:
+[нестроковые sc-идентификатор];;
+
+scs_subidentification_4 <= nrel_explanation:
+[Помимо строковых идентификаторов, выделяются нестроковые sc-идентификаторы, <br>
+которые идентифицируют объекты при помощи графических иллюстраций, символов, иероглифов, пиктограмм и др. <br>
+Представляет собой изображение идентифицируемого объекта
+];;
+
+scs_subidentification_4 => nrel_example:
+"../../OSTIS_NEW/scg_example/OSTIS_CONF.png";;

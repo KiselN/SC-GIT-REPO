@@ -1,0 +1,5 @@
+/!* keyword: Not_Transitive_Set */
+Not_Transitive_Set => nrel_main_ru_idtf: 
+	[ нетранзитивное множество ] ;;
+Not_Transitive_Set => nrel_ru_idtf: 
+	[ множество, не все элементы которого являются его подможествами /* множествами, все элементы которых являются его элементами*/ ] ;;

@@ -1,0 +1,8 @@
+/!* keyword: Singleton__subd */
+
+Singleton__subd <= nrel_subdividing:
+{
+	Singleton_1;
+    Singleton_2;
+	Singleton_3
+};;

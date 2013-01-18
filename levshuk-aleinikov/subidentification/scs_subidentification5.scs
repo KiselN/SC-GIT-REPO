@@ -1,0 +1,39 @@
+/!* keyword: scs_subidentification_5 */
+scs_subidentification_5 => nrel_main_ru_idtf: 
+	[Раздел OSTIS. Атомарные и неатомарные идентификаторы] ;;
+	
+scs_subidentification_5 <= nrel_superpartition:
+scs_subidentification_1;;
+
+scs_subidentification_5 <= nrel_next_partition:
+scs_subidentification_6;;
+
+scs_subidentification_5 => nrel_introduction:
+[Строковые sc-идентификаторы разделяют на атомарные и неатомарные идентификаторы. <br>
+К атомарным идентификаторам относятся идентификаторы, в состав которых не <br>
+входят другие идентификаторы. К неатомарным, соответственно, относятся <br>
+те идентификаторы, которые в свой состав включают идентификаторы других объектов];;
+
+scs_subidentification_5 => nrel_ru_idtf:
+[атомарный sc-идентификатор];;
+
+scs_subidentification_5 <= nrel_explanation:
+[Это sc-идентификатор, не включающий в свой состав другие sc-идентификаторы];;
+
+scs_subidentification_5 -> rrel_example:
+[треугольник];;
+
+scs_subidentification_5 => nrel_ru_idtf:
+[неатомарный sc-идентификатор];;
+
+scs_subidentification_5 <= nrel_explanation:
+[Это sc-идентификатор, состоящий из других sc-идентификаторов];;
+
+scs_subidentification_5 -> rrel_example:
+[Треугк.(Тчк.А; Тчк.B; Тчк.С) ]
+(*
+	<= nrel_comment:
+	[Приведен пример неатомарного идентификатора - идентификатор треугольника АВС. <br>
+	В своем составе данный идентификатор содержит атомарные идентификаторы трех точек,<br> 
+	задающих этот треугольник: точка А, точка B и точка C.];;
+*);;

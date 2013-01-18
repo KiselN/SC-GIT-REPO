@@ -1,0 +1,13 @@
+/!* keyword: Endless */
+Endless => nrel_main_ru_idtf: 
+	[конечное множество] ;;
+Endless <= nrel_subdividing:
+{
+	Empty_Set;
+	Singleton;
+	Сouple;
+	triple;
+	four;
+	further	
+};;	
+	

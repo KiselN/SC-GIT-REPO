@@ -1,0 +1,9 @@
+/!* keyword: atomic_logical_ formula */
+atomic_logical_ formula => nrel_main_ru_idtf: 
+	[ атомарная логическая формула ] ;;
+atomic_logical_ formula  => nrel_ru_idtf: 
+	[ предикатная атомарная формула ] ;;
+atomic_logical_ formula  => nrel_ru_idtf: 
+	[ множество sc-констант и sc-переменных ] ;;
+atomic_logical_ formula  => nrel_ru_idtf: 
+	[ обобщённая структура ] ;;

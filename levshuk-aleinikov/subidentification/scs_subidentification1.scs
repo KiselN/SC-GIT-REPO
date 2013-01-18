@@ -1,0 +1,11 @@
+/!* keyword: scs_subidentification_1 */
+scs_subidentification_1 => nrel_main_ru_idtf: 
+	[Раздел OSTIS. Зачем нужна идентификация] ;;
+	
+scs_subidentification_1 <= nrel_superpartition:
+scs_identification_1;;
+
+scs_subidentification_1 <= nrel_next_partition:
+scs_subidentification_2;;
+
+scs_subidentification_1 <- scs_atomic;;

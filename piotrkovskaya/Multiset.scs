@@ -1,0 +1,48 @@
+/!* keyword: Multiset */
+Multiset => nrel_main_ru_idtf:
+	[Multiset] ;;
+Multiset => nrel_main_en_idtf: 
+  [ Cantor_Set ] ;;	
+Multiset <= nrel_superpartition:  
+	[120. Семантический язык множеств /* раздел 3-го уровня */] ;;
+Multiset => nrel_ru_idtf:
+	[мультимножество] ;;
+
+Multiset => nrel_ru_idtf: 
+	[множество] ;;
+Multiset => nrel_ru_idtf: 
+	[неклассическое множество] ;;
+Multiset => nrel_ru_idtf: 
+	[ множество с кратными вхождениями элементов] ;;
+Multiset => nrel_ru_idtf: 
+	[множество всех мультимножеств, понятие мультимножества] ;;
+Multiset => nrel_definition:
+	[Множество является мультимножеством тогда и только тогда, когда оно не является канторовским множеством.] ;; 
+Multiset => nrel_explanation:
+	[
+	Мультимножествами могут быть только связки.	
+	];;
+
+Multiset <- Notion  ;;
+Multiset <- Cantor_Set_1  ;;
+Multiset <- Reflexive_Set  ;;
+Multiset <- Not_Transitive_Set  ;;
+Multiset <- Endless  ;;
+Multiset <- Semantically_Normalized_Set  ;;
+Multiset <- Class_of_Sets_of_Different_Types_of_Semantic  ;;
+Multiset => nrel_explanation:
+	[
+		S1 входит в качестве элемента во множество S;<br>
+S1 является как минимум однократным элементом множества S;<br>
+S2 является как минимум однократным элементом множества S;<br>
+S3 является как минимум однократным элементом множества S;<br>
+S4 является как минимум четырехкратным элементом множества S;<br>
+	];;		
+Multiset => nrel_comment:
+		"../sc-git-repo/images/Multiset.png";;
+(*
+		<=> nrel_semantic_equivalence: "...\SC-GIT-REPO\Ostis\images\Multiset.png";;
+		<=> nrel_semantic_equivalence: [/*на теоретико-множественном математическом языке*/ <br>
+		S={S1, S2, S3, Sn, Sn, Sn, Sn} ? мультимножество];;
+
+	*);;

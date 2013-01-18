@@ -1,0 +1,25 @@
+/!* keyword: nrel_power*/
+nrel_power <= nrel_superpartition:  
+	[120. Семантический язык множеств /* раздел 3-го уровня */] ;;
+nrel_power => nrel_main_ru_idtf: 
+	[мощность*] ;;	
+
+nrel_power => nrel_ru_idtf: 
+	[кардинальное число*] ;;
+nrel_power => nrel_ru_idtf: 
+	[отношение мощности*] ;;
+nrel_power => nrel_explanation:
+	[Мощность множества определяется общим количеством пар принадлежности, выходящих из знака этого множества..<br>
+	];;
+	
+nrel_power => nrel_definition:
+	[ Мощность множества – это суммарное количество вхождений в это множество всех его элементов. Общее количество вхождений всех элементов множества.. ] ;; 
+nrel_power  <-  Notion  ;;
+nrel_power  <-  Cantor_Set_1  ;;
+nrel_power  <-  Relation  ;;
+
+nrel_power => nrel_explanation:
+	[ Мощность всех натуральных и целых чисел обозначается "алеф-нуль". ] ;; 
+	
+nrel_power => nrel_comment:
+	"D:/OSTIS/DOC/SC-GIT-REPO/images/nrel_power.png";;

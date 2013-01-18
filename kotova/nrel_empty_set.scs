@@ -1,0 +1,24 @@
+/!* keyword: nrel_empty_set*/
+nrel_empty_set <= nrel_superpartition:  
+	[120. Семантический язык множеств /* раздел 3-го уровня */] ;;
+nrel_empty_set => nrel_main_ru_idtf: 
+	[пустое множество] ;;	
+
+nrel_empty_set => nrel_ru_idtf: 
+nrel_empty_set => nrel_ru_idtf: 
+	[понятие пустого множества] ;;
+nrel_empty_set => nrel_ru_idtf: 
+	[0-мощное множество] ;;
+	
+nrel_empty_set  => nrel_definition:
+	[Множество является пустым множеством тогда и только тогда, когда ему не принадлежит ни один элемент.<br>
+	];;
+nrel_empty_set => nrel_explanation:
+	"D:/OSTIS/DOC/SC-GIT-REPO/images/nrel_empty_set.png";;
+nrel_empty_set <-  Notion  ;;
+nrel_empty_set <-  Cantor_Set_1  ;;
+nrel_empty_set  <- Not_Reflexive_Set  ;;
+nrel_empty_set  <-  Transitive_Set  ;;
+nrel_empty_set  <-  Endless  ;;
+nrel_empty_set  <-  Semantically_Normalized_Set  ;;
+nrel_empty_set <-  Class_of_Sets_of_Different_Types_of_Semantic  ;;

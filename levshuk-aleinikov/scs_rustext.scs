@@ -1,0 +1,5 @@
+/!* keyword: scs_rustext */
+scs_rustext => nrel_main_ru_idtf: 
+	[русскоязычный текст] ;;
+scs_rustext => nrel_main_en_idtf: 
+	[russian language text] ;;

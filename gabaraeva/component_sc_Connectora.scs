@@ -1,0 +1,21 @@
+/!* keyword: sc_component_connector  */
+sc_component_connector  => nrel_main_ru_idtf: 
+	[компонент sc-коннектора*] ;;	
+sc_component_connector  => nrel_ru_idtf:
+	[ Отношение быть компонентом sc-коннектора*] ;;
+sc_component_connector  => nrel_ru_idtf:
+	[ Отношение инцидентности, связывающее sc-коннектор с одним из его компонентов*] ;;
+/* компонент sc-коннектора – это тот sc-элемент, который связывается sc-коннектором с некоторым другим sc-элементом */
+sc_component_connector  => nrel_ru_idtf:
+	[инцидентность sc-коннектора с его компонентом] ;;
+sc_component_connector  => nrel_ru_idtf:
+	[ инцидентность sc-коннектора и его компонента] ;;
+sc_component_connector  => nrel_ru_idtf:
+	[ быть компонентом sc-коннектора] ;;
+sc_component_connector  => nrel_ru_idtf:
+	[ быть sc-элементом, который связывается данным sc-коннектором с некоторым другим sc-элементом] ;;
+sc_component_connector  => nrel_ru_idtf:
+	[ Первое отношение инцидентности sc-элементов] ;;
+
+
+

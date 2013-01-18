@@ -1,0 +1,5 @@
+/!* keyword: scs_atomic */
+scs_atomic => nrel_main_ru_idtf: 
+	[атомарный раздел] ;;
+scs_atomic => nrel_main_ru_idtf: 
+	[atomic section] ;;

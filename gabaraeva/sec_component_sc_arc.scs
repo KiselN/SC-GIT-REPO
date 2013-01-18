@@ -1,0 +1,21 @@
+/!* keyword: Second_component_scarc  */
+Second_component_scarc => nrel_main_ru_idtf: 
+	[второй компонент sc-дуги*] ;;	
+Second_component_scarc => nrel_ru_idtf:
+	[ Отношение быть вторым компонентом sc-дуги*] ;;
+Second_component_scarc => nrel_ru_idtf:
+	[ Отношение инцидентности, связывающее sc-дугу с тем sc-элементом, в который она входит*] ;;
+Second_component_scarc  => nrel_ru_idtf:
+	[инцидентность sc-дуги с её вторым компонентом*] ;;
+Second_component_scarc  => nrel_ru_idtf:
+	[инцидентность sc-дуги и её второго компонента*] ;;
+Second_component_scarc  => nrel_ru_idtf:
+	[ быть вторым компонентом sc-дуги*] ;;
+Second_component_scarc  => nrel_ru_idtf:
+	[быть sc-элементом, в который входит данная sc-дуга*] ;;
+Second_component_scarc  => nrel_ru_idtf:
+	[ Второе отношение инцидентности sc-элементов*] ;;
+
+
+
+
