@@ -1,0 +1,36 @@
+/!* keyword: nrel_implement */
+nrel_implement => nrel_main_ru_idtf: 
+	[Принадлежность*] ;;
+nrel_implement => nrel_ru_idtf: 
+	[пара принадлежности] ;
+	[множество всевозможных пар принадлежности];
+	[отношение принадлежности*];;
+
+nrel_implement <= nrel_explanation:
+	[
+	Отношение принадлежности является понятием теории множеств, которого связывает множество и его элемент. В этом случае говорят, что существует принадлежность элемента множеству.
+	] ;;
+nrel_implement <= nrel_inclusion: 
+	[понятие];
+	[канторовское множество];
+	[нерефлексивное множество];
+	[нетранзитивное множество];
+	[бесконечное множество];
+	[семантически нормализованное множество];
+	[отношение];;
+nrel_implement <= nrel_explanation:
+	[
+		si является элементом sj;<br>
+		si принадлежит множеству sj;<br>
+		si входит в состав множества sj в качестве элемента;<br>
+		si включается во множество sj;<br>
+		множество sj содержит si.
+	] (* <=> nrel_semantic_equivalence: "../../images/nrel_implementExample1.png" (* <= nrel_comment: [/*в SCg-коде*/];; *);;
+		  <=> nrel_semantic_equivalence: "../../images/nrel_implementExample2.png" (* <= nrel_comment: [/*в SCg-коде*/];; *);;
+		  <=> nrel_semantic_equivalence: [
+														<sj, si>∈ принадлежность*
+													] (* <= nrel_comment: [/*на теоретико-множественном математическом языке*/];; *);;
+		  <=> nrel_semantic_equivalence: [
+														si ∈ sj;<br>
+														sj ∋ si.
+													] (* <= nrel_comment: [/*ориентированная пара <sj, si> принадлежит отношению принадлежности*/];; *);; *);;
