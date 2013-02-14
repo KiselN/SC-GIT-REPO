@@ -1,7 +1,0 @@
-!format_html
-
-<= nrel_identification:
-	{
-		["формат html"] (<- ru_lang);
-		["html format"] (<- en_lang);
-	}

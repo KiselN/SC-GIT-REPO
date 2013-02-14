@@ -1,5 +1,0 @@
-!circle
-<= nrel_identification:
-{
-  ["окружность"] (<- ru_lang);
-}

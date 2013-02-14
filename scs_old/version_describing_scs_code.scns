@@ -1,5 +1,0 @@
-!version_describing_scs_code
-<= nrel_identification: 
-{
-	["Описание версий. SCs-код"] (<- ru_lang);
-}

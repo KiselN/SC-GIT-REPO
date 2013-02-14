@@ -1,5 +1,0 @@
-!nrel_altitude
-<= nrel_identification:
-{
-  ["высота*"] (<- ru_lang);
-}

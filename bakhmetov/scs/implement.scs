@@ -25,8 +25,8 @@ nrel_implement <= nrel_explanation:
 		si входит в состав множества sj в качестве элемента;<br>
 		si включается во множество sj;<br>
 		множество sj содержит si.
-	] (* <=> nrel_semantic_equivalence: "../../images/nrel_implementExample1.png" (* <= nrel_comment: [/*в SCg-коде*/];; *);;
-		  <=> nrel_semantic_equivalence: "../../images/nrel_implementExample2.png" (* <= nrel_comment: [/*в SCg-коде*/];; *);;
+	] (* <=> nrel_semantic_equivalence: "file://images/nrel_implementExample1.png" (* <= nrel_comment: [/*в SCg-коде*/];; *);;
+		  <=> nrel_semantic_equivalence: "file://images/nrel_implementExample2.png" (* <= nrel_comment: [/*в SCg-коде*/];; *);;
 		  <=> nrel_semantic_equivalence: [
 														<sj, si>∈ принадлежность*
 													] (* <= nrel_comment: [/*на теоретико-множественном математическом языке*/];; *);;

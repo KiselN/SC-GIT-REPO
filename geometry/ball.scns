@@ -1,5 +1,0 @@
-!ball
-<= nrel_identification:
-{
-  ["шар"] (<- ru_lang);
-}

@@ -23,4 +23,4 @@ nrel_one_to_one_congruence <= nrel_explanation:
 		•	х1 и х2 – пара;<br>
 		•	у1 и у2 – пара.<br>
 		
-	] (* <=> nrel_semantic_equivalence: "../../images/one_to_one_congruence.png"(* <= nrel_comment: [/*в SCg-коде*/];; *);; *);;
+	] (* <=> nrel_semantic_equivalence: "file://images/one_to_one_congruence.png"(* <= nrel_comment: [/*в SCg-коде*/];; *);; *);;

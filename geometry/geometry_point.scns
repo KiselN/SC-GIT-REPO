@@ -1,5 +1,0 @@
-!geometry_point
-<= nrel_identification:
-{
-  ["геометрическая точка"] (<- ru_lang);
-}

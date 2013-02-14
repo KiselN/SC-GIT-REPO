@@ -1,5 +1,0 @@
-!round
-<= nrel_identification:
-{
-  ["круг"] (<- ru_lang);
-}

@@ -1,5 +1,0 @@
-!nrel_perimeter
-<= nrel_identification:
-{
-  ["периметр*"] (<- ru_lang);
-}

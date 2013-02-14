@@ -9,7 +9,7 @@ nrel_congruence => nrel_ru_idtf:
 nrel_congruence <= nrel_definition:
 	[
 	Множество является соответствием* между двумя множествами тогда и только тогда, когда оно является бинарным отношением и первое множество включает* унарную проекцию* этого бинарного отношения по атрибутивному отношению 1_, а второе множество – унарную проекцию* этого бинарного отношения по атрибутивному отношению 2_.
-	] (* <=> nrel_semantic_equivalence: "../../images/congruence.png";; *);;
+	] (* <=> nrel_semantic_equivalence: "file://images/congruence.png";; *);;
 nrel_congruence <= nrel_inclusion: 
 	[понятие];
 	[канторовское множество];
@@ -21,4 +21,4 @@ nrel_congruence <= nrel_explanation:
 		•	х1 и х2 – пара;<br>
 		•	у1 и у2 – пара.
 		
-	] (* <=> nrel_semantic_equivalence: "../../images/congruenceExample.png" (* <= nrel_comment: [/*в SCg-коде*/];; *);; *);;
+	] (* <=> nrel_semantic_equivalence: "file://images/congruenceExample.png" (* <= nrel_comment: [/*в SCg-коде*/];; *);; *);;

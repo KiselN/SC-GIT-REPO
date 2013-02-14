@@ -1,5 +1,0 @@
-!scs_sentence_4_level
-	<= nrel_identification: 
-	{
-		["sc.s-предложение уровня 4"] (<- ru_lang);
-	}

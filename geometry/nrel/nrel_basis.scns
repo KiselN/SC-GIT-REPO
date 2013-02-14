@@ -1,6 +1,0 @@
-!nrel_basis
-
-<= nrel_identification:
-	{
-		["основание*"] (<- ru_lang);
-	}

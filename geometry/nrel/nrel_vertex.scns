@@ -1,5 +1,0 @@
-!nrel_vertex
-<= nrel_identification:
-{
-  ["вершина*"] (<- ru_lang);
-}

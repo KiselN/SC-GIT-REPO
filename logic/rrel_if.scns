@@ -1,5 +1,0 @@
-!rrel_if
-<= nrel_identification:
-{
-  ["если_"] (<- ru_lang);
-}

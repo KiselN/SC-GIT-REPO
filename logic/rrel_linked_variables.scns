@@ -1,5 +1,0 @@
-!rrel_linked_variables
-<= nrel_identification:
-{
-  ["связываемые переменные_"] (<- ru_lang);
-}

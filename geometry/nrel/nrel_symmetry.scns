@@ -1,6 +1,0 @@
-!nrel_symmetry
-
-<= nrel_identification:
-	{
-		["симметрия*"] (<- ru_lang);
-	}

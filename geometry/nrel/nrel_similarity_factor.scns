@@ -1,6 +1,0 @@
-!nrel_similarity_factor
-
-<= nrel_identification:
-	{
-		["коэффициент подобия*"] (<- ru_lang);
-	}

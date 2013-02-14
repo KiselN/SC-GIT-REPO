@@ -1,5 +1,0 @@
-!nrel_interior_angle
-<= nrel_identification:
-{
-  ["внутренний угол*"] (<- ru_lang);
-}

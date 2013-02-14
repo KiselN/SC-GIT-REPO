@@ -1,5 +1,0 @@
-!nrel_bisectrix
-<= nrel_identification:
-{
-  ["биссектриса*"] (<- ru_lang);
-}

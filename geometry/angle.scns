@@ -1,5 +1,0 @@
-!angle
-<= nrel_identification:
-{
-  ["угол"] (<- ru_lang);
-}

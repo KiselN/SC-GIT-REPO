@@ -1,6 +1,0 @@
-!rotate_body
-
-<= nrel_identification:
-	{
-		["тело вращения"] (<- ru_lang);
-	}

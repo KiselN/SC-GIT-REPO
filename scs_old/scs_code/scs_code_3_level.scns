@@ -1,5 +1,0 @@
-!scs_code_3_level
-	<= nrel_identification: 
-	{
-		["SCs-код уровня 3"] (<- ru_lang);
-	}

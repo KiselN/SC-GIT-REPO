@@ -1,0 +1,16 @@
+/!* keyword: project_conf_ostis */
+project_conf_ostis => nrel_main_ru_idtf:
+	[Проект Conf.OSTIS];;
+project_conf_ostis => nrel_ru_idtf:
+	[Проект, направленный на подготовку и проведение ежегодных конференций по открытым семантическим технологиям проектирования интеллектуальных систем];;
+project_conf_ostis => nrel_inclusion:
+	[
+		Проект IS.Conf.OSTIS
+	] (* <=> nrel_semantic_equivalence: [Проект, направленный на разработку интеллектуальной системы, предназначенной для информационной поддержки подготовки и проведения ежегодных конференций по открытым семантическим технологиям проектирования интеллектуальных систем];; *);;
+project_conf_ostis <= nrel_inclusion:
+	[Система IS.Conf.OSTIS];
+	[Проект Conf.OSTIS-2013];
+	[Конференция OSTIS-2013];;
+project_conf_ostis <=> nrel_semantic_equivalence:
+	[IS.Conf.OSTIS];
+	[www.conf.ostis.net];;

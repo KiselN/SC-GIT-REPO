@@ -19,4 +19,4 @@ nrel_full_congruence <= nrel_explanation:
 		•	х1 и х2 – пара;<br>
 		•	у1 и у2 – пара.
 		
-	] (* <=> nrel_semantic_equivalence: "../../images/full_congruence.png"(* <= nrel_comment: [/*в SCg-коде*/];; *);; *);;
+	] (* <=> nrel_semantic_equivalence: "file://images/full_congruence.png"(* <= nrel_comment: [/*в SCg-коде*/];; *);; *);;

@@ -1,7 +1,0 @@
-/!* keyword: Cantor_Set_1 */
-Cantor_Set_1 => nrel_main_ru_idtf: 
-	[канторовское множество] ;;
-Cantor_Set_1 => nrel_ru_idtf: 
-	[ множество, все элементы которого различны ] ;;
-Cantor_Set_1 => nrel_ru_idtf: 
-	[ множество без кратных вхождений элементов ] ;;

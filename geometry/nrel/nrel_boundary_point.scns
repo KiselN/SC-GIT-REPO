@@ -1,5 +1,0 @@
-!nrel_boundary_point
-<= nrel_identification:
-{
-  ["граничная точка*"] (<- ru_lang);
-}

@@ -17,7 +17,7 @@ nrel_decart_composition <= nrel_definition:
 		
 		•	в состав отношения d входит каждый кортеж вида <a1 : x1i, a2 : x2i, …, an : xni>, где x1i есть элемент множества, являющегося унарной проекцией отношения d по атрибуту a1; x2i есть элемент множества, являющегося унарной проекцией отношения d по атрибуту a2 и так далее, xni есть элемент множества, являющегося унарной проекцией отношения d по атрибуту an.
 		
-	] (* <=> nrel_semantic_equivalence: "../../images/decart_composition.png";; *);;
+	] (* <=> nrel_semantic_equivalence: "file://images/decart_composition.png";; *);;
 nrel_decart_composition <= nrel_inclusion: 
 	[понятие];
 	[канторовское множество];
@@ -26,4 +26,4 @@ nrel_decart_composition <= nrel_explanation:
 	[
 		Декартовым произведением множеств {2} и {1,2,3} буде множество пар {<1_:1, 2_:2>, <1_:3, 2_:2>, <1_:2, 2_:2>}
 		
-	] (* <=> nrel_semantic_equivalence: "../../images/decart_compositionExample.png"(* <= nrel_comment: [/*в SCg-коде*/];; *);; *);;
+	] (* <=> nrel_semantic_equivalence: "file://images/decart_compositionExample.png"(* <= nrel_comment: [/*в SCg-коде*/];; *);; *);;

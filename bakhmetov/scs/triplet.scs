@@ -8,7 +8,7 @@ triplet => nrel_ru_idtf:
 triplet <= nrel_definition:
 	[
 	Множество является тройкой тогда и только тогда, когда существуют три различных вхождения в это множество элементов этого множества, и не существует четырёх различных вхождений элементов в это множество.
-	] (* <=> nrel_semantic_equivalence: "../../images/triplet.png";; *);;
+	] (* <=> nrel_semantic_equivalence: "file://images/triplet.png";; *);;
 triplet <= nrel_inclusion: 
 	[понятие];
 	[канторовское множество];
@@ -17,9 +17,9 @@ triplet <= nrel_inclusion:
 	[бесконечное множество];
 	[семантически нормализованное множество];
 	[класс множеств различного семантического типа];;
-triplet <= nrel_explanation: "../../images/tripletImage.png"(* <= nrel_comment: [/*в SCg-коде*/];; *);;
+triplet <= nrel_explanation: "file://images/tripletImage.png"(* <= nrel_comment: [/*в SCg-коде*/];; *);;
 triplet <= nrel_explanation:
 	[
 		Тройка точек А, В и С образуют треугольник АВС.
 		
-	] (* <=> nrel_semantic_equivalence: "../../images/tripletExample.png"(* <= nrel_comment: [/*в SCg-коде*/];; *);; *);;
+	] (* <=> nrel_semantic_equivalence: "file://images/tripletExample.png"(* <= nrel_comment: [/*в SCg-коде*/];; *);; *);;

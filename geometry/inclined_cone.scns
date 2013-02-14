@@ -1,6 +1,0 @@
-!inclined_cone
-
-<= nrel_identification:
-	{
-		["наклонный конус"] (<- ru_lang);
-	}

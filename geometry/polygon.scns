@@ -1,6 +1,0 @@
-!polygon
-
-<= nrel_identification:
-	{
-		["многоугольник"] (<- ru_lang);
-	}

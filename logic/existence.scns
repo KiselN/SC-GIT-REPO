@@ -1,5 +1,0 @@
-!existence
-<= nrel_identification:
-{
-  ["существование"] (<- ru_lang);
-}

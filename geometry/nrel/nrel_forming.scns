@@ -1,6 +1,0 @@
-!nrel_forming
-
-<= nrel_identification:
-	{
-		["образующая*"] (<- ru_lang);
-	}

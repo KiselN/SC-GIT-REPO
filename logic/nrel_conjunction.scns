@@ -1,5 +1,0 @@
-!nrel_conjunction
-<= nrel_identification:
-{
-  ["конъюнкция*"] (<- ru_lang);
-}
